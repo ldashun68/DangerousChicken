@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="453,16" extention="ProgressBar">
+  <displayList>
+    <image id="n0_rhju" name="n0" src="rhju32" fileName="image/Bar_Bg_001.png" xy="0,0" size="453,16">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_rhju" name="bar" src="rhju33" fileName="image/Bar_Progress.png" xy="0,3" size="453,10"/>
+    <image id="n2_rhju" name="n2" src="rhju2s" fileName="image/Img_Statetag.png" xy="0,6" pivot="0.5,0.5" anchor="true"/>
+    <image id="n3_rhju" name="n3" src="rhju30" fileName="image/Icon_Unlock.png" xy="-7,-2"/>
+    <image id="n4_rhju" name="n4" src="rhju2s" fileName="image/Img_Statetag.png" xy="113,6" pivot="0.5,0.5" anchor="true"/>
+    <image id="n5_rhju" name="n5" src="rhju2s" fileName="image/Img_Statetag.png" xy="226,6" pivot="0.5,0.5" anchor="true"/>
+    <image id="n6_rhju" name="n6" src="rhju2s" fileName="image/Img_Statetag.png" xy="339,6" pivot="0.5,0.5" anchor="true"/>
+    <image id="n7_rhju" name="n7" src="rhju2s" fileName="image/Img_Statetag.png" xy="453,6" pivot="0.5,0.5" anchor="true"/>
+    <text id="n8_rhju" name="n8" xy="115,8" pivot="0.5,0.5" anchor="true" size="36,23" fontSize="15" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="25%"/>
+    <text id="n9_rhju" name="n9" xy="228,8" pivot="0.5,0.5" anchor="true" size="36,23" fontSize="15" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="50%"/>
+    <text id="n10_rhju" name="n10" xy="341,8" pivot="0.5,0.5" anchor="true" size="36,23" fontSize="15" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="75%"/>
+    <text id="n11_rhju" name="n11" xy="456,8" pivot="0.5,0.5" anchor="true" size="45,23" fontSize="15" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="100%"/>
+  </displayList>
+  <ProgressBar/>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n1_ldi5" name="n1" src="ldi5d" fileName="image/white.png" xy="0,0" size="1334,750" alpha="0.638" color="#000000"/>
+    <image id="n2_ldi5" name="n2" src="ldi5e" fileName="image/xzmsbt.png" xy="17,11"/>
+    <list id="n3_ldi5" name="list" xy="29,107" size="1265,530" layout="row" overflow="scroll" scroll="horizontal" colGap="40">
+      <item url="ui://3fcv2cekldi5f"/>
+    </list>
+    <loader id="n9_ldi5" name="close" xy="1240,11" size="76,67" url="ui://3fcv2cekldi5c"/>
+  </displayList>
+</component>

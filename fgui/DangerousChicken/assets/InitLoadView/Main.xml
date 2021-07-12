@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" bgColor="#ff0000">
+  <displayList>
+    <image id="n17_kkf2" name="n17" src="kkf21l" fileName="image/bg2.png" xy="0,0" size="1334,750"/>
+    <image id="n19_rhju" name="n19" src="rhju1m" fileName="image/Title.png" xy="106,450"/>
+    <text id="n14_sebx" name="ProgressText" xy="667,719" pivot="0.5,0.5" anchor="true" size="151,35" fontSize="25" color="#ffffff" text="加载中...90%"/>
+    <movieclip id="n18_rhju" name="n18" src="ogt7h" fileName="load.jta" xy="642,628"/>
+  </displayList>
+</component>

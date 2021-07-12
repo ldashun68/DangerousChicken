@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="211,42">
+  <displayList>
+    <image id="n32_rhju" name="n32" src="rhju2m" fileName="image/Bg_Item.png" xy="0,0" size="211,42"/>
+    <loader id="n33_rhju" name="n33" xy="10,-1" pivot="0.5,0.5" size="44,45" aspect="true" url="ui://3d05hlavrhju2o" fill="scaleFree"/>
+    <image id="n34_rhju" name="n34" src="rhju2n" fileName="image/Btn_Recharge.png" xy="171,5"/>
+    <text id="n35_rhju" name="text" xy="113,22" pivot="0.5,0.5" anchor="true" size="102,35" fontSize="25" color="#ffffff" align="center" vAlign="middle" letterSpacing="1" autoSize="none" strokeColor="#ffffff" text="0,000k"/>
+  </displayList>
+</component>

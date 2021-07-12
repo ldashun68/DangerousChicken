@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="225,89">
+  <displayList>
+    <image id="n35_rhju" name="n35" src="rhju2u" fileName="image/Btn_Bg_002.png" xy="0,0" size="225,89"/>
+    <loader id="n37_rhju" name="n37" xy="55,48" pivot="0.5,0.5" anchor="true" size="43,45" aspect="true" url="ui://3d05hlavrhju2t" fill="scaleFree"/>
+    <text id="n38_rhju" name="text" xy="141,48" pivot="0.5,0.5" anchor="true" size="113,42" fontSize="25" align="center" vAlign="middle" letterSpacing="1" autoSize="none" strokeColor="#000000" text="直接获得"/>
+  </displayList>
+</component>

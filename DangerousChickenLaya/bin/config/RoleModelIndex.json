@@ -1,0 +1,13 @@
+{
+    "ghost": [
+        "units/Conventional/gm.lh",
+        "units/Conventional/gp.lh"
+    ],
+    "child": [
+        "units/Conventional/play_1.lh",
+        "units/Conventional/play_2.lh",
+        "units/Conventional/play_3.lh",
+        "units/Conventional/play_4.lh",
+        "units/Conventional/play_5.lh"
+    ]
+}

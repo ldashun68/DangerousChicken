@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ckbxipq6">
+  <resources>
+    <image id="pbnw4" name="xzmsbt.png" path="/image/" exported="true"/>
+    <image id="kkf2b" name="nine_0006.png" path="/image/" exported="true"/>
+    <image id="kkf2c" name="Icon_Soul_01.png" path="/image/" exported="true"/>
+    <image id="kkf2d" name="btn_Close_02.png" path="/image/" exported="true"/>
+    <image id="ogt7e" name="check.png" path="/image/"/>
+    <image id="ogt7f" name="Icon_Notic_01.png" path="/image/"/>
+    <image id="ogt7g" name="ic_user.png" path="/image/"/>
+    <image id="ogt7h" name="Icon_Change_01.png" path="/image/"/>
+    <image id="ogt7i" name="white.png" path="/image/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

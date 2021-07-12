@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3fcv2cek">
+  <resources>
+    <component id="ldi50" name="Main.xml" path="/" exported="true"/>
+    <image id="ldi52" name="Focus.png" path="/image/"/>
+    <image id="ldi53" name="backspace_key.png" path="/image/"/>
+    <image id="ldi54" name="icon_2.png" path="/image/" exported="true"/>
+    <image id="ldi55" name="icon_6.png" path="/image/" exported="true"/>
+    <image id="ldi56" name="icon_1.png" path="/image/" exported="true"/>
+    <image id="ldi57" name="icon_4.png" path="/image/" exported="true"/>
+    <image id="ldi58" name="icon_3.png" path="/image/" exported="true"/>
+    <image id="ldi59" name="icon_5.png" path="/image/" exported="true"/>
+    <image id="ldi5a" name="icon_0.png" path="/image/" exported="true"/>
+    <image id="ldi5b" name="ic_skill0000.png" path="/image/"/>
+    <image id="ldi5c" name="btn_Close_02.png" path="/image/" exported="true"/>
+    <image id="ldi5d" name="white.png" path="/image/"/>
+    <image id="ldi5e" name="xzmsbt.png" path="/image/" exported="true"/>
+    <component id="ldi5f" name="modeItem.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

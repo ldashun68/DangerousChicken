@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="381,497">
+  <displayList>
+    <loader id="n23_rhju" name="n23" xy="0,0" size="381,497" url="ui://3d05hlavrhju2c"/>
+    <image id="n24_rhju" name="n24" src="rhju2h" fileName="image/Text_Model_001.png" xy="77,370"/>
+    <image id="n25_rhju" name="n25" src="rhju2i" fileName="image/Icon_User.png" xy="161,458" pivot="0.5,0.5" anchor="true"/>
+    <text id="n26_rhju" name="text" xy="193,458" pivot="0,0.5" anchor="true" size="136,38" fontSize="27" color="#b8b7b7" vAlign="middle" autoSize="none" text="0"/>
+  </displayList>
+</component>

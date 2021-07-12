@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rbw1tvvv">
+  <resources>
+    <component id="iitt1" name="Main.xml" path="/" exported="true"/>
+    <component id="q9do18" name="circle.xml" path="/" exported="true"/>
+    <image id="t4kk1b" name="fxjdtu.png" path="/images/" exported="true"/>
+    <image id="t4kk1c" name="fxjzjtou.png" path="/images/" exported="true"/>
+    <image id="t4kk1d" name="fxtlj.png" path="/images/" exported="true" scale9grid="0,0,-28,-34"/>
+    <component id="ldi51e" name="thumb.xml" path="/" exported="true"/>
+    <image id="ldi51f" name="Indicator.png" path="/images/" exported="true"/>
+    <component id="ogt7f" name="Skill.xml" path="/" exported="true"/>
+    <image id="rhju1i" name="jump.png" path="/images/" exported="true"/>
+    <image id="rhju1j" name="clamp.png" path="/images/" exported="true"/>
+    <image id="rhju1k" name="box.png" path="/images/" exported="true"/>
+    <image id="rhju1l" name="throw stones.png" path="/images/" exported="true"/>
+    <image id="rhju1n" name="Btn_Skill_Hit.png" path="/images/" exported="true"/>
+    <image id="rhju1o" name="Btn_Skill_Opration.png" path="/images/" exported="true"/>
+    <image id="rhju1p" name="flashlight.png" path="/images/" exported="true"/>
+  </resources>
+  <publish name="Joystick">
+    <atlas name="默认" index="0"/>
+  </publish>
+</packageDescription>

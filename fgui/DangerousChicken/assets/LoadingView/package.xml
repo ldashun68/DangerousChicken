@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3rgz9xe6">
+  <resources>
+    <component id="ogt70" name="Main.xml" path="/" exported="true"/>
+    <image id="ogt71" name="Loading_1.png" path="/image/" exported="true"/>
+    <image id="ogt73" name="Loading_2.png" path="/image/" exported="true"/>
+    <image id="ogt74" name="Loading_3.png" path="/image/" exported="true"/>
+    <image id="ogt75" name="Loading_4.png" path="/image/" exported="true"/>
+    <image id="ogt76" name="Loading_5.png" path="/image/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

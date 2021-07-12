@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,100">
+  <displayList>
+    <loader id="n21_rhju" name="icon" xy="34,31" pivot="0.5,0.5" anchor="true" size="62,63" url="ui://3d05hlavrhju2e" fill="scaleFree" autoSize="true"/>
+    <text id="n22_rhju" name="text" xy="1,63" size="68,35" fontSize="25" color="#b9b4b4" align="center" vAlign="middle" autoSize="none" text="文本"/>
+  </displayList>
+</component>

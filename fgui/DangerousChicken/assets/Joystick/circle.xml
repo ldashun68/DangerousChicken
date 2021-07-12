@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,212" scroll="both" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2_kzym" name="thumb1" xy="-21,60" pivot="0.5,0.5" size="256,80" aspect="true" url="ui://rbw1tvvvt4kk1c" align="center" vAlign="middle" fill="scaleFree" autoSize="true">
+      <gearDisplay controller="button" pages="1,3"/>
+    </loader>
+    <loader id="n1" name="thumb" xy="69,69" pivot="0.5,0.5" size="73,74" aspect="true" url="ui://rbw1tvvvt4kk1d" align="center" vAlign="middle" fill="scaleFree" autoSize="true">
+      <gearDisplay controller="button" pages="1,3"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

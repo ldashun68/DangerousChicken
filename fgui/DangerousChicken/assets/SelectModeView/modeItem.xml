@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="365,501">
+  <displayList>
+    <loader id="n8_ldi5" name="icon" xy="-50,-35" size="281,367" scale="1.5,1.5" url="ui://3fcv2cekldi5a"/>
+    <text id="n6_ldi5" name="type" xy="5,363" size="355,67" fontSize="40" color="#434543" align="center" vAlign="middle" autoSize="none" text="Escape"/>
+    <text id="n7_ldi5" name="count" xy="98,435" size="194,68" fontSize="46" color="#434543" align="center" vAlign="middle" autoSize="none" text="2"/>
+  </displayList>
+</component>

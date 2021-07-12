@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="175,70">
+  <displayList>
+    <image id="n45_rhju" name="n45" src="rhju3c" fileName="image/Img_Pickup.png" xy="0,0" size="175,70"/>
+    <text id="n46_rhju" name="n46" xy="11,11" pivot="0.5,0.5" size="152,48" fontSize="35" color="#926ff7" align="center" vAlign="middle" autoSize="none" strokeColor="#926ff7" text="女孩"/>
+  </displayList>
+</component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <text id="n10_rhju" name="timeText" xy="599,57" size="135,52" fontSize="38" color="#ffffff" align="center" autoSize="none" strokeColor="#ffffff" singleLine="true" text="00:00"/>
+  </displayList>
+</component>

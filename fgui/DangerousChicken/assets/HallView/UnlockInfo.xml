@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="206,43">
+  <displayList>
+    <image id="n37_rhju" name="n37" src="rhju2x" fileName="image/Img_explaintag_002.png" xy="0,0"/>
+    <text id="n38_rhju" name="n38" xy="103,18" pivot="0.5,0.5" anchor="true" size="160,28" fontSize="19" color="#ffffff" strokeColor="#000000" text="再解锁25%可-100"/>
+  </displayList>
+</component>

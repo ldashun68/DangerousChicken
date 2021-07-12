@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3d05hlav">
+  <resources>
+    <component id="kkf20" name="Main.xml" path="/" exported="true"/>
+    <image id="rhju24" name="Textuer_Bg_003.jpg" path="/image/" exported="true"/>
+    <image id="rhju25" name="Icon_Clan.png" path="/image/" exported="true"/>
+    <image id="rhju26" name="Icon_Home.png" path="/image/" exported="true"/>
+    <image id="rhju27" name="Icon_Achievements.png" path="/image/" exported="true"/>
+    <image id="rhju28" name="Icon_Parts_01.png" path="/image/" exported="true"/>
+    <image id="rhju29" name="Icon_Shop.png" path="/image/" exported="true"/>
+    <component id="rhju2a" name="PeripheryItem.xml" path="/" exported="true"/>
+    <image id="rhju2b" name="Btn_Model_003.png" path="/image/" exported="true"/>
+    <image id="rhju2c" name="Btn_Model_001.png" path="/image/" exported="true"/>
+    <image id="rhju2d" name="Btn_Model_002.png" path="/image/" exported="true"/>
+    <image id="rhju2e" name="Icon_Ranking.png" path="/image/" exported="true"/>
+    <component id="rhju2f" name="EscapeMode.xml" path="/" exported="true"/>
+    <image id="rhju2g" name="Text_Hold.png" path="/image/" exported="true"/>
+    <image id="rhju2h" name="Text_Model_001.png" path="/image/" exported="true"/>
+    <image id="rhju2i" name="Icon_User.png" path="/image/" exported="true"/>
+    <component id="rhju2j" name="Undetermined1.xml" path="/" exported="true"/>
+    <component id="rhju2k" name="Undetermined2.xml" path="/" exported="true"/>
+    <image id="rhju2l" name="Icon_Signin.png" path="/image/" exported="true"/>
+    <image id="rhju2m" name="Bg_Item.png" path="/image/" exported="true" scale="9grid" scale9grid="16,0,32,42"/>
+    <image id="rhju2n" name="Btn_Recharge.png" path="/image/" exported="true"/>
+    <image id="rhju2o" name="item_1.png" path="/image/" exported="true"/>
+    <image id="rhju2p" name="item_2.png" path="/image/" exported="true"/>
+    <component id="rhju2q" name="CoinBox.xml" path="/" exported="true"/>
+    <component id="rhju2r" name="DiamondBox.xml" path="/" exported="true"/>
+    <image id="rhju2s" name="Img_Statetag.png" path="/image/" exported="true" scale="9grid" scale9grid="22,17,13,5"/>
+    <image id="rhju2t" name="Icon_videoads_001.png" path="/image/" exported="true"/>
+    <image id="rhju2u" name="Btn_Bg_002.png" path="/image/" exported="true" scale="9grid" scale9grid="35,0,11,80"/>
+    <component id="rhju2v" name="CoinBuy.xml" path="/" exported="true"/>
+    <component id="rhju2w" name="VideoBuy.xml" path="/" exported="true"/>
+    <image id="rhju2x" name="Img_explaintag_002.png" path="/image/" exported="true"/>
+    <component id="rhju2y" name="UnlockInfo.xml" path="/" exported="true"/>
+    <image id="rhju2z" name="Icon_Arrow.png" path="/image/" exported="true"/>
+    <image id="rhju30" name="Icon_Unlock.png" path="/image/" exported="true"/>
+    <image id="rhju32" name="Bar_Bg_001.png" path="/image/" exported="true"/>
+    <image id="rhju33" name="Bar_Progress.png" path="/image/" exported="true"/>
+    <component id="rhju34" name="ProgressBar1.xml" path="/" exported="true"/>
+    <image id="rhju35" name="Img_explaintag.png" path="/image/" exported="true" scale="9grid" scale9grid="11,15,6,18"/>
+    <image id="rhju36" name="Icon_Check_01.png" path="/image/" exported="true"/>
+    <image id="rhju37" name="Icon_Checkbox.png" path="/image/" exported="true"/>
+    <image id="rhju38" name="Btn_Bg_001.png" path="/image/" exported="true"/>
+    <component id="rhju39" name="UseSkin.xml" path="/" exported="true"/>
+    <component id="rhju3a" name="RoleName.xml" path="/" exported="true"/>
+    <image id="rhju3b" name="Img_Nor_Floor.png" path="/image/" exported="true" scale="9grid" scale9grid="27,0,54,67"/>
+    <image id="rhju3c" name="Img_Pickup.png" path="/image/" exported="true" scale="9grid" scale9grid="23,17,28,34"/>
+    <component id="rhju3d" name="RoleNameItem.xml" path="/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

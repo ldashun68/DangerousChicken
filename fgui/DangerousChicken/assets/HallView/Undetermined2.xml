@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="346,275">
+  <displayList>
+    <image id="n29_rhju" name="n29" src="rhju2d" fileName="image/Btn_Model_002.png" xy="0,-6"/>
+    <image id="n26_rhju" name="n26" src="rhju2g" fileName="image/Text_Hold.png" xy="151,166"/>
+    <image id="n27_rhju" name="n27" src="rhju2i" fileName="image/Icon_User.png" xy="167,216" pivot="0.5,0.5" anchor="true" scale="0.8,0.8"/>
+    <text id="n28_rhju" name="text" xy="185,216" pivot="0,0.5" anchor="true" size="136,38" fontSize="21" color="#b8b7b7" vAlign="middle" autoSize="none" text="0"/>
+  </displayList>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="cqdlc3oi">
+  <resources>
+    <component id="ga291k" name="Main.xml" path="/" exported="true"/>
+    <image id="kkf21l" name="bg2.png" path="/image/" exported="true"/>
+    <movieclip id="ogt7h" name="load.jta" path="/" exported="true"/>
+    <image id="ogt77" name="loading_Sheet_0.png" path="/image/" exported="true"/>
+    <image id="ogt78" name="loading_Sheet_1.png" path="/image/" exported="true"/>
+    <image id="ogt7a" name="loading_Sheet_2.png" path="/image/" exported="true"/>
+    <image id="ogt79" name="loading_Sheet_3.png" path="/image/" exported="true"/>
+    <image id="ogt7e" name="loading_Sheet_4.png" path="/image/" exported="true"/>
+    <image id="ogt7d" name="loading_Sheet_5.png" path="/image/" exported="true"/>
+    <image id="ogt7b" name="loading_Sheet_6.png" path="/image/" exported="true"/>
+    <image id="ogt7c" name="loading_Sheet_7.png" path="/image/" exported="true"/>
+    <image id="ogt72" name="loading_Sheet_8.png" path="/image/" exported="true"/>
+    <image id="rhju1m" name="Title.png" path="/image/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

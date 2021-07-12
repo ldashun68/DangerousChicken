@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,300">
+  <displayList>
+    <loader id="n13_nxkf" name="skill1" xy="55,104" pivot="0.5,0.5" anchor="true" size="104,84" url="ui://rbw1tvvvrhju1o" fill="scaleFree" autoSize="true"/>
+    <loader id="n12_nxkf" name="skill2" xy="220,41" pivot="0.5,0.5" anchor="true" size="46,48" aspect="true" url="ui://rbw1tvvvrhju1i" fill="scaleFree" autoSize="true"/>
+    <loader id="n10_ogt7" name="skill3" xy="220,210" pivot="0.5,0.5" anchor="true" size="66,53" url="ui://rbw1tvvvrhju1l" fill="scaleFree" autoSize="true"/>
+    <text id="n11_ogt7" name="countText" xy="220,161" pivot="0.5,0.5" anchor="true" size="50,35" fontSize="25" color="#ffffff" align="center" autoSize="none" singleLine="true" text="3"/>
+  </displayList>
+</component>

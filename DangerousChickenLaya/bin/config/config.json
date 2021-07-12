@@ -1,0 +1,22 @@
+{
+  "debug":true,
+  "version":"1.0.0",
+  "loadJsonCount": 3,
+  "loadJson":{
+    "RoleModelIndex":"config/RoleModelIndex.json"
+  },
+  "loadui":[
+    
+  ],
+  "scene3d":"",
+  "serverurl":"https://coolrun.liandaxinxi.com",
+  "config":{
+    "allow_video":true,
+    "allow_share":true,
+    "video_faill_share":true,
+    "adIntervals":1000,
+    "shareDuration":3000,
+    "allow_adGame":true,
+    "showShareMenu":true
+  }
+}

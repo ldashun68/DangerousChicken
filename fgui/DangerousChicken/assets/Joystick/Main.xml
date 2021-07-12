@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <loader id="n8_oacy" name="Touch" xy="0,0" size="1334,750"/>
+    <loader id="n7" name="joystick_center" xy="189,491" size="73,74" url="ui://rbw1tvvvt4kk1d" align="center" vAlign="middle" fill="scaleFree" autoSize="true">
+      <relation target="" sidePair="bottom-bottom"/>
+    </loader>
+    <component id="n4" name="joystick" src="q9do18" fileName="circle.xml" xy="120,428">
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <graph id="n2" name="joystick_touch" xy="98,404" size="260,260" type="rect" lineSize="0" fillColor="#00ffffff">
+      <relation target="" sidePair="bottom-bottom"/>
+    </graph>
+    <component id="n9_rhju" name="Skill" src="ogt7f" fileName="Skill.xml" xy="997,427"/>
+  </displayList>
+</component>

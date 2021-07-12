@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="154,44">
+  <displayList>
+    <image id="n42_rhju" name="UseSkin" src="rhju38" fileName="image/Btn_Bg_001.png" xy="0,0"/>
+    <text id="n43_rhju" name="n43" xy="11,9" size="104,29" fontSize="20" color="#e3ffff" vAlign="middle" strokeColor="#1a333d" strokeSize="2" text="使用该皮肤"/>
+    <image id="n44_rhju" name="n44" src="rhju37" fileName="image/Icon_Checkbox.png" xy="120,11"/>
+    <image id="n45_rhju" name="tick" src="rhju36" fileName="image/Icon_Check_01.png" xy="120,6"/>
+  </displayList>
+</component>
