@@ -6,7 +6,6 @@ import InitLoadView from "./view/InitLoginView";
 import JoystickView from "./view/JoystickView";
 import LoadingView from "./view/LoadingView";
 import OverView from "./view/OverView";
-import SelectModeView from "./view/SelectModeView";
 import WaitingRoomView from "./view/WaitingRoomView";
 
 export default class ViewConfig extends RabManager {
@@ -15,19 +14,17 @@ export default class ViewConfig extends RabManager {
     static HallView = "HallView";
     static LoadingView = "LoadingView";
     static WaitingRoomView = "WaitingRoomView";
-    static SelectModeView = "SelectModeView";
     static JoystickView = "JoystickView";
     static GameView = "GameView";
-    static GameOverView = "GameOverView";
+    static OverView = "OverView";
     
     protected OnInit() {
         GameManager.uimanager.regClass("InitLoadView",InitLoadView);
         GameManager.uimanager.regClass("HallView",HallView);
         GameManager.uimanager.regClass("LoadingView",LoadingView);
         GameManager.uimanager.regClass("WaitingRoomView",WaitingRoomView);
-        GameManager.uimanager.regClass("SelectModeView",SelectModeView);
         GameManager.uimanager.regClass("JoystickView",JoystickView);
         GameManager.uimanager.regClass("GameView",GameView);
-        GameManager.uimanager.regClass("GameOverView",OverView);
+        GameManager.uimanager.regClass("OverView",OverView);
     }
 }

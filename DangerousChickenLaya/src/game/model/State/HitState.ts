@@ -14,6 +14,8 @@ export default class HitState extends ActorState<Unit>{
     }
     
     protected onAnimPlayEnd() {
+        super.onAnimPlayEnd();
         this.Exchange = true;
+        this.CurrFsm.Owner.OnChangeEntityState(RoleState.idle);
     }
 }

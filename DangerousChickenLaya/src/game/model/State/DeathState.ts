@@ -18,6 +18,7 @@ export default class DeathState extends ActorState<Unit>{
     }
 
     protected onAnimPlayEnd() {
-    
+        super.onAnimPlayEnd();
+        this.CurrFsm.Owner.death();
     }
 }

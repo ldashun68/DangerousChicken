@@ -56,9 +56,11 @@ export default class Fsm<T> extends FsmBase {
      */
     public GetState(stateType:any):BaseState<T> {
         let state:BaseState<T> = null;
-        for(var i = 0;i<this.m_StateDic.length;i++) {
-            if(this.m_StateDic[i].onStateType == stateType) {
-                state = (this.m_StateDic[i]);
+        if (this.m_StateDic != null) {
+            for(var i = 0;i<this.m_StateDic.length;i++) {
+                if(this.m_StateDic[i].onStateType == stateType) {
+                    state = (this.m_StateDic[i]);
+                }
             }
         }
         return state;
@@ -79,23 +81,30 @@ export default class Fsm<T> extends FsmBase {
      * @param compel 是否强制切换 默认非强制
      * @returns 
      */
-    public ChangeState(newState:number,compel:boolean = false){
+    public ChangeState(newState:number,compel:boolean = false): boolean {
         if (this.CurrStateType == newState) {
+            return false;
+        }
+
+        // 判断是否有该状态
+        let temp = this.GetState(newState);
+        if (temp == null) {
             return;
         }
 
         if (this.m_CurrState != null) {
             if(!this.m_CurrState.Exchange && !compel) {
-                return;
+                return false;
             }
             this.m_CurrState.Leave();
         }
 
         this.LastStateType = this.CurrStateType;
         this.CurrStateType = newState;
-        this.m_CurrState = this.GetState(this.CurrStateType);
+        this.m_CurrState = temp;
         //进入新状态
         this.m_CurrState.Enter();
+        return true;
     }
 
     /**

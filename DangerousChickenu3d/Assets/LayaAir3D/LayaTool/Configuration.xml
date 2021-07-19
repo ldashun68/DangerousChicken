@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LayaExportSetting>
-  <config>2</config>
+  <config>1</config>
   <config1>
-    <FirstlevelMenu>1</FirstlevelMenu>
+    <FirstlevelMenu>0</FirstlevelMenu>
     <Scenes>False</Scenes>
     <ScenesDir>
     </ScenesDir>
@@ -19,30 +19,37 @@
     <TerrainSetting>False</TerrainSetting>
     <TextureSetting>False</TextureSetting>
     <JPGQuality>75</JPGQuality>
-    <PVRQuality>2</PVRQuality>
-    <ConvertTerrain>True</ConvertTerrain>
+    <AndroidTextureType>ETC1</AndroidTextureType>
+    <AndroidASTCQuality>astcfast</AndroidASTCQuality>
+    <ETCQuality>etcnormal</ETCQuality>
+    <IOSTextureType>PVRTC1_2</IOSTextureType>
+    <IOSASTCQuality>astcfast</IOSASTCQuality>
+    <PVRQuality>pvrtcfast</PVRQuality>
+    <ConvertTerrain>False</ConvertTerrain>
     <TerrainToMeshResolution>8</TerrainToMeshResolution>
-    <GameObjectSetting>True</GameObjectSetting>
+    <GameObjectSetting>False</GameObjectSetting>
     <IgnoreNullGameObject>True</IgnoreNullGameObject>
-    <IgnoreNotActiveGameObject>True</IgnoreNotActiveGameObject>
+    <IgnoreNotActiveGameObject>False</IgnoreNotActiveGameObject>
     <OptimizeGameObject>False</OptimizeGameObject>
-    <BatchMade>True</BatchMade>
-    <OtherSetting>True</OtherSetting>
+    <BatchMade>False</BatchMade>
+    <OtherSetting>False</OtherSetting>
     <CoverOriginalFile>True</CoverOriginalFile>
-    <CustomizeDirectory>True</CustomizeDirectory>
-    <CustomizeDirectoryName>units</CustomizeDirectoryName>
+    <CustomizeDirectory>False</CustomizeDirectory>
+    <CustomizeDirectoryName>
+    </CustomizeDirectoryName>
     <Ios>False</Ios>
     <Android>False</Android>
     <Conventional>True</Conventional>
-    <SavePath>/Users/Shared/Pro/lock/working/Gitgg/GrannyHouse/GrannyHouseLaya/GrannyHouseLaya/bin</SavePath>
+    <SavePath>
+    </SavePath>
     <ScrollPositionY>0</ScrollPositionY>
   </config1>
   <config2>
-    <FirstlevelMenu>1</FirstlevelMenu>
+    <FirstlevelMenu>0</FirstlevelMenu>
     <Scenes>False</Scenes>
     <ScenesDir>
     </ScenesDir>
-    <MeshSetting>True</MeshSetting>
+    <MeshSetting>False</MeshSetting>
     <IgnoreVerticesUV>False</IgnoreVerticesUV>
     <IgnoreVerticesNormal>False</IgnoreVerticesNormal>
     <IgnoreVerticesTangent>False</IgnoreVerticesTangent>
@@ -54,23 +61,30 @@
     <TexAnimationSocket>False</TexAnimationSocket>
     <TextureSetting>False</TextureSetting>
     <JPGQuality>75</JPGQuality>
-    <PVRQuality>2</PVRQuality>
-    <TerrainSetting>True</TerrainSetting>
-    <ConvertTerrain>True</ConvertTerrain>
-    <TerrainToMeshResolution>2</TerrainToMeshResolution>
+    <AndroidTextureType>ETC1</AndroidTextureType>
+    <AndroidASTCQuality>astcfast</AndroidASTCQuality>
+    <ETCQuality>etcnormal</ETCQuality>
+    <IOSTextureType>PVRTC1_2</IOSTextureType>
+    <IOSASTCQuality>astcfast</IOSASTCQuality>
+    <PVRQuality>pvrtcfast</PVRQuality>
+    <TerrainSetting>False</TerrainSetting>
+    <ConvertTerrain>False</ConvertTerrain>
+    <TerrainToMeshResolution>8</TerrainToMeshResolution>
     <GameObjectSetting>True</GameObjectSetting>
     <IgnoreNullGameObject>True</IgnoreNullGameObject>
     <IgnoreNotActiveGameObject>True</IgnoreNotActiveGameObject>
     <OptimizeGameObject>False</OptimizeGameObject>
-    <BatchMade>True</BatchMade>
+    <BatchMade>False</BatchMade>
     <OtherSetting>True</OtherSetting>
     <CoverOriginalFile>True</CoverOriginalFile>
-    <CustomizeDirectory>True</CustomizeDirectory>
-    <CustomizeDirectoryName>units</CustomizeDirectoryName>
+    <CustomizeDirectory>False</CustomizeDirectory>
+    <CustomizeDirectoryName>
+    </CustomizeDirectoryName>
     <Ios>False</Ios>
     <Android>False</Android>
     <Conventional>True</Conventional>
-    <SavePath>G:/work/granny-house/GrannyHouseLaya/GrannyHouseLaya/bin</SavePath>
+    <SavePath>
+    </SavePath>
     <ScrollPositionY>0</ScrollPositionY>
   </config2>
   <config3>
@@ -90,7 +104,12 @@
     <TexAnimationSocket>False</TexAnimationSocket>
     <TextureSetting>False</TextureSetting>
     <JPGQuality>75</JPGQuality>
-    <PVRQuality>2</PVRQuality>
+    <AndroidTextureType>ETC1</AndroidTextureType>
+    <AndroidASTCQuality>astcfast</AndroidASTCQuality>
+    <ETCQuality>etcnormal</ETCQuality>
+    <IOSTextureType>PVRTC1_2</IOSTextureType>
+    <IOSASTCQuality>astcfast</IOSASTCQuality>
+    <PVRQuality>pvrtcfast</PVRQuality>
     <TerrainSetting>False</TerrainSetting>
     <ConvertTerrain>False</ConvertTerrain>
     <TerrainToMeshResolution>8</TerrainToMeshResolution>
@@ -128,7 +147,12 @@
     <TexAnimationSocket>False</TexAnimationSocket>
     <TextureSetting>False</TextureSetting>
     <JPGQuality>75</JPGQuality>
-    <PVRQuality>2</PVRQuality>
+    <AndroidTextureType>ETC1</AndroidTextureType>
+    <AndroidASTCQuality>astcfast</AndroidASTCQuality>
+    <ETCQuality>etcnormal</ETCQuality>
+    <IOSTextureType>PVRTC1_2</IOSTextureType>
+    <IOSASTCQuality>astcfast</IOSASTCQuality>
+    <PVRQuality>pvrtcfast</PVRQuality>
     <TerrainSetting>False</TerrainSetting>
     <ConvertTerrain>False</ConvertTerrain>
     <TerrainToMeshResolution>8</TerrainToMeshResolution>
@@ -166,7 +190,12 @@
     <TexAnimationSocket>False</TexAnimationSocket>
     <TextureSetting>False</TextureSetting>
     <JPGQuality>75</JPGQuality>
-    <PVRQuality>2</PVRQuality>
+    <AndroidTextureType>0</AndroidTextureType>
+    <AndroidASTCQuality>1</AndroidASTCQuality>
+    <ETCQuality>1</ETCQuality>
+    <IOSTextureType>0</IOSTextureType>
+    <IOSASTCQuality>1</IOSASTCQuality>
+    <PVRQuality>1</PVRQuality>
     <TerrainSetting>False</TerrainSetting>
     <ConvertTerrain>False</ConvertTerrain>
     <TerrainToMeshResolution>8</TerrainToMeshResolution>
@@ -188,9 +217,7 @@
     <ScrollPositionY>0</ScrollPositionY>
   </config5>
   <language>1</language>
-  <time>1625904049</time>
-  <saveAcount>
-  </saveAcount>
-  <savePassWorld>
-  </savePassWorld>
+  <time>0</time>
+  <saveAcount></saveAcount>
+  <savePassWorld></savePassWorld>
 </LayaExportSetting>

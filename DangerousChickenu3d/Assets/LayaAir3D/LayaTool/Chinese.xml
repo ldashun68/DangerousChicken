@@ -18,7 +18,8 @@
   <IgnoreNotActiveGameObjects> 忽 略 未 激 活 节 点 </IgnoreNotActiveGameObjects>
   <BatchMakeTheFirstLevelGameObjects> 批 量 导 出 一 级 节 点 </BatchMakeTheFirstLevelGameObjects>
   <Assetsplatform> 发 布 平 台 </Assetsplatform>
-  <IOSQuality>iOS 质量</IOSQuality>
+  <TexCompressType>纹理压缩类型</TexCompressType>
+  <TexCompressQuality>纹理压缩质量</TexCompressQuality>
   <AnimationSetting> 动 画 设 置 </AnimationSetting>
   <TexAnimatorSetting> 预 烘 焙 骨 骼 动 画 </TexAnimatorSetting>
   <TexAnimatorbakeFPS> 烘 焙 帧 数 </TexAnimatorbakeFPS>
@@ -65,7 +66,7 @@
   <putongVIP>普通用户</putongVIP>
 
   //Version
-  <LayaBoxVersion>LayaBox 版 本 2.9.0</LayaBoxVersion>
+  <LayaBoxVersion>LayaBox 版 本 2.12.0</LayaBoxVersion>
   <AboutLayaAir> 关 于 LayaAir</AboutLayaAir>
   <downloadNodejs> 请 下 载 和 安 装 NodeJs,</downloadNodejs>
   <unity> 然 后 重 新 启 动 Unity</unity>

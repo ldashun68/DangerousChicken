@@ -1,26 +1,23 @@
 {
 	"version":"LAYAMATERIAL:02",
 	"props":{
-		"type":"Laya.UnlitMaterial",
-		"name":"fx_glass",
+		"type":"Laya.EffectMaterial",
 		"renderStates":[
 			{
-				"cull":2,
-				"blend":0,
-				"srcBlend":1,
-				"dstBlend":0,
-				"depthWrite":true,
+				"cull":0,
+				"blend":1,
+				"srcBlend":770,
+				"dstBlend":1,
+				"depthWrite":false,
 				"depthTest":515
 			}
 		],
-		"enableVertexColor":false,
+		"name":"fx_glass",
 		"alphaTest":false,
-		"alphaTestValue":0.5,
-		"renderQueue":2000,
-		"albedoIntensity":1,
+		"renderQueue":3000,
 		"textures":[
 			{
-				"name":"albedoTexture",
+				"name":"texture",
 				"path":"../Texture2D/fx_glass.jpg",
 				"constructParams":[
 					256,
@@ -47,15 +44,17 @@
 				]
 			},
 			{
-				"name":"albedoColor",
+				"name":"color",
 				"value":[
-					1,
-					1,
-					1,
-					1
+					0.5,
+					0.5,
+					0.5,
+					0.5
 				]
 			}
 		],
-		"defines":[]
+		"defines":[
+			"ADDTIVEFOG"
+		]
 	}
 }

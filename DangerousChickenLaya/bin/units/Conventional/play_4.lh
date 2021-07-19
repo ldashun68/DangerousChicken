@@ -74,56 +74,43 @@
 										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Cheer.lani"
 									},
 									{
-										"name":"Dorothy_Hi",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Hi.lani"
+										"name":"Dorothy_Hi"
 									},
 									{
-										"name":"Dorothy_Hurt",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Hurt.lani"
+										"name":"Dorothy_Hurt"
 									},
 									{
-										"name":"Dorothy_Laugh",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Laugh.lani"
+										"name":"Dorothy_Laugh"
 									},
 									{
-										"name":"Dorothy_Melee",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Melee.lani"
+										"name":"Dorothy_Melee"
 									},
 									{
-										"name":"Dorothy_MoveBox",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_MoveBox.lani"
+										"name":"Dorothy_MoveBox"
 									},
 									{
-										"name":"Dorothy_OTL",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_OTL.lani"
+										"name":"Dorothy_OTL"
 									},
 									{
-										"name":"Dorothy_Praise",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Praise.lani"
+										"name":"Dorothy_Praise"
 									},
 									{
-										"name":"Dorothy_Provoke",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Provoke.lani"
+										"name":"Dorothy_Provoke"
 									},
 									{
-										"name":"Dorothy_Respawn",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Respawn.lani"
+										"name":"Dorothy_Respawn"
 									},
 									{
-										"name":"Dorothy_Sad",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Sad.lani"
+										"name":"Dorothy_Sad"
 									},
 									{
-										"name":"Dorothy_Upset",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Dorothy_Upset.lani"
+										"name":"Dorothy_Upset"
 									},
 									{
-										"name":"Elle_Dodge",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Elle_Dodge.lani"
+										"name":"Elle_Dodge"
 									},
 									{
-										"name":"Girl_Attack",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_Attack.lani"
+										"name":"Girl_Attack"
 									},
 									{
 										"name":"Girl_Contact",
@@ -150,20 +137,35 @@
 										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_Run.lani"
 									},
 									{
-										"name":"Girl_RunAtk",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_RunAtk.lani"
+										"name":"Girl_RunAtk"
 									},
 									{
-										"name":"Girl_Scared",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_Scared.lani"
+										"name":"Girl_Scared"
 									},
 									{
-										"name":"Girl_StoreStand",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_StoreStand.lani"
+										"name":"Girl_StoreStand"
 									},
 									{
-										"name":"T_Pose",
-										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-T_Pose.lani"
+										"name":"T_Pose"
+									},
+									{
+										"name":"Girl_JumpDwon",
+										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_JumpDwon.lani"
+									}
+								]
+							},
+							{
+								"name":"New Layer",
+								"weight":0,
+								"blendingMode":0,
+								"states":[
+									{
+										"name":"Girl_IdleStay",
+										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_IdleStay.lani"
+									},
+									{
+										"name":"Girl_Run",
+										"clipPath":"Assets/model/Units/Model/play4/Elle_Set-Girl_Run.lani"
 									}
 								]
 							}
@@ -410,7 +412,7 @@
 																	"rotation":[
 																		0.003205214,
 																		-0.0114127,
-																		-0.04105056,
+																		-0.04105057,
 																		-0.9990868
 																	],
 																	"scale":[
@@ -528,7 +530,7 @@
 													"rotation":[
 														0.2054814,
 														0.9783417,
-														0.005006953,
+														0.005006955,
 														0.02449184
 													],
 													"scale":[
@@ -667,7 +669,7 @@
 																	],
 																	"rotation":[
 																		0.004452881,
-																		-0.01728936,
+																		-0.01728937,
 																		-0.03344168,
 																		-0.9992812
 																	],
@@ -698,10 +700,10 @@
 														-0.1375105
 													],
 													"rotation":[
-														-0.01528683,
+														-0.01528673,
 														-0.7001234,
 														0.7074823,
-														-0.09519652
+														-0.09519642
 													],
 													"scale":[
 														1,
@@ -784,7 +786,7 @@
 														0.0003308483
 													],
 													"rotation":[
-														-0.06041122,
+														-0.06041123,
 														-0.01267641,
 														0.01672396,
 														-0.997953
@@ -814,7 +816,7 @@
 																0.2124487,
 																0.9735295,
 																-0.08427992,
-																-0.001715731
+																-0.001715733
 															],
 															"scale":[
 																1,
@@ -860,9 +862,9 @@
 																			"isStatic":false,
 																			"layer":0,
 																			"position":[
-																				0.2673624,
-																				-2.422333E-08,
-																				1.211166E-08
+																				0.2647887,
+																				0.004310179,
+																				-0.0008853866
 																			],
 																			"rotation":[
 																				0.05225454,
@@ -892,7 +894,7 @@
 																						0
 																					],
 																					"rotation":[
-																						2.488571E-05,
+																						2.488566E-05,
 																						0.001023692,
 																						-0.7004774,
 																						-0.7136738
@@ -914,19 +916,19 @@
 																							"isStatic":false,
 																							"layer":0,
 																							"position":[
-																								0.04612028,
-																								-7.56979E-10,
+																								0.04612027,
+																								0,
 																								0
 																							],
 																							"rotation":[
-																								-8.36572E-16,
-																								-5.122523E-32,
+																								-9.947599E-14,
+																								-4.263257E-14,
 																								1,
-																								-6.123234E-17
+																								6.123234E-17
 																							],
 																							"scale":[
-																								-1,
-																								-1,
+																								-0.9999999,
+																								-0.9999999,
 																								-1
 																							]
 																						},
@@ -1004,9 +1006,9 @@
 																			"isStatic":false,
 																			"layer":0,
 																			"position":[
-																				0.2673624,
-																				-1.81675E-08,
-																				0
+																				0.2657239,
+																				0.002214646,
+																				0.004789773
 																			],
 																			"rotation":[
 																				-0.08933514,
@@ -1058,14 +1060,14 @@
 																							"isStatic":false,
 																							"layer":0,
 																							"position":[
-																								0.04612026,
+																								0.04612027,
 																								0,
-																								1.211166E-08
+																								-6.055832E-09
 																							],
 																							"rotation":[
-																								1.486046E-30,
-																								-8.365694E-16,
-																								-1.776357E-15,
+																								-9.237056E-14,
+																								2.842171E-14,
+																								1.862645E-09,
 																								-1
 																							],
 																							"scale":[
@@ -1155,7 +1157,7 @@
 																			"rotation":[
 																				0.01432993,
 																				0.01467834,
-																				-0.01620731,
+																				-0.0162073,
 																				-0.9996582
 																			],
 																			"scale":[
@@ -1182,8 +1184,8 @@
 																					"rotation":[
 																						0.05027512,
 																						0.998262,
-																						0.009483161,
-																						-0.02924879
+																						0.009483159,
+																						-0.02924873
 																					],
 																					"scale":[
 																						1,
@@ -1207,9 +1209,9 @@
 																								-2.573729E-07
 																							],
 																							"rotation":[
-																								-0.04445985,
-																								-0.03603879,
-																								-0.1043102,
+																								-0.04445989,
+																								-0.0360388,
+																								-0.10431,
 																								-0.9928967
 																							],
 																							"scale":[
@@ -1265,10 +1267,10 @@
 																						0.1810858
 																					],
 																					"rotation":[
-																						-0.070435,
-																						0.712862,
-																						-0.6971418,
-																						0.0293239
+																						-0.07043491,
+																						0.7128621,
+																						-0.6971419,
+																						0.02932381
 																					],
 																					"scale":[
 																						1,
@@ -1374,14 +1376,14 @@
 																					"isStatic":false,
 																					"layer":0,
 																					"position":[
-																						0.3471439,
+																						0.347144,
 																						2.422333E-08,
 																						0
 																					],
 																					"rotation":[
-																						1.24345E-14,
-																						0,
-																						0,
+																						1.164153E-10,
+																						-4.074536E-10,
+																						1.490116E-08,
 																						-1
 																					],
 																					"scale":[
@@ -1504,7 +1506,7 @@
 																					"rotation":[
 																						-0.2130455,
 																						-0.5155964,
-																						0.08441848,
+																						0.08441849,
 																						-0.8256183
 																					],
 																					"scale":[
@@ -1632,14 +1634,14 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.03053654,
-																																0,
+																																0.03053656,
+																																2.422333E-08,
 																																0
 																															],
 																															"rotation":[
-																																9.313225E-09,
-																																-1.490116E-08,
-																																-1.862645E-09,
+																																1.490116E-08,
+																																0,
+																																0,
 																																-1
 																															],
 																															"scale":[
@@ -1718,14 +1720,14 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.04181499,
-																																1.211166E-08,
+																																0.04181494,
+																																-2.422333E-08,
 																																0
 																															],
 																															"rotation":[
-																																-9.313225E-10,
-																																-1.387779E-17,
-																																-1.490116E-08,
+																																1.490116E-08,
+																																-2.220446E-16,
+																																1.490116E-08,
 																																-1
 																															],
 																															"scale":[
@@ -1757,7 +1759,7 @@
 																											"rotation":[
 																												0.0003844057,
 																												-0.0001037781,
-																												-0.2606525,
+																												-0.2606526,
 																												-0.9654326
 																											],
 																											"scale":[
@@ -1804,14 +1806,14 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.04577674,
-																																0,
-																																0
+																																0.04577671,
+																																-4.844665E-08,
+																																4.844665E-08
 																															],
 																															"rotation":[
-																																-2.775557E-17,
-																																1.862645E-09,
 																																-1.490116E-08,
+																																-1.110223E-16,
+																																-7.450581E-09,
 																																-1
 																															],
 																															"scale":[
@@ -1836,15 +1838,15 @@
 																											"isStatic":false,
 																											"layer":0,
 																											"position":[
-																												-0.03892057,
-																												0.03056262,
-																												-0.003680686
+																												-0.03825045,
+																												0.02967917,
+																												-0.0108848
 																											],
 																											"rotation":[
-																												-0.005349791,
-																												0.09764262,
-																												0.9394836,
-																												0.3283412
+																												-0.09493968,
+																												0.06322074,
+																												0.9388369,
+																												0.3249228
 																											],
 																											"scale":[
 																												1,
@@ -1906,9 +1908,9 @@
 																			],
 																			"rotation":[
 																				-0.6702674,
-																				0.0704331,
+																				0.07043315,
 																				0.7257236,
-																				0.1382244
+																				0.1382245
 																			],
 																			"scale":[
 																				1,
@@ -1959,10 +1961,10 @@
 																								4.844665E-08
 																							],
 																							"rotation":[
-																								-9.67438E-09,
+																								-9.674382E-09,
 																								2.91564E-08,
 																								0.8443971,
-																								-0.5357177
+																								-0.5357178
 																							],
 																							"scale":[
 																								1,
@@ -2062,20 +2064,20 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.03053653,
-																																-2.422333E-08,
+																																0.03053651,
+																																8.326769E-09,
 																																0
 																															],
 																															"rotation":[
-																																-2.957919E-25,
-																																-6.519258E-09,
+																																-5.809631E-25,
+																																-9.487849E-09,
 																																1,
 																																6.123234E-17
 																															],
 																															"scale":[
 																																-1,
 																																-1,
-																																-1
+																																-0.9999999
 																															]
 																														},
 																														"components":[],
@@ -2148,19 +2150,19 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.04181499,
-																																3.633499E-08,
+																																0.04181494,
+																																4.844665E-08,
 																																0
 																															],
 																															"rotation":[
-																																-5.702687E-26,
-																																-9.313227E-10,
+																																7.450581E-09,
+																																1.490116E-08,
 																																1,
-																																6.123234E-17
+																																-4.978998E-17
 																															],
 																															"scale":[
 																																-1,
-																																-1,
+																																-0.9999999,
 																																-1
 																															]
 																														},
@@ -2234,15 +2236,15 @@
 																															"isStatic":false,
 																															"layer":0,
 																															"position":[
-																																0.04577671,
-																																2.422333E-08,
-																																-4.844665E-08
+																																0.04577674,
+																																0,
+																																2.422333E-08
 																															],
 																															"rotation":[
-																																1.862645E-09,
-																																1.140541E-25,
+																																-9.12433E-25,
+																																-1.490116E-08,
 																																1,
-																																-6.123234E-17
+																																6.123234E-17
 																															],
 																															"scale":[
 																																-1,
@@ -2330,23 +2332,23 @@
 									"rootBone":290,
 									"boundBox":{
 										"min":[
-											-0.5850011,
-											-0.3149296,
-											-0.2765264
+											-0.585001,
+											-0.3149294,
+											-0.2765262
 										],
 										"max":[
-											0.9492648,
-											0.4391987,
-											0.2749871
+											0.949265,
+											0.4391981,
+											0.2749875
 										]
 									},
 									"boundSphere":{
 										"center":[
-											0.1821318,
-											0.06213453,
-											-0.000769645
+											0.182132,
+											0.06213431,
+											-0.0007693321
 										],
-										"radius":0.8981715
+										"radius":0.8981714
 									},
 									"bones":[
 										290,

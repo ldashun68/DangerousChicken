@@ -17,7 +17,8 @@
   <IgnoreNotActiveGameObjects> Ignore Not Active Game Objects</IgnoreNotActiveGameObjects>
   <BatchMakeTheFirstLevelGameObjects> Batch Make The First Level Game Objects</BatchMakeTheFirstLevelGameObjects>
   <Assetsplatform> Assets platform</Assetsplatform>
-  <IOSQuality>iOS Quality</IOSQuality>
+  <TexCompressType>Texture Compress Type</TexCompressType>
+  <TexCompressQuality>Texture Compress Quality</TexCompressQuality>
   <AnimationSetting> Animation Setting</AnimationSetting>
   <TexAnimatorSetting> Pre Baked Bone Animation</TexAnimatorSetting>
   <TexAnimatorbakeFPS> Bake FPS </TexAnimatorbakeFPS>
@@ -63,7 +64,7 @@
   <putongVIP>normalUser</putongVIP>
   
   //Version
-  <LayaBoxVersion>LayaBox Version 2.9.0</LayaBoxVersion>
+  <LayaBoxVersion>LayaBox Version 2.12.0</LayaBoxVersion>
   <AboutLayaAir>About LayaAir</AboutLayaAir>
   <downloadNodejs>Please download and install nodejs,</downloadNodejs>
   <unity> then restart Unity</unity>

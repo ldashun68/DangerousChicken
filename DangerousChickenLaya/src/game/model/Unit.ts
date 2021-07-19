@@ -3,7 +3,8 @@ import GameManager from "../../rab/Manager/GameManager";
 import GameObject from "../../rab/model/GameObject";
 import Util from "../../rab/Util";
 import GameController from "../manager/GameController";
-import { AnimationName, FightUserInfo, FrameSyncData, RoleState, UnitInfo } from "./DataType";
+import { FightUserInfo, FrameSyncData, RoleState, UnitInfo } from "./DataType";
+import ActorState from "./State/ActorState";
 
 /**
  * 实体单元
@@ -28,15 +29,19 @@ export default abstract class Unit extends GameObject {
     public forward: Laya.Vector3;
     /**单位状态 */
     protected _fsm:Fsm<Unit>;
+    /**移动速度 */
+    protected _moveSpeed: number;
     /**是否移动 */
     protected _isMove:boolean;
 
     constructor (fightUserInfo: FightUserInfo) {
         super();
 
+        this._moveSpeed = 0.03;
         this._isMove = false;
         this._unitInfo = {
             id: fightUserInfo.id,
+            nickName: fightUserInfo.nickName,
             type: fightUserInfo.role.type,
         };
     }
@@ -61,24 +66,16 @@ export default abstract class Unit extends GameObject {
         }
 
         this.onInitEntityUnity();
+        this.getForward();
     }
 
     /**初始化对象属性 */
     protected abstract onInitEntityUnity(): any;
 
     /**帧频处理 */
-    public onUpdateentity()
-    {
-        
-        if(this._fsm)
-        {
+    public onUpdateentity() {
+        if (this._fsm) {
             this._fsm.Update();
-            // if(this._isSendMessage == true) {
-            //     if (this._isMove) {
-            //         this.move();
-            //         this.onSendMessage();
-            //     }
-            // }
         }
     }
 
@@ -90,11 +87,21 @@ export default abstract class Unit extends GameObject {
         Util.getVector(this._moveDistance, this.forward, this._moveAngle);
     }
 
+    /**待机 */
+    public idle (): void {
+        
+    }
+
     /**移动 */
     public move (speed: number = this.moveSpeed): void {
-        this.getForward();
-        Util.addPosition(this.forward, this.gameObject);
+        this.getForward(speed);
+        Util.addPosition(this.forward, this.gameObject, false);
         this.onSendMessage();
+    }
+
+    /**跳跃 */
+    public jump (): void {
+        
     }
 
     /**落下 */
@@ -102,19 +109,69 @@ export default abstract class Unit extends GameObject {
 
     }
 
-    /**切换状态 */
-    protected OnChangeEntityState(state:RoleState, compel?: boolean) {
-        if(this._fsm)
-        {
-            this._fsm.ChangeState(state, compel); 
-            this.onSendMessage();
+    /**死亡 */
+    public death (): void {
+        
+    }
+
+    /**
+     * 切换当前状态
+     * @param newState 下一个的状态
+     * @param compel 是否强制切换 默认非强制
+     * @returns 
+     */
+    public OnChangeEntityState(state:RoleState, compel?: boolean):boolean {
+        if(this._fsm) {
+            if (this._fsm.ChangeState(state, compel) == true) {
+                this.onSendMessage();
+                return true
+            }
+        }
+        return false
+    }
+    
+    /**
+     * 获得状态
+     * @param stateType 
+     * @returns 
+     */
+    public GetState(stateType:any): ActorState<Unit> {
+        return this._fsm.GetState(stateType) as ActorState<Unit>;
+    }
+
+    /**设置动画 */
+    public setAnimation (animName: string, isPlay: boolean, isLoop: boolean = false): ActorState<Unit> {
+        if (this._fsm != null) {
+            (this._fsm.CurrState as ActorState<Unit>).setAnimation(animName, isPlay, isLoop);
+            return (this._fsm.CurrState as ActorState<Unit>);
+        }
+        return null;
+    }
+
+    /**设置动画名字 */
+    public setAnimationName (animName: string) {
+        if (this._fsm != null) {
+            (this._fsm.CurrState as ActorState<Unit>).animName = animName;
         }
     }
 
-    /**当前速度 */
-    public get moveSpeed():number
-    {
-        return 0.05;
+    /**动画时间 */
+    public getAnimTime(animName:string):number {
+        return (this._fsm.CurrState as ActorState<Unit>).getAnimTime(animName);
+    }
+
+    public get roleModel (): Laya.Sprite3D {
+        return this._roleModel;
+    }
+
+    /**设置当前速度 */
+    public set moveSpeed (speed: number) {
+        this._moveSpeed = speed;
+    }
+
+    /**获得当前速度 */
+    public get moveSpeed ():number {
+        return this._moveSpeed;
     }
 
     /**当前状态 */
@@ -135,6 +192,10 @@ export default abstract class Unit extends GameObject {
     /**获得单位信息 */
     public get unitInfo (): UnitInfo {
         return this._unitInfo;
+    }
+
+    public get animator ():Laya.Animator {
+        return this._animator;
     }
 
     //----------------------------------------发送消息----------------------------------------
@@ -158,8 +219,7 @@ export default abstract class Unit extends GameObject {
     /**获得同步数据处理 */
     public setServerData(data:FrameSyncData)
     {
-        if(data)
-        {
+        if(data) {
             this.onHandleMessage(data);
         }
     }
@@ -167,6 +227,6 @@ export default abstract class Unit extends GameObject {
     /**处理接受到的消息 */
     protected onHandleMessage(data:FrameSyncData)
     {
-
+        
     }
 }

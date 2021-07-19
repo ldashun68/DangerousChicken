@@ -1,11 +1,11 @@
 import GameConfig from "../GameConfig";
 
-
 /**
  * 工具类
  * @author Rabbit
  */
 export default class Util {
+
     public static version: string = "1.0.0";
     /**缓动列表 */
     public static tweenList: TweenList = {

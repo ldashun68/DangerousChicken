@@ -34,15 +34,15 @@
 					"isStatic":false,
 					"layer":0,
 					"position":[
-						0,
-						1,
-						-5
+						6.28,
+						9.3,
+						-37.9
 					],
 					"rotation":[
 						0,
-						1,
+						0.7945737,
 						0,
-						0
+						-0.6071678
 					],
 					"scale":[
 						1,
@@ -53,7 +53,7 @@
 					"orthographic":false,
 					"orthographicVerticalSize":10,
 					"fieldOfView":60,
-					"enableHDR":true,
+					"enableHDR":false,
 					"nearPlane":0.3,
 					"farPlane":1000,
 					"viewport":[
@@ -73,43 +73,8 @@
 				"child":[]
 			},
 			{
-				"type":"DirectionLight",
-				"instanceID":1,
-				"props":{
-					"name":"Directional Light",
-					"active":true,
-					"isStatic":false,
-					"layer":0,
-					"position":[
-						0,
-						3,
-						0
-					],
-					"rotation":[
-						0.1093816,
-						0.8754261,
-						0.4082179,
-						-0.2345697
-					],
-					"scale":[
-						1,
-						1,
-						1
-					],
-					"intensity":0,
-					"lightmapBakedType":0,
-					"color":[
-						1,
-						0.9568627,
-						0.8392157
-					]
-				},
-				"components":[],
-				"child":[]
-			},
-			{
 				"type":"Sprite3D",
-				"instanceID":2,
+				"instanceID":1,
 				"props":{
 					"name":"collider",
 					"active":true,
@@ -136,7 +101,7 @@
 				"child":[
 					{
 						"type":"Sprite3D",
-						"instanceID":3,
+						"instanceID":2,
 						"props":{
 							"name":"stair",
 							"active":true,
@@ -163,7 +128,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":4,
+								"instanceID":3,
 								"props":{
 									"name":"GameObject",
 									"active":true,
@@ -190,7 +155,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":5,
+										"instanceID":4,
 										"props":{
 											"name":"stair",
 											"active":true,
@@ -243,7 +208,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":6,
+								"instanceID":5,
 								"props":{
 									"name":"GameObject (1)",
 									"active":true,
@@ -270,7 +235,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":7,
+										"instanceID":6,
 										"props":{
 											"name":"stair (1)",
 											"active":true,
@@ -323,7 +288,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":8,
+								"instanceID":7,
 								"props":{
 									"name":"GameObject (2)",
 									"active":true,
@@ -350,7 +315,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":9,
+										"instanceID":8,
 										"props":{
 											"name":"stair (1)",
 											"active":true,
@@ -403,7 +368,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":10,
+								"instanceID":9,
 								"props":{
 									"name":"GameObject (3)",
 									"active":true,
@@ -430,7 +395,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":11,
+										"instanceID":10,
 										"props":{
 											"name":"stair (1)",
 											"active":true,
@@ -485,7 +450,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":12,
+						"instanceID":11,
 						"props":{
 							"name":"floor",
 							"active":true,
@@ -512,7 +477,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":13,
+								"instanceID":12,
 								"props":{
 									"name":"floor",
 									"active":true,
@@ -563,7 +528,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":14,
+								"instanceID":13,
 								"props":{
 									"name":"floor (1)",
 									"active":true,
@@ -614,7 +579,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":15,
+								"instanceID":14,
 								"props":{
 									"name":"floor (2)",
 									"active":true,
@@ -665,7 +630,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":16,
+								"instanceID":15,
 								"props":{
 									"name":"floor (3)",
 									"active":true,
@@ -716,7 +681,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":17,
+								"instanceID":16,
 								"props":{
 									"name":"floor (4)",
 									"active":true,
@@ -767,7 +732,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":18,
+								"instanceID":17,
 								"props":{
 									"name":"floor (5)",
 									"active":true,
@@ -818,7 +783,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":19,
+								"instanceID":18,
 								"props":{
 									"name":"floor (6)",
 									"active":true,
@@ -869,7 +834,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":20,
+								"instanceID":19,
 								"props":{
 									"name":"floor (7)",
 									"active":true,
@@ -920,7 +885,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":21,
+								"instanceID":20,
 								"props":{
 									"name":"floor (8)",
 									"active":true,
@@ -973,7 +938,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":22,
+						"instanceID":21,
 						"props":{
 							"name":"wall",
 							"active":true,
@@ -1000,7 +965,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":23,
+								"instanceID":22,
 								"props":{
 									"name":"wall",
 									"active":true,
@@ -1051,9 +1016,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":24,
+								"instanceID":23,
 								"props":{
-									"name":"wall (1)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1102,9 +1067,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":25,
+								"instanceID":24,
 								"props":{
-									"name":"wall (2)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1153,9 +1118,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":26,
+								"instanceID":25,
 								"props":{
-									"name":"wall (3)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1204,9 +1169,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":27,
+								"instanceID":26,
 								"props":{
-									"name":"wall (4)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1255,9 +1220,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":28,
+								"instanceID":27,
 								"props":{
-									"name":"wall (5)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1306,9 +1271,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":29,
+								"instanceID":28,
 								"props":{
-									"name":"wall (6)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1357,9 +1322,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":30,
+								"instanceID":29,
 								"props":{
-									"name":"wall (7)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1408,9 +1373,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":31,
+								"instanceID":30,
 								"props":{
-									"name":"wall (8)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1459,9 +1424,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":32,
+								"instanceID":31,
 								"props":{
-									"name":"wall (9)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1510,9 +1475,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":33,
+								"instanceID":32,
 								"props":{
-									"name":"wall (10)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1561,9 +1526,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":34,
+								"instanceID":33,
 								"props":{
-									"name":"wall (11)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1612,9 +1577,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":35,
+								"instanceID":34,
 								"props":{
-									"name":"wall (12)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1663,9 +1628,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":36,
+								"instanceID":35,
 								"props":{
-									"name":"wall (13)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1683,6 +1648,57 @@
 									"scale":[
 										9,
 										6,
+										0.5
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":36,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										13.07,
+										4.65,
+										-21.13
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										2,
+										4,
 										0.5
 									]
 								},
@@ -1716,58 +1732,7 @@
 								"type":"Sprite3D",
 								"instanceID":37,
 								"props":{
-									"name":"wall (14)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										13.07,
-										4.65,
-										-21.13
-									],
-									"rotation":[
-										0,
-										0,
-										0,
-										-1
-									],
-									"scale":[
-										2,
-										4,
-										0.5
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":38,
-								"props":{
-									"name":"wall (15)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1816,9 +1781,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":39,
+								"instanceID":38,
 								"props":{
-									"name":"wall (16)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1867,9 +1832,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":40,
+								"instanceID":39,
 								"props":{
-									"name":"wall (17)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1918,9 +1883,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":41,
+								"instanceID":40,
 								"props":{
-									"name":"wall (18)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -1969,9 +1934,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":42,
+								"instanceID":41,
 								"props":{
-									"name":"wall (19)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2020,9 +1985,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":43,
+								"instanceID":42,
 								"props":{
-									"name":"wall (20)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2071,9 +2036,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":44,
+								"instanceID":43,
 								"props":{
-									"name":"wall (21)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2122,9 +2087,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":45,
+								"instanceID":44,
 								"props":{
-									"name":"wall (22)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2173,9 +2138,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":46,
+								"instanceID":45,
 								"props":{
-									"name":"wall (23)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2224,9 +2189,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":47,
+								"instanceID":46,
 								"props":{
-									"name":"wall (24)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2275,9 +2240,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":48,
+								"instanceID":47,
 								"props":{
-									"name":"wall (25)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2326,9 +2291,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":49,
+								"instanceID":48,
 								"props":{
-									"name":"wall (26)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2377,9 +2342,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":50,
+								"instanceID":49,
 								"props":{
-									"name":"wall (27)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2428,9 +2393,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":51,
+								"instanceID":50,
 								"props":{
-									"name":"wall (28)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2479,9 +2444,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":52,
+								"instanceID":51,
 								"props":{
-									"name":"wall (29)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2530,9 +2495,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":53,
+								"instanceID":52,
 								"props":{
-									"name":"wall (30)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2581,9 +2546,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":54,
+								"instanceID":53,
 								"props":{
-									"name":"wall (31)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2632,9 +2597,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":55,
+								"instanceID":54,
 								"props":{
-									"name":"wall (32)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2683,9 +2648,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":56,
+								"instanceID":55,
 								"props":{
-									"name":"wall (33)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2734,9 +2699,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":57,
+								"instanceID":56,
 								"props":{
-									"name":"wall (34)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2785,9 +2750,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":58,
+								"instanceID":57,
 								"props":{
-									"name":"wall (35)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2836,9 +2801,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":59,
+								"instanceID":58,
 								"props":{
-									"name":"wall (36)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2887,9 +2852,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":60,
+								"instanceID":59,
 								"props":{
-									"name":"wall (37)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2938,9 +2903,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":61,
+								"instanceID":60,
 								"props":{
-									"name":"wall (38)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -2989,9 +2954,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":62,
+								"instanceID":61,
 								"props":{
-									"name":"wall (39)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3040,9 +3005,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":63,
+								"instanceID":62,
 								"props":{
-									"name":"wall (40)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3091,9 +3056,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":64,
+								"instanceID":63,
 								"props":{
-									"name":"wall (41)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3111,6 +3076,57 @@
 									"scale":[
 										11.5,
 										6,
+										0.5
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":64,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										-10.77,
+										4.13,
+										2.79
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										2,
+										4,
 										0.5
 									]
 								},
@@ -3144,58 +3160,7 @@
 								"type":"Sprite3D",
 								"instanceID":65,
 								"props":{
-									"name":"wall (42)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-10.77,
-										4.13,
-										2.79
-									],
-									"rotation":[
-										0,
-										0,
-										0,
-										-1
-									],
-									"scale":[
-										2,
-										4,
-										0.5
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":66,
-								"props":{
-									"name":"wall (43)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3244,9 +3209,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":67,
+								"instanceID":66,
 								"props":{
-									"name":"wall (44)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3295,9 +3260,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":68,
+								"instanceID":67,
 								"props":{
-									"name":"wall (45)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3346,9 +3311,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":69,
+								"instanceID":68,
 								"props":{
-									"name":"wall (46)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3397,9 +3362,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":70,
+								"instanceID":69,
 								"props":{
-									"name":"wall (47)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3448,9 +3413,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":71,
+								"instanceID":70,
 								"props":{
-									"name":"wall (48)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3499,9 +3464,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":72,
+								"instanceID":71,
 								"props":{
-									"name":"wall (49)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3550,9 +3515,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":73,
+								"instanceID":72,
 								"props":{
-									"name":"wall (52)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3601,9 +3566,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":74,
+								"instanceID":73,
 								"props":{
-									"name":"wall (53)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3652,9 +3617,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":75,
+								"instanceID":74,
 								"props":{
-									"name":"wall (54)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3703,9 +3668,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":76,
+								"instanceID":75,
 								"props":{
-									"name":"wall (55)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3754,9 +3719,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":77,
+								"instanceID":76,
 								"props":{
-									"name":"wall (56)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3805,9 +3770,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":78,
+								"instanceID":77,
 								"props":{
-									"name":"wall (57)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3856,9 +3821,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":79,
+								"instanceID":78,
 								"props":{
-									"name":"wall (59)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3907,9 +3872,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":80,
+								"instanceID":79,
 								"props":{
-									"name":"wall (60)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -3958,9 +3923,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":81,
+								"instanceID":80,
 								"props":{
-									"name":"wall (61)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4009,9 +3974,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":82,
+								"instanceID":81,
 								"props":{
-									"name":"wall (62)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4060,9 +4025,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":83,
+								"instanceID":82,
 								"props":{
-									"name":"wall (63)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4111,9 +4076,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":84,
+								"instanceID":83,
 								"props":{
-									"name":"wall (64)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4162,9 +4127,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":85,
+								"instanceID":84,
 								"props":{
-									"name":"wall (65)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4213,9 +4178,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":86,
+								"instanceID":85,
 								"props":{
-									"name":"wall (66)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4264,9 +4229,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":87,
+								"instanceID":86,
 								"props":{
-									"name":"wall (67)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4315,9 +4280,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":88,
+								"instanceID":87,
 								"props":{
-									"name":"wall (68)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4366,9 +4331,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":89,
+								"instanceID":88,
 								"props":{
-									"name":"wall (69)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4417,9 +4382,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":90,
+								"instanceID":89,
 								"props":{
-									"name":"wall (70)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4468,9 +4433,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":91,
+								"instanceID":90,
 								"props":{
-									"name":"wall (71)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4519,9 +4484,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":92,
+								"instanceID":91,
 								"props":{
-									"name":"wall (72)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4570,9 +4535,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":93,
+								"instanceID":92,
 								"props":{
-									"name":"wall (73)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4621,9 +4586,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":94,
+								"instanceID":93,
 								"props":{
-									"name":"wall (74)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4672,9 +4637,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":95,
+								"instanceID":94,
 								"props":{
-									"name":"wall (75)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4723,9 +4688,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":96,
+								"instanceID":95,
 								"props":{
-									"name":"wall (76)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4774,9 +4739,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":97,
+								"instanceID":96,
 								"props":{
-									"name":"wall (77)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4825,9 +4790,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":98,
+								"instanceID":97,
 								"props":{
-									"name":"wall (78)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4876,9 +4841,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":99,
+								"instanceID":98,
 								"props":{
-									"name":"wall (79)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4927,9 +4892,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":100,
+								"instanceID":99,
 								"props":{
-									"name":"wall (80)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -4978,9 +4943,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":101,
+								"instanceID":100,
 								"props":{
-									"name":"wall (81)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5029,9 +4994,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":102,
+								"instanceID":101,
 								"props":{
-									"name":"wall (82)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5080,9 +5045,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":103,
+								"instanceID":102,
 								"props":{
-									"name":"wall (83)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5131,9 +5096,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":104,
+								"instanceID":103,
 								"props":{
-									"name":"wall (84)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5182,9 +5147,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":105,
+								"instanceID":104,
 								"props":{
-									"name":"wall (85)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5233,9 +5198,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":106,
+								"instanceID":105,
 								"props":{
-									"name":"wall (86)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5284,9 +5249,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":107,
+								"instanceID":106,
 								"props":{
-									"name":"wall (87)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5335,9 +5300,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":108,
+								"instanceID":107,
 								"props":{
-									"name":"wall (88)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5386,9 +5351,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":109,
+								"instanceID":108,
 								"props":{
-									"name":"wall (89)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5437,9 +5402,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":110,
+								"instanceID":109,
 								"props":{
-									"name":"wall (90)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5488,9 +5453,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":111,
+								"instanceID":110,
 								"props":{
-									"name":"wall (91)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5539,9 +5504,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":112,
+								"instanceID":111,
 								"props":{
-									"name":"wall (92)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5590,9 +5555,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":113,
+								"instanceID":112,
 								"props":{
-									"name":"wall (93)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5641,9 +5606,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":114,
+								"instanceID":113,
 								"props":{
-									"name":"wall (94)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5692,9 +5657,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":115,
+								"instanceID":114,
 								"props":{
-									"name":"wall (95)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5743,9 +5708,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":116,
+								"instanceID":115,
 								"props":{
-									"name":"wall (96)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5794,9 +5759,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":117,
+								"instanceID":116,
 								"props":{
-									"name":"wall (97)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5845,9 +5810,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":118,
+								"instanceID":117,
 								"props":{
-									"name":"wall (98)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5896,9 +5861,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":119,
+								"instanceID":118,
 								"props":{
-									"name":"wall (99)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5947,9 +5912,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":120,
+								"instanceID":119,
 								"props":{
-									"name":"wall (100)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -5998,9 +5963,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":121,
+								"instanceID":120,
 								"props":{
-									"name":"wall (101)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6049,9 +6014,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":122,
+								"instanceID":121,
 								"props":{
-									"name":"wall (102)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6100,9 +6065,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":123,
+								"instanceID":122,
 								"props":{
-									"name":"wall (103)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6151,9 +6116,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":124,
+								"instanceID":123,
 								"props":{
-									"name":"wall (104)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6202,9 +6167,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":125,
+								"instanceID":124,
 								"props":{
-									"name":"wall (105)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6253,9 +6218,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":126,
+								"instanceID":125,
 								"props":{
-									"name":"wall (106)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6304,9 +6269,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":127,
+								"instanceID":126,
 								"props":{
-									"name":"wall (107)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6355,60 +6320,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":128,
+								"instanceID":127,
 								"props":{
-									"name":"wall (108)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										14.01,
-										-2.95,
-										26.11
-									],
-									"rotation":[
-										0,
-										0,
-										0,
-										-1
-									],
-									"scale":[
-										15.3,
-										6,
-										0.3
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":129,
-								"props":{
-									"name":"wall (109)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6457,9 +6371,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":130,
+								"instanceID":128,
 								"props":{
-									"name":"wall (110)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6508,9 +6422,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":131,
+								"instanceID":129,
 								"props":{
-									"name":"wall (111)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6559,9 +6473,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":132,
+								"instanceID":130,
 								"props":{
-									"name":"wall (112)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6610,9 +6524,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":133,
+								"instanceID":131,
 								"props":{
-									"name":"wall (113)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6661,9 +6575,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":134,
+								"instanceID":132,
 								"props":{
-									"name":"wall (114)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6712,9 +6626,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":135,
+								"instanceID":133,
 								"props":{
-									"name":"wall (115)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6763,9 +6677,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":136,
+								"instanceID":134,
 								"props":{
-									"name":"wall (116)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6814,9 +6728,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":137,
+								"instanceID":135,
 								"props":{
-									"name":"wall (117)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6865,9 +6779,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":138,
+								"instanceID":136,
 								"props":{
-									"name":"wall (118)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6916,9 +6830,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":139,
+								"instanceID":137,
 								"props":{
-									"name":"wall (119)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -6967,9 +6881,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":140,
+								"instanceID":138,
 								"props":{
-									"name":"wall (120)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7018,9 +6932,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":141,
+								"instanceID":139,
 								"props":{
-									"name":"wall (121)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7069,9 +6983,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":142,
+								"instanceID":140,
 								"props":{
-									"name":"wall (122)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7120,9 +7034,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":143,
+								"instanceID":141,
 								"props":{
-									"name":"wall (123)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7171,9 +7085,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":144,
+								"instanceID":142,
 								"props":{
-									"name":"wall (124)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7222,9 +7136,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":145,
+								"instanceID":143,
 								"props":{
-									"name":"wall (125)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7273,9 +7187,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":146,
+								"instanceID":144,
 								"props":{
-									"name":"wall (127)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7324,9 +7238,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":147,
+								"instanceID":145,
 								"props":{
-									"name":"wall (128)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7375,9 +7289,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":148,
+								"instanceID":146,
 								"props":{
-									"name":"wall (129)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7426,9 +7340,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":149,
+								"instanceID":147,
 								"props":{
-									"name":"wall (130)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7477,9 +7391,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":150,
+								"instanceID":148,
 								"props":{
-									"name":"wall (131)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7528,9 +7442,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":151,
+								"instanceID":149,
 								"props":{
-									"name":"wall (132)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7579,9 +7493,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":152,
+								"instanceID":150,
 								"props":{
-									"name":"wall (133)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7630,9 +7544,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":153,
+								"instanceID":151,
 								"props":{
-									"name":"wall (134)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7681,9 +7595,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":154,
+								"instanceID":152,
 								"props":{
-									"name":"wall (135)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7732,9 +7646,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":155,
+								"instanceID":153,
 								"props":{
-									"name":"wall (136)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7783,9 +7697,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":156,
+								"instanceID":154,
 								"props":{
-									"name":"wall (137)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7834,9 +7748,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":157,
+								"instanceID":155,
 								"props":{
-									"name":"wall (138)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7885,9 +7799,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":158,
+								"instanceID":156,
 								"props":{
-									"name":"wall (139)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7936,9 +7850,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":159,
+								"instanceID":157,
 								"props":{
-									"name":"wall (141)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -7987,9 +7901,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":160,
+								"instanceID":158,
 								"props":{
-									"name":"wall (142)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8038,9 +7952,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":161,
+								"instanceID":159,
 								"props":{
-									"name":"wall (143)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8089,9 +8003,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":162,
+								"instanceID":160,
 								"props":{
-									"name":"wall (126)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8140,9 +8054,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":163,
+								"instanceID":161,
 								"props":{
-									"name":"wall (140)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8191,9 +8105,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":164,
+								"instanceID":162,
 								"props":{
-									"name":"wall (144)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8242,9 +8156,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":165,
+								"instanceID":163,
 								"props":{
-									"name":"wall (145)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8293,9 +8207,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":166,
+								"instanceID":164,
 								"props":{
-									"name":"wall (146)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8344,9 +8258,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":167,
+								"instanceID":165,
 								"props":{
-									"name":"wall (147)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8395,9 +8309,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":168,
+								"instanceID":166,
 								"props":{
-									"name":"wall (148)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8446,9 +8360,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":169,
+								"instanceID":167,
 								"props":{
-									"name":"wall (149)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8497,9 +8411,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":170,
+								"instanceID":168,
 								"props":{
-									"name":"wall (150)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8548,9 +8462,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":171,
+								"instanceID":169,
 								"props":{
-									"name":"wall (151)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8599,9 +8513,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":172,
+								"instanceID":170,
 								"props":{
-									"name":"wall (152)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8650,9 +8564,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":173,
+								"instanceID":171,
 								"props":{
-									"name":"wall (153)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8701,9 +8615,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":174,
+								"instanceID":172,
 								"props":{
-									"name":"wall (154)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8752,9 +8666,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":175,
+								"instanceID":173,
 								"props":{
-									"name":"wall (155)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8803,9 +8717,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":176,
+								"instanceID":174,
 								"props":{
-									"name":"wall (156)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8854,9 +8768,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":177,
+								"instanceID":175,
 								"props":{
-									"name":"wall (157)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8905,9 +8819,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":178,
+								"instanceID":176,
 								"props":{
-									"name":"wall (158)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -8956,9 +8870,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":179,
+								"instanceID":177,
 								"props":{
-									"name":"wall (159)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9007,9 +8921,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":180,
+								"instanceID":178,
 								"props":{
-									"name":"wall (160)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9058,9 +8972,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":181,
+								"instanceID":179,
 								"props":{
-									"name":"wall (161)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9109,9 +9023,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":182,
+								"instanceID":180,
 								"props":{
-									"name":"wall (162)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9160,9 +9074,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":183,
+								"instanceID":181,
 								"props":{
-									"name":"wall (163)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9211,9 +9125,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":184,
+								"instanceID":182,
 								"props":{
-									"name":"wall (164)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9262,9 +9176,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":185,
+								"instanceID":183,
 								"props":{
-									"name":"wall (165)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9313,9 +9227,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":186,
+								"instanceID":184,
 								"props":{
-									"name":"wall (166)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9364,9 +9278,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":187,
+								"instanceID":185,
 								"props":{
-									"name":"wall (58)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9415,9 +9329,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":188,
+								"instanceID":186,
 								"props":{
-									"name":"wall (167)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9466,9 +9380,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":189,
+								"instanceID":187,
 								"props":{
-									"name":"wall (174)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9517,9 +9431,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":190,
+								"instanceID":188,
 								"props":{
-									"name":"wall (168)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9568,9 +9482,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":191,
+								"instanceID":189,
 								"props":{
-									"name":"wall (169)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9619,9 +9533,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":192,
+								"instanceID":190,
 								"props":{
-									"name":"wall (170)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9670,9 +9584,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":193,
+								"instanceID":191,
 								"props":{
-									"name":"wall (172)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9721,9 +9635,9 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":194,
+								"instanceID":192,
 								"props":{
-									"name":"wall (173)",
+									"name":"wall",
 									"active":true,
 									"isStatic":false,
 									"layer":0,
@@ -9769,12 +9683,726 @@
 									}
 								],
 								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":193,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										11.23995,
+										-0.2210026,
+										26.77003
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":194,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										11.68794,
+										-0.2210026,
+										27.51002
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":195,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										11.42394,
+										-0.2210026,
+										28.32702
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":196,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										12.14394,
+										-0.2210026,
+										28.79603
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":197,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										11.48894,
+										-1.115003,
+										27.14202
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":198,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										11.58594,
+										-1.115003,
+										27.99203
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":199,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										27.872,
+										-0.7210002,
+										-21.972
+									],
+									"rotation":[
+										0,
+										0,
+										1,
+										0
+									],
+									"scale":[
+										0.64,
+										1,
+										1.5
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":200,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										0.6738799,
+										-0.1380625,
+										22.5933
+									],
+									"rotation":[
+										0,
+										0.7071068,
+										-0.7071068,
+										0
+									],
+									"scale":[
+										0.7000002,
+										0.7000005,
+										0.7000005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0.6203691
+												],
+												"size":[
+													0.79,
+													0.83,
+													1.25259
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":201,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										-14.859,
+										-0.6669998,
+										7.609
+									],
+									"rotation":[
+										0.7071068,
+										0,
+										0,
+										-0.7071068
+									],
+									"scale":[
+										0.7000005,
+										0.7000002,
+										0.8500005
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":202,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										28.046,
+										-0.4320002,
+										-23.037
+									],
+									"rotation":[
+										-0.498639,
+										0,
+										0.8668097,
+										0
+									],
+									"scale":[
+										0.5,
+										0.4,
+										0.5999999
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":203,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										27.965,
+										-0.7929997,
+										-23.038
+									],
+									"rotation":[
+										-0.1796608,
+										0,
+										0.9837287,
+										0
+									],
+									"scale":[
+										0.4400001,
+										0.3000001,
+										0.5999998
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":204,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										16.05,
+										-2.95,
+										26.11
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										11.1,
+										6,
+										0.3
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":205,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										9.62,
+										-4.91,
+										26.11
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										3,
+										6,
+										0.3
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":206,
+								"props":{
+									"name":"wall",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										7.551,
+										-2.95,
+										26.11
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										2.3,
+										6,
+										0.3
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
 							}
 						]
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":195,
+						"instanceID":207,
 						"props":{
 							"name":"prop",
 							"active":true,
@@ -9801,7 +10429,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":196,
+								"instanceID":208,
 								"props":{
 									"name":"rescue",
 									"active":true,
@@ -9852,7 +10480,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":197,
+								"instanceID":209,
 								"props":{
 									"name":"rescue",
 									"active":true,
@@ -9903,628 +10531,16 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":198,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-13.82995,
-										6.201003,
-										26.69003
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":199,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-14.27794,
-										6.201003,
-										27.43002
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":200,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-14.01394,
-										6.201003,
-										28.24702
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":201,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-14.73394,
-										6.201003,
-										28.71603
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":202,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-14.07894,
-										7.095003,
-										27.06202
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":203,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-14.17594,
-										7.095003,
-										27.91203
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":204,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-30.462,
-										6.701,
-										-22.052
-									],
-									"rotation":[
-										0,
-										0,
-										0,
-										-1
-									],
-									"scale":[
-										0.64,
-										1,
-										1.5
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":205,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-3.26388,
-										6.118062,
-										22.5133
-									],
-									"rotation":[
-										-0.7071068,
-										0,
-										0,
-										0.7071068
-									],
-									"scale":[
-										0.7,
-										0.7000002,
-										0.7000002
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0.6203691
-												],
-												"size":[
-													0.79,
-													0.83,
-													1.25259
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":206,
-								"props":{
-									"name":"prop (1)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										12.269,
-										6.647,
-										7.529
-									],
-									"rotation":[
-										0,
-										0.7071068,
-										-0.7071068,
-										0
-									],
-									"scale":[
-										0.7,
-										0.7,
-										0.85
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":207,
-								"props":{
-									"name":"prop (2)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-30.636,
-										6.412,
-										-23.117
-									],
-									"rotation":[
-										0,
-										-0.498639,
-										0,
-										-0.8668097
-									],
-									"scale":[
-										0.5,
-										0.4,
-										0.6
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":208,
-								"props":{
-									"name":"prop (3)",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-30.555,
-										6.773,
-										-23.118
-									],
-									"rotation":[
-										0,
-										-0.1796608,
-										0,
-										-0.9837287
-									],
-									"scale":[
-										0.44,
-										0.3,
-										0.5999999
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":209,
-								"props":{
-									"name":"Safe House1",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										10.5,
-										9,
-										28.65
-									],
-									"rotation":[
-										0,
-										-8.940697E-08,
-										0,
-										-1
-									],
-									"scale":[
-										5.27,
-										6.2974,
-										9
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													0,
-													0,
-													0
-												],
-												"size":[
-													1,
-													1,
-													1
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
 								"instanceID":210,
 								"props":{
-									"name":"Safe House2",
+									"name":"spanner",
 									"active":true,
 									"isStatic":false,
 									"layer":8,
 									"position":[
-										14.63,
-										8.678833,
-										-36.43
+										6.895,
+										6.731,
+										30.265
 									],
 									"rotation":[
 										0,
@@ -10533,9 +10549,9 @@
 										-1
 									],
 									"scale":[
-										5.27,
-										6.2974,
-										9
+										1,
+										1,
+										1
 									]
 								},
 								"components":[
@@ -10568,25 +10584,25 @@
 								"type":"Sprite3D",
 								"instanceID":211,
 								"props":{
-									"name":"Safe House3",
+									"name":"spanner",
 									"active":true,
 									"isStatic":false,
 									"layer":8,
 									"position":[
-										-36.75,
-										9,
-										32.37
+										10.908,
+										6.731,
+										-34.78
 									],
 									"rotation":[
 										0,
-										-0.7071065,
+										-8.940697E-08,
 										0,
-										-0.7071071
+										-1
 									],
 									"scale":[
-										5.27,
-										6.2974,
-										9
+										1,
+										1,
+										1
 									]
 								},
 								"components":[
@@ -10619,734 +10635,20 @@
 								"type":"Sprite3D",
 								"instanceID":212,
 								"props":{
-									"name":"door1",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-30.07999,
-										6.194061,
-										14.86999
-									],
-									"rotation":[
-										0.5000007,
-										-0.4999993,
-										-0.4999993,
-										-0.5000007
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.311302E-06,
-													-2.063811E-06,
-													2.391703
-												],
-												"size":[
-													3.540776,
-													0.3912694,
-													4.773329
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":213,
-								"props":{
-									"name":"door2",
+									"name":"spanner",
 									"active":true,
 									"isStatic":false,
 									"layer":8,
 									"position":[
-										-17.19299,
-										6.23,
-										23.13
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.96,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":214,
-								"props":{
-									"name":"door3",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										9.230007,
-										6.28,
-										-10.66
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.96,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":215,
-								"props":{
-									"name":"door4",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-14.23999,
-										6.34,
-										-18.25
-									],
-									"rotation":[
-										3.106892E-06,
-										-0.7071068,
-										-0.7071068,
-										-3.106892E-06
-									],
-									"scale":[
-										0.940001,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":216,
-								"props":{
-									"name":"door5",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-9.359993,
-										6.23,
-										-10.19
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.96,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":217,
-								"props":{
-									"name":"door6",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-1.269993,
-										6.23,
-										-3.270002
-									],
-									"rotation":[
-										3.106892E-06,
-										-0.7071068,
-										-0.7071068,
-										-3.106892E-06
-									],
-									"scale":[
-										0.9500009,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":218,
-								"props":{
-									"name":"door7",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-7.559993,
-										6.23,
-										39.81
-									],
-									"rotation":[
-										3.106892E-06,
-										-0.7071068,
-										-0.7071068,
-										-3.106892E-06
-									],
-									"scale":[
-										0.9500009,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":219,
-								"props":{
-									"name":"door8",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										5.360007,
-										0.04000044,
-										-21.13
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.96,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":220,
-								"props":{
-									"name":"door9",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-30.21999,
-										6.28,
-										-6.550001
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.96,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":221,
-								"props":{
-									"name":"door10",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										0.9900074,
-										-0.0199995,
-										-10.02
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										0.82,
-										0.7,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													2.64
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													5.79
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":222,
-								"props":{
-									"name":"door11",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-24.56999,
-										0.02000046,
-										-9.740002
-									],
-									"rotation":[
-										3.106892E-06,
-										-0.7071068,
-										-0.7071068,
-										-3.106892E-06
-									],
-									"scale":[
-										0.940001,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":223,
-								"props":{
-									"name":"door12",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										11.77201,
-										6.31,
-										-35.132
-									],
-									"rotation":[
-										0.5000015,
-										-0.4999985,
-										-0.4999985,
-										-0.5000015
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":224,
-								"props":{
-									"name":"door13",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-38.14999,
-										6.23,
-										29.62499
-									],
-									"rotation":[
-										3.106892E-06,
-										-0.7071068,
-										-0.7071068,
-										-3.106892E-06
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":225,
-								"props":{
-									"name":"door14",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										7.650007,
-										6.233255,
-										29.84
-									],
-									"rotation":[
-										0.4999979,
-										-0.5000021,
-										-0.5000021,
-										-0.4999979
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-1.369811,
-													1.262712E-06,
-													1.810032
-												],
-												"size":[
-													2.817986,
-													0.1959309,
-													3.62679
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":226,
-								"props":{
-									"name":"door15",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										10.88001,
-										6.233278,
-										-36.48
+										-39.033,
+										6.731,
+										28.832
 									],
 									"rotation":[
 										0,
-										-0.7071033,
+										-0.7071065,
 										0,
-										0.7071103
+										-0.7071071
 									],
 									"scale":[
 										1,
@@ -11364,116 +10666,14 @@
 											{
 												"type":"BoxColliderShape",
 												"center":[
-													-0.01479775,
-													1.854005,
-													-0.5344568
+													0,
+													0,
+													0
 												],
 												"size":[
-													3,
-													3.903939,
-													1.112946
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":227,
-								"props":{
-									"name":"door16",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										-36.76999,
-										6.233278,
-										28.605
-									],
-									"rotation":[
-										0,
-										-1,
-										0,
-										8.761882E-06
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-0.01479775,
-													1.854005,
-													-0.5344568
-												],
-												"size":[
-													3,
-													3.903939,
-													1.112946
-												]
-											}
-										],
-										"isTrigger":true
-									}
-								],
-								"child":[]
-							},
-							{
-								"type":"Sprite3D",
-								"instanceID":228,
-								"props":{
-									"name":"door17",
-									"active":true,
-									"isStatic":false,
-									"layer":8,
-									"position":[
-										6.712997,
-										6.233278,
-										28.54099
-									],
-									"rotation":[
-										0,
-										-0.7070974,
-										0,
-										0.7071162
-									],
-									"scale":[
-										1,
-										1,
-										1
-									]
-								},
-								"components":[
-									{
-										"type":"PhysicsCollider",
-										"restitution":0,
-										"friction":0.5,
-										"rollingFriction":0,
-										"shapes":[
-											{
-												"type":"BoxColliderShape",
-												"center":[
-													-0.01479775,
-													1.854005,
-													-0.5344568
-												],
-												"size":[
-													3,
-													3.903939,
-													1.112946
+													1,
+													1,
+													1
 												]
 											}
 										],
@@ -11488,7 +10688,7 @@
 			},
 			{
 				"type":"Sprite3D",
-				"instanceID":229,
+				"instanceID":213,
 				"props":{
 					"name":"gameroom",
 					"active":true,
@@ -11515,7 +10715,7 @@
 				"child":[
 					{
 						"type":"Sprite3D",
-						"instanceID":230,
+						"instanceID":214,
 						"props":{
 							"name":"map_Escape3",
 							"active":true,
@@ -11542,7 +10742,7 @@
 						"child":[
 							{
 								"type":"MeshSprite3D",
-								"instanceID":231,
+								"instanceID":215,
 								"props":{
 									"name":"map_Escape3 (1)",
 									"active":true,
@@ -11614,7 +10814,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":232,
+								"instanceID":216,
 								"props":{
 									"name":"map_Escape3B1a",
 									"active":true,
@@ -11663,7 +10863,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":233,
+								"instanceID":217,
 								"props":{
 									"name":"map_Escape3roof",
 									"active":true,
@@ -11714,7 +10914,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":234,
+								"instanceID":218,
 								"props":{
 									"name":"map_Escape3B1roof",
 									"active":true,
@@ -11751,7 +10951,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":235,
+								"instanceID":219,
 								"props":{
 									"name":"map_Escape3obj",
 									"active":true,
@@ -11788,7 +10988,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":236,
+								"instanceID":220,
 								"props":{
 									"name":"GameObject (1)",
 									"active":true,
@@ -11815,7 +11015,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":237,
+										"instanceID":221,
 										"props":{
 											"name":"p_drum (3)",
 											"active":true,
@@ -11852,7 +11052,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":238,
+										"instanceID":222,
 										"props":{
 											"name":"p_drum (4)",
 											"active":true,
@@ -11889,7 +11089,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":239,
+										"instanceID":223,
 										"props":{
 											"name":"p_drum (5)",
 											"active":true,
@@ -11926,7 +11126,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":240,
+										"instanceID":224,
 										"props":{
 											"name":"p_drum (6)",
 											"active":true,
@@ -11963,7 +11163,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":241,
+										"instanceID":225,
 										"props":{
 											"name":"p_drum (7)",
 											"active":true,
@@ -12000,7 +11200,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":242,
+										"instanceID":226,
 										"props":{
 											"name":"p_drum (8)",
 											"active":true,
@@ -12037,7 +11237,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":243,
+										"instanceID":227,
 										"props":{
 											"name":"P_Bookbox",
 											"active":true,
@@ -12074,7 +11274,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":244,
+										"instanceID":228,
 										"props":{
 											"name":"p_drum (9)",
 											"active":true,
@@ -12113,7 +11313,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":245,
+								"instanceID":229,
 								"props":{
 									"name":"GameObject",
 									"active":true,
@@ -12140,7 +11340,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":246,
+										"instanceID":230,
 										"props":{
 											"name":"P_CeilingFan (1)",
 											"active":true,
@@ -12186,7 +11386,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":247,
+												"instanceID":231,
 												"props":{
 													"name":"P_CeilingFan",
 													"active":true,
@@ -12223,7 +11423,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":248,
+												"instanceID":232,
 												"props":{
 													"name":"P_CeilingFan01",
 													"active":true,
@@ -12262,7 +11462,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":249,
+										"instanceID":233,
 										"props":{
 											"name":"P_CeilingFan",
 											"active":true,
@@ -12308,7 +11508,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":250,
+												"instanceID":234,
 												"props":{
 													"name":"P_CeilingFan",
 													"active":true,
@@ -12345,7 +11545,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":251,
+												"instanceID":235,
 												"props":{
 													"name":"P_CeilingFan01",
 													"active":true,
@@ -12384,7 +11584,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":252,
+										"instanceID":236,
 										"props":{
 											"name":"P_Clock",
 											"active":true,
@@ -12430,7 +11630,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":253,
+												"instanceID":237,
 												"props":{
 													"name":"P_Clock",
 													"active":true,
@@ -12467,7 +11667,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":254,
+												"instanceID":238,
 												"props":{
 													"name":"P_Clock_a",
 													"active":true,
@@ -12506,7 +11706,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":255,
+										"instanceID":239,
 										"props":{
 											"name":"P_Bookbox",
 											"active":true,
@@ -12557,7 +11757,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":256,
+										"instanceID":240,
 										"props":{
 											"name":"P_Chandelier",
 											"active":true,
@@ -12584,7 +11784,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":257,
+												"instanceID":241,
 												"props":{
 													"name":"P_Chandelier",
 													"active":true,
@@ -12621,7 +11821,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":258,
+												"instanceID":242,
 												"props":{
 													"name":"P_Chandelier_light",
 													"active":true,
@@ -12658,7 +11858,7 @@
 											},
 											{
 												"type":"ShuriKenParticle3D",
-												"instanceID":259,
+												"instanceID":243,
 												"props":{
 													"name":"Lightshaft_sparks (4)",
 													"active":true,
@@ -12754,7 +11954,7 @@
 												"child":[
 													{
 														"type":"ShuriKenParticle3D",
-														"instanceID":260,
+														"instanceID":244,
 														"props":{
 															"name":"Lightshaft_sparks (6)",
 															"active":true,
@@ -12851,7 +12051,7 @@
 													},
 													{
 														"type":"ShuriKenParticle3D",
-														"instanceID":261,
+														"instanceID":245,
 														"props":{
 															"name":"Lightshaft_sparks (5)",
 															"active":true,
@@ -12948,7 +12148,7 @@
 													},
 													{
 														"type":"ShuriKenParticle3D",
-														"instanceID":262,
+														"instanceID":246,
 														"props":{
 															"name":"Lightshaft_sparks (7)",
 															"active":true,
@@ -13049,7 +12249,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":263,
+										"instanceID":247,
 										"props":{
 											"name":"P_CeilingFan (2)",
 											"active":true,
@@ -13095,7 +12295,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":264,
+												"instanceID":248,
 												"props":{
 													"name":"P_CeilingFan",
 													"active":true,
@@ -13132,7 +12332,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":265,
+												"instanceID":249,
 												"props":{
 													"name":"P_CeilingFan01",
 													"active":true,
@@ -13171,7 +12371,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":266,
+										"instanceID":250,
 										"props":{
 											"name":"p_lamp",
 											"active":true,
@@ -13198,7 +12398,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":267,
+												"instanceID":251,
 												"props":{
 													"name":"p_lamp",
 													"active":true,
@@ -13237,7 +12437,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":268,
+										"instanceID":252,
 										"props":{
 											"name":"p_drum",
 											"active":true,
@@ -13274,7 +12474,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":269,
+										"instanceID":253,
 										"props":{
 											"name":"p_Chair",
 											"active":true,
@@ -13334,7 +12534,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":270,
+										"instanceID":254,
 										"props":{
 											"name":"p_lamp01 (10)",
 											"active":true,
@@ -13370,7 +12570,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":271,
+												"instanceID":255,
 												"props":{
 													"name":"right",
 													"active":true,
@@ -13409,7 +12609,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":272,
+										"instanceID":256,
 										"props":{
 											"name":"p_lamp01 (11)",
 											"active":true,
@@ -13445,7 +12645,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":273,
+												"instanceID":257,
 												"props":{
 													"name":"right",
 													"active":true,
@@ -13484,7 +12684,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":274,
+										"instanceID":258,
 										"props":{
 											"name":"p_lamp01 (12)",
 											"active":true,
@@ -13520,7 +12720,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":275,
+												"instanceID":259,
 												"props":{
 													"name":"right",
 													"active":true,
@@ -13559,7 +12759,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":276,
+										"instanceID":260,
 										"props":{
 											"name":"T_PictureGrandpa",
 											"active":true,
@@ -13596,7 +12796,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":277,
+										"instanceID":261,
 										"props":{
 											"name":"P_BookShel",
 											"active":true,
@@ -13658,7 +12858,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":278,
+								"instanceID":262,
 								"props":{
 									"name":"map_Escape3",
 									"active":true,
@@ -13685,7 +12885,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":279,
+										"instanceID":263,
 										"props":{
 											"name":"prison",
 											"active":true,
@@ -13721,7 +12921,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":280,
+												"instanceID":264,
 												"props":{
 													"name":"map_TownLevelF1_PrisonF2 (1)",
 													"active":true,
@@ -13757,7 +12957,7 @@
 												"child":[
 													{
 														"type":"MeshSprite3D",
-														"instanceID":281,
+														"instanceID":265,
 														"props":{
 															"name":"map_TownLevelF1_PrisonF2_ (1)",
 															"active":true,
@@ -13794,7 +12994,7 @@
 													},
 													{
 														"type":"MeshSprite3D",
-														"instanceID":282,
+														"instanceID":266,
 														"props":{
 															"name":"map_TownLevelF1_PrisonF2_ (2)",
 															"active":true,
@@ -13831,7 +13031,7 @@
 													},
 													{
 														"type":"MeshSprite3D",
-														"instanceID":283,
+														"instanceID":267,
 														"props":{
 															"name":"map_TownLevelF1_PrisonF2_ (3)",
 															"active":true,
@@ -13874,47 +13074,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":284,
-								"props":{
-									"name":"p_ESteelWall",
-									"active":true,
-									"isStatic":false,
-									"layer":0,
-									"position":[
-										-30.07999,
-										5.754061,
-										14.86999
-									],
-									"rotation":[
-										0.5000007,
-										-0.4999993,
-										-0.4999993,
-										-0.5000007
-									],
-									"scale":[
-										1,
-										1,
-										1
-									],
-									"meshPath":"Assets/Mesh/p_ESteelWall-p_ESteelWall.lm",
-									"enableRender":true,
-									"receiveShadows":true,
-									"castShadow":true,
-									"materials":[
-										{
-											"path":"Assets/Material/T_towntile05.lmat"
-										},
-										{
-											"path":"Assets/Material/T_town1wall01.lmat"
-										}
-									]
-								},
-								"components":[],
-								"child":[]
-							},
-							{
-								"type":"MeshSprite3D",
-								"instanceID":285,
+								"instanceID":268,
 								"props":{
 									"name":"P_Prisonopen_Burton01",
 									"active":true,
@@ -13974,7 +13134,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":286,
+								"instanceID":269,
 								"props":{
 									"name":"P_Prisonopen_Burton02",
 									"active":true,
@@ -14034,7 +13194,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":287,
+								"instanceID":270,
 								"props":{
 									"name":"F_DoorType",
 									"active":true,
@@ -14060,790 +13220,900 @@
 								"components":[],
 								"child":[
 									{
-										"type":"MeshSprite3D",
-										"instanceID":288,
+										"type":"Sprite3D",
+										"instanceID":271,
 										"props":{
-											"name":"F_DoorType_00",
+											"name":"door_blue",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												-8.503,
+												-8.84,
 												-0.97,
-												7.22
+												4.42
 											],
 											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
+												-2.980233E-08,
+												0.7071068,
+												0.7071068,
+												2.980233E-08
 											],
 											"scale":[
 												0.96,
 												0.7,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":272,
+												"props":{
+													"name":"door_blue",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														1,
+														0
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close-F_DoorType_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open-F_DoorType_open.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":289,
+										"type":"Sprite3D",
+										"instanceID":273,
 										"props":{
-											"name":"F_DoorType_01",
+											"name":"door_blue",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												17.92,
+												20.62,
 												-0.92,
-												-26.57
+												-26.83
 											],
 											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
+												0,
+												0.7071068,
+												0.7071068,
+												0
 											],
 											"scale":[
-												0.96,
-												0.7,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bclose-F_DoorType_Bclose.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bopen-F_DoorType_Bopen.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":290,
-										"props":{
-											"name":"F_DoorType_02",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												-5.55,
-												-0.86,
-												-34.16
-											],
-											"rotation":[
-												3.106892E-06,
-												-0.7071068,
-												-0.7071068,
-												-3.106892E-06
-											],
-											"scale":[
-												0.94,
+												1,
 												1,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":274,
+												"props":{
+													"name":"door_blue",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														-0.7071068,
+														-0.7071068
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bclose1-F_DoorType_Bclose1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bopen1-F_DoorType_Bopen1.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":291,
+										"type":"Sprite3D",
+										"instanceID":275,
 										"props":{
-											"name":"F_DoorType_03",
+											"name":"door_blue",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												-0.67,
-												-0.97,
-												-26.1
+												16.62,
+												-7.16,
+												-37.304
 											],
 											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
+												0,
+												0.7071068,
+												0.7071068,
+												0
+											],
+											"scale":[
+												1,
+												1,
+												1
+											]
+										},
+										"components":[],
+										"child":[
+											{
+												"type":"MeshSprite3D",
+												"instanceID":276,
+												"props":{
+													"name":"door_blue",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														-0.7071068,
+														-0.7071068
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door.lmat"
+														}
+													]
+												},
+												"components":[
+													{
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
+															{
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
+															}
+														],
+														"isTrigger":true
+													}
+												],
+												"child":[]
+											}
+										]
+									},
+									{
+										"type":"Sprite3D",
+										"instanceID":277,
+										"props":{
+											"name":"door_green",
+											"active":true,
+											"isStatic":false,
+											"layer":0,
+											"position":[
+												-0.935,
+												-0.97,
+												-28.71
+											],
+											"rotation":[
+												-2.980233E-08,
+												0.7071068,
+												0.7071068,
+												2.980233E-08
 											],
 											"scale":[
 												0.96,
 												0.7,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":278,
+												"props":{
+													"name":"door_green",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														1,
+														0
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 1.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close-F_DoorType_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open-F_DoorType_open.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":292,
+										"type":"Sprite3D",
+										"instanceID":279,
 										"props":{
-											"name":"F_DoorType_04",
+											"name":"door_green",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
+											"position":[
+												10.014,
+												-7.22,
+												-25.478
+											],
+											"rotation":[
+												-2.980233E-08,
+												0.7071068,
+												0.7071068,
+												2.980233E-08
+											],
+											"scale":[
+												1,
+												0.7,
+												1
+											]
+										},
+										"components":[],
+										"child":[
+											{
+												"type":"MeshSprite3D",
+												"instanceID":280,
+												"props":{
+													"name":"door_green",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														0,
+														-1
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 1.lmat"
+														}
+													]
+												},
+												"components":[
+													{
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
+															{
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
+															}
+														],
+														"isTrigger":true
+													}
+												],
+												"child":[]
+											}
+										]
+									},
+									{
+										"type":"Sprite3D",
+										"instanceID":281,
+										"props":{
+											"name":"door_green",
+											"active":true,
+											"isStatic":false,
+											"layer":0,
+											"position":[
+												-21.68,
+												-0.92,
+												-25.19
+											],
+											"rotation":[
+												0,
+												0.7071068,
+												0.7071068,
+												0
+											],
+											"scale":[
+												0.96,
+												0.7,
+												1
+											]
+										},
+										"components":[],
+										"child":[
+											{
+												"type":"MeshSprite3D",
+												"instanceID":282,
+												"props":{
+													"name":"door_green",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														-1,
+														0
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 1.lmat"
+														}
+													]
+												},
+												"components":[
+													{
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
+															{
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	2.64
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	5.79
+																]
+															}
+														],
+														"isTrigger":true
+													}
+												],
+												"child":[]
+											}
+										]
+									},
+									{
+										"type":"Sprite3D",
+										"instanceID":283,
+										"props":{
+											"name":"door_red",
+											"active":true,
+											"isStatic":false,
+											"layer":0,
 											"position":[
 												7.42,
 												-0.97,
 												-19.18
 											],
 											"rotation":[
-												3.106892E-06,
-												-0.7071068,
-												-0.7071068,
-												-3.106892E-06
+												0,
+												0.7071068,
+												0.7071068,
+												0
 											],
 											"scale":[
 												0.95,
 												1,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":284,
+												"props":{
+													"name":"door_red",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														0,
+														-1
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 2.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close1-F_DoorType_close1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open1-F_DoorType_open1.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	1.810032
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	3.62679
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":293,
+										"type":"Sprite3D",
+										"instanceID":285,
 										"props":{
-											"name":"F_DoorType_05",
+											"name":"door_red",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												1.13,
+												0.98,
 												-0.97,
-												23.9
+												21.22
 											],
 											"rotation":[
-												3.106892E-06,
-												-0.7071068,
-												-0.7071068,
-												-3.106892E-06
+												0,
+												0.7071068,
+												0.7071068,
+												0
 											],
 											"scale":[
 												0.95,
 												1,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":286,
+												"props":{
+													"name":"door_red",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														-1,
+														0
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 2.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close-F_DoorType_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open-F_DoorType_open.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	1.810032
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	3.62679
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":294,
+										"type":"Sprite3D",
+										"instanceID":287,
 										"props":{
-											"name":"F_DoorType_06",
+											"name":"door_red",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												14.05,
-												-7.16,
-												-37.04
+												-5.55,
+												-0.86,
+												-33.97
 											],
 											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
+												-1.490116E-07,
+												0.7071068,
+												0.7071068,
+												-1.490116E-07
 											],
 											"scale":[
-												0.96,
-												0.7,
+												1,
+												1,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":288,
+												"props":{
+													"name":"door_red",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														0.7071068,
+														-0.7071068
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 2.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bclose-F_DoorType_Bclose.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bopen-F_DoorType_Bopen.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	1.810032
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	3.62679
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
+										]
 									},
 									{
-										"type":"MeshSprite3D",
-										"instanceID":295,
+										"type":"Sprite3D",
+										"instanceID":289,
 										"props":{
-											"name":"F_DoorType_07",
+											"name":"door_red",
 											"active":true,
 											"isStatic":false,
-											"layer":8,
+											"layer":0,
 											"position":[
-												-21.53,
-												-0.92,
-												-22.46
-											],
-											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
-											],
-											"scale":[
-												0.96,
-												0.7,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close-F_DoorType_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open-F_DoorType_open.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":296,
-										"props":{
-											"name":"F_DoorType_08",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												9.68,
-												-7.22,
-												-25.93
-											],
-											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
-											],
-											"scale":[
-												0.82,
-												0.7,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_A04-F_DoorType_A04.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close1-F_DoorType_close1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open1-F_DoorType_open1.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":297,
-										"props":{
-											"name":"F_DoorType_09",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												-15.88,
+												-15.76,
 												-7.18,
-												-25.65
+												-25.5
 											],
 											"rotation":[
-												3.106892E-06,
-												-0.7071068,
-												-0.7071068,
-												-3.106892E-06
+												0,
+												0.7071068,
+												0.7071068,
+												0
 											],
 											"scale":[
 												0.94,
 												1,
 												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door.lmat"
-												}
 											]
 										},
-										"components":[
+										"components":[],
+										"child":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"MeshSprite3D",
+												"instanceID":290,
+												"props":{
+													"name":"door_red",
+													"active":true,
+													"isStatic":false,
+													"layer":8,
+													"position":[
+														0,
+														0,
+														0
+													],
+													"rotation":[
+														0,
+														0,
+														0,
+														-1
+													],
+													"scale":[
+														1,
+														1,
+														1
+													],
+													"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
+													"enableRender":true,
+													"receiveShadows":true,
+													"castShadow":true,
+													"materials":[
+														{
+															"path":"Assets/Material/P_town_door 2.lmat"
+														}
+													]
+												},
+												"components":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
+														"type":"PhysicsCollider",
+														"restitution":0,
+														"friction":0.5,
+														"rollingFriction":0,
+														"shapes":[
 															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close1-F_DoorType_close1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open1-F_DoorType_open1.lani"
+																"type":"BoxColliderShape",
+																"center":[
+																	-1.369811,
+																	1.262712E-06,
+																	1.810032
+																],
+																"size":[
+																	2.817986,
+																	0.1959309,
+																	3.62679
+																]
 															}
-														]
+														],
+														"isTrigger":true
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"child":[]
 											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":298,
-										"props":{
-											"name":"F_DoorType_B50",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												20.462,
-												-0.89,
-												-51.042
-											],
-											"rotation":[
-												0.5000015,
-												-0.4999985,
-												-0.4999985,
-												-0.5000015
-											],
-											"scale":[
-												1,
-												1,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door_final.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close1-F_DoorType_close1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open1-F_DoorType_open1.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":299,
-										"props":{
-											"name":"F_DoorType_B51",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												-29.46,
-												-0.97,
-												13.71499
-											],
-											"rotation":[
-												3.106892E-06,
-												-0.7071068,
-												-0.7071068,
-												-3.106892E-06
-											],
-											"scale":[
-												1,
-												1,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door_final.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bclose1-F_DoorType_Bclose1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_Bopen1-F_DoorType_Bopen1.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
-									},
-									{
-										"type":"MeshSprite3D",
-										"instanceID":300,
-										"props":{
-											"name":"F_DoorType_B52",
-											"active":true,
-											"isStatic":false,
-											"layer":8,
-											"position":[
-												16.34,
-												-0.9667454,
-												13.93
-											],
-											"rotation":[
-												0.4999979,
-												-0.5000021,
-												-0.5000021,
-												-0.4999979
-											],
-											"scale":[
-												1,
-												1,
-												1
-											],
-											"meshPath":"Assets/Mesh/F_DoorType_01-F_DoorType_01.lm",
-											"enableRender":true,
-											"receiveShadows":true,
-											"castShadow":true,
-											"materials":[
-												{
-													"path":"Assets/Material/P_town_door_final.lmat"
-												}
-											]
-										},
-										"components":[
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/F_DoorType_close1-F_DoorType_close1.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/F_DoorType_open1-F_DoorType_open1.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[]
+										]
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":301,
+										"instanceID":291,
 										"props":{
-											"name":"p_ESteelDoor_ani50",
+											"name":"door_iron",
 											"active":true,
 											"isStatic":false,
 											"layer":8,
@@ -14866,32 +14136,32 @@
 										},
 										"components":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"PhysicsCollider",
+												"restitution":0,
+												"friction":0.5,
+												"rollingFriction":0,
+												"shapes":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_close-p_ESteelDoor_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_open-p_ESteelDoor_open.lani"
-															}
+														"type":"BoxColliderShape",
+														"center":[
+															0,
+															2,
+															0
+														],
+														"size":[
+															3,
+															4,
+															1
 														]
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"isTrigger":false
 											}
 										],
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":302,
+												"instanceID":292,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_1",
 													"active":true,
@@ -14928,7 +14198,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":303,
+												"instanceID":293,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_2",
 													"active":true,
@@ -14965,7 +14235,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":304,
+												"instanceID":294,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_3",
 													"active":true,
@@ -15002,7 +14272,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":305,
+												"instanceID":295,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_4",
 													"active":true,
@@ -15039,7 +14309,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":306,
+												"instanceID":296,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_5",
 													"active":true,
@@ -15076,7 +14346,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":307,
+												"instanceID":297,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_6",
 													"active":true,
@@ -15113,7 +14383,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":308,
+												"instanceID":298,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_7",
 													"active":true,
@@ -15150,7 +14420,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":309,
+												"instanceID":299,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_8",
 													"active":true,
@@ -15187,7 +14457,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":310,
+												"instanceID":300,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_9",
 													"active":true,
@@ -15224,7 +14494,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":311,
+												"instanceID":301,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_10",
 													"active":true,
@@ -15261,7 +14531,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":312,
+												"instanceID":302,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_11",
 													"active":true,
@@ -15298,7 +14568,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":313,
+												"instanceID":303,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_12",
 													"active":true,
@@ -15335,7 +14605,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":314,
+												"instanceID":304,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_13",
 													"active":true,
@@ -15372,7 +14642,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":315,
+												"instanceID":305,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_14",
 													"active":true,
@@ -15409,7 +14679,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":316,
+												"instanceID":306,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_15",
 													"active":true,
@@ -15446,7 +14716,7 @@
 											},
 											{
 												"type":"ShuriKenParticle3D",
-												"instanceID":317,
+												"instanceID":307,
 												"props":{
 													"name":"Lightning (3)",
 													"active":true,
@@ -15521,13 +14791,6 @@
 																"max":5
 															}
 														]
-													},
-													"shape":{
-														"shapeType":0,
-														"bases":{
-															"enable":true,
-															"radius":0.5
-														}
 													},
 													"colorOverLifetime":{
 														"bases":{
@@ -15621,180 +14884,14 @@
 												},
 												"components":[],
 												"child":[]
-											},
-											{
-												"type":"ShuriKenParticle3D",
-												"instanceID":318,
-												"props":{
-													"name":"fx_open",
-													"active":true,
-													"isStatic":false,
-													"layer":0,
-													"position":[
-														0.47,
-														-0.9555702,
-														-0.57
-													],
-													"rotation":[
-														0,
-														-5.960464E-06,
-														0,
-														1
-													],
-													"scale":[
-														1.5238,
-														1.5238,
-														1.5238
-													],
-													"main":{
-														"randomSeed":0,
-														"bases":{
-															"isPerformanceMode":true,
-															"prewarm":false,
-															"startSpeedConstant":0,
-															"startSpeedConstantMax":0,
-															"startSizeType":2,
-															"startSizeConstant":1.8,
-															"startSizeConstantMin":1,
-															"startSizeConstantMax":1.8,
-															"startColorType":2,
-															"scaleMode":2,
-															"maxParticles":1000
-														},
-														"vector3s":{
-															"startSizeConstantSeparate":[
-																1.8,
-																1,
-																1
-															],
-															"startSizeConstantMinSeparate":[
-																1,
-																1,
-																1
-															],
-															"startSizeConstantMaxSeparate":[
-																1.8,
-																1,
-																1
-															]
-														},
-														"vector4s":{
-															"startColorConstant":[
-																0.6132076,
-																0.6132076,
-																0.6132076,
-																1
-															],
-															"startColorConstantMin":[
-																0.3207547,
-																0.3207547,
-																0.3207547,
-																1
-															],
-															"startColorConstantMax":[
-																0.6132076,
-																0.6132076,
-																0.6132076,
-																1
-															]
-														}
-													},
-													"emission":{
-														"bases":{
-															"enable":true,
-															"emissionRate":8
-														}
-													},
-													"shape":{
-														"shapeType":0,
-														"bases":{
-															"enable":true
-														}
-													},
-													"colorOverLifetime":{
-														"bases":{
-															"enable":true
-														},
-														"color":{
-															"type":1,
-															"gradient":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															},
-															"gradientMax":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															}
-														}
-													},
-													"renderer":{
-														"bases":{
-															"renderMode":4
-														},
-														"resources":{
-															"material":"Assets/Material/Lightshafts_Magic.lmat",
-															"mesh":"Assets/Mesh/polySurface1-polySurface1.lm"
-														}
-													}
-												},
-												"components":[],
-												"child":[]
 											}
 										]
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":319,
+										"instanceID":308,
 										"props":{
-											"name":"p_ESteelDoor_ani51",
+											"name":"door_iron",
 											"active":true,
 											"isStatic":false,
 											"layer":8,
@@ -15817,32 +14914,32 @@
 										},
 										"components":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"PhysicsCollider",
+												"restitution":0,
+												"friction":0.5,
+												"rollingFriction":0,
+												"shapes":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_close-p_ESteelDoor_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_open-p_ESteelDoor_open.lani"
-															}
+														"type":"BoxColliderShape",
+														"center":[
+															0,
+															2,
+															0
+														],
+														"size":[
+															3,
+															4,
+															1
 														]
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"isTrigger":false
 											}
 										],
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":320,
+												"instanceID":309,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_1",
 													"active":true,
@@ -15879,7 +14976,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":321,
+												"instanceID":310,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_2",
 													"active":true,
@@ -15916,7 +15013,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":322,
+												"instanceID":311,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_3",
 													"active":true,
@@ -15953,7 +15050,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":323,
+												"instanceID":312,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_4",
 													"active":true,
@@ -15990,7 +15087,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":324,
+												"instanceID":313,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_5",
 													"active":true,
@@ -16027,7 +15124,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":325,
+												"instanceID":314,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_6",
 													"active":true,
@@ -16064,7 +15161,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":326,
+												"instanceID":315,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_7",
 													"active":true,
@@ -16101,7 +15198,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":327,
+												"instanceID":316,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_8",
 													"active":true,
@@ -16138,7 +15235,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":328,
+												"instanceID":317,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_9",
 													"active":true,
@@ -16175,7 +15272,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":329,
+												"instanceID":318,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_10",
 													"active":true,
@@ -16212,7 +15309,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":330,
+												"instanceID":319,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_11",
 													"active":true,
@@ -16249,7 +15346,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":331,
+												"instanceID":320,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_12",
 													"active":true,
@@ -16286,7 +15383,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":332,
+												"instanceID":321,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_13",
 													"active":true,
@@ -16323,7 +15420,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":333,
+												"instanceID":322,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_14",
 													"active":true,
@@ -16360,7 +15457,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":334,
+												"instanceID":323,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_15",
 													"active":true,
@@ -16394,180 +15491,14 @@
 												},
 												"components":[],
 												"child":[]
-											},
-											{
-												"type":"ShuriKenParticle3D",
-												"instanceID":335,
-												"props":{
-													"name":"fx_open",
-													"active":true,
-													"isStatic":false,
-													"layer":0,
-													"position":[
-														0.09,
-														-0.9555702,
-														-0.57
-													],
-													"rotation":[
-														0,
-														-5.960464E-06,
-														0,
-														1
-													],
-													"scale":[
-														1.5238,
-														1.5238,
-														1.5238
-													],
-													"main":{
-														"randomSeed":0,
-														"bases":{
-															"isPerformanceMode":true,
-															"prewarm":false,
-															"startSpeedConstant":0,
-															"startSpeedConstantMax":0,
-															"startSizeType":2,
-															"startSizeConstant":1.8,
-															"startSizeConstantMin":1,
-															"startSizeConstantMax":1.8,
-															"startColorType":2,
-															"scaleMode":2,
-															"maxParticles":1000
-														},
-														"vector3s":{
-															"startSizeConstantSeparate":[
-																1.8,
-																1,
-																1
-															],
-															"startSizeConstantMinSeparate":[
-																1,
-																1,
-																1
-															],
-															"startSizeConstantMaxSeparate":[
-																1.8,
-																1,
-																1
-															]
-														},
-														"vector4s":{
-															"startColorConstant":[
-																0.6981132,
-																0.6981132,
-																0.6981132,
-																1
-															],
-															"startColorConstantMin":[
-																0.4862745,
-																0.4862745,
-																0.4862745,
-																1
-															],
-															"startColorConstantMax":[
-																0.6981132,
-																0.6981132,
-																0.6981132,
-																1
-															]
-														}
-													},
-													"emission":{
-														"bases":{
-															"enable":true,
-															"emissionRate":8
-														}
-													},
-													"shape":{
-														"shapeType":0,
-														"bases":{
-															"enable":true
-														}
-													},
-													"colorOverLifetime":{
-														"bases":{
-															"enable":true
-														},
-														"color":{
-															"type":1,
-															"gradient":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															},
-															"gradientMax":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															}
-														}
-													},
-													"renderer":{
-														"bases":{
-															"renderMode":4
-														},
-														"resources":{
-															"material":"Assets/Material/Lightshafts_Magic.lmat",
-															"mesh":"Assets/Mesh/polySurface1-polySurface1.lm"
-														}
-													}
-												},
-												"components":[],
-												"child":[]
 											}
 										]
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":336,
+										"instanceID":324,
 										"props":{
-											"name":"p_ESteelDoor_ani52",
+											"name":"door_iron",
 											"active":true,
 											"isStatic":false,
 											"layer":8,
@@ -16590,32 +15521,32 @@
 										},
 										"components":[
 											{
-												"type":"Animator",
-												"layers":[
+												"type":"PhysicsCollider",
+												"restitution":0,
+												"friction":0.5,
+												"rollingFriction":0,
+												"shapes":[
 													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"F_DoorType_close",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_close-p_ESteelDoor_close.lani"
-															},
-															{
-																"name":"F_DoorType_open",
-																"clipPath":"Assets/AnimationClip/p_ESteelDoor_open-p_ESteelDoor_open.lani"
-															}
+														"type":"BoxColliderShape",
+														"center":[
+															0,
+															2,
+															0
+														],
+														"size":[
+															3,
+															4,
+															1
 														]
 													}
 												],
-												"cullingMode":0,
-												"playOnWake":true
+												"isTrigger":false
 											}
 										],
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":337,
+												"instanceID":325,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_1",
 													"active":true,
@@ -16652,7 +15583,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":338,
+												"instanceID":326,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_2",
 													"active":true,
@@ -16689,7 +15620,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":339,
+												"instanceID":327,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_3",
 													"active":true,
@@ -16726,7 +15657,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":340,
+												"instanceID":328,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_4",
 													"active":true,
@@ -16763,7 +15694,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":341,
+												"instanceID":329,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_5",
 													"active":true,
@@ -16800,7 +15731,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":342,
+												"instanceID":330,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_6",
 													"active":true,
@@ -16837,7 +15768,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":343,
+												"instanceID":331,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_7",
 													"active":true,
@@ -16874,7 +15805,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":344,
+												"instanceID":332,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_8",
 													"active":true,
@@ -16911,7 +15842,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":345,
+												"instanceID":333,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_9",
 													"active":true,
@@ -16948,7 +15879,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":346,
+												"instanceID":334,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_10",
 													"active":true,
@@ -16985,7 +15916,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":347,
+												"instanceID":335,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_11",
 													"active":true,
@@ -17022,7 +15953,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":348,
+												"instanceID":336,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_12",
 													"active":true,
@@ -17059,7 +15990,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":349,
+												"instanceID":337,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_13",
 													"active":true,
@@ -17096,7 +16027,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":350,
+												"instanceID":338,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_14",
 													"active":true,
@@ -17133,7 +16064,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":351,
+												"instanceID":339,
 												"props":{
 													"name":"p_ESteelDoor_close001_Part_15",
 													"active":true,
@@ -17170,7 +16101,7 @@
 											},
 											{
 												"type":"ShuriKenParticle3D",
-												"instanceID":352,
+												"instanceID":340,
 												"props":{
 													"name":"Lightning (3)",
 													"active":true,
@@ -17345,178 +16276,12 @@
 												},
 												"components":[],
 												"child":[]
-											},
-											{
-												"type":"ShuriKenParticle3D",
-												"instanceID":353,
-												"props":{
-													"name":"fx_open",
-													"active":true,
-													"isStatic":false,
-													"layer":0,
-													"position":[
-														0.24,
-														-0.9555702,
-														-0.57
-													],
-													"rotation":[
-														0,
-														-5.960464E-06,
-														0,
-														1
-													],
-													"scale":[
-														1.5238,
-														1.5238,
-														1.5238
-													],
-													"main":{
-														"randomSeed":0,
-														"bases":{
-															"isPerformanceMode":true,
-															"prewarm":false,
-															"startSpeedConstant":0,
-															"startSpeedConstantMax":0,
-															"startSizeType":2,
-															"startSizeConstant":1.8,
-															"startSizeConstantMin":1,
-															"startSizeConstantMax":1.8,
-															"startColorType":2,
-															"scaleMode":2,
-															"maxParticles":1000
-														},
-														"vector3s":{
-															"startSizeConstantSeparate":[
-																1.8,
-																1,
-																1
-															],
-															"startSizeConstantMinSeparate":[
-																1,
-																1,
-																1
-															],
-															"startSizeConstantMaxSeparate":[
-																1.8,
-																1,
-																1
-															]
-														},
-														"vector4s":{
-															"startColorConstant":[
-																0.6226415,
-																0.6226415,
-																0.6226415,
-																1
-															],
-															"startColorConstantMin":[
-																0.2830189,
-																0.2830189,
-																0.2830189,
-																1
-															],
-															"startColorConstantMax":[
-																0.6226415,
-																0.6226415,
-																0.6226415,
-																1
-															]
-														}
-													},
-													"emission":{
-														"bases":{
-															"enable":true,
-															"emissionRate":8
-														}
-													},
-													"shape":{
-														"shapeType":0,
-														"bases":{
-															"enable":true
-														}
-													},
-													"colorOverLifetime":{
-														"bases":{
-															"enable":true
-														},
-														"color":{
-															"type":1,
-															"gradient":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															},
-															"gradientMax":{
-																"rgbs":[
-																	{
-																		"key":0,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	},
-																	{
-																		"key":0.4794079,
-																		"value":[
-																			0,
-																			0.05481755,
-																			0.5943396
-																		]
-																	},
-																	{
-																		"key":1,
-																		"value":[
-																			0,
-																			0,
-																			0
-																		]
-																	}
-																]
-															}
-														}
-													},
-													"renderer":{
-														"bases":{
-															"renderMode":4
-														},
-														"resources":{
-															"material":"Assets/Material/Lightshafts_Magic.lmat",
-															"mesh":"Assets/Mesh/polySurface1-polySurface1.lm"
-														}
-													}
-												},
-												"components":[],
-												"child":[]
 											}
 										]
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":354,
+										"instanceID":341,
 										"props":{
 											"name":"P_PartActuator",
 											"active":true,
@@ -17562,7 +16327,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":355,
+												"instanceID":342,
 												"props":{
 													"name":"P_PartActuator",
 													"active":true,
@@ -17599,7 +16364,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":356,
+												"instanceID":343,
 												"props":{
 													"name":"P_PartActuator01",
 													"active":true,
@@ -17636,7 +16401,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":357,
+												"instanceID":344,
 												"props":{
 													"name":"P_PartActuator02",
 													"active":true,
@@ -17673,7 +16438,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":358,
+												"instanceID":345,
 												"props":{
 													"name":"P_PartActuator03",
 													"active":true,
@@ -17712,7 +16477,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":359,
+										"instanceID":346,
 										"props":{
 											"name":"P_PartActuator",
 											"active":true,
@@ -17758,7 +16523,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":360,
+												"instanceID":347,
 												"props":{
 													"name":"P_PartActuator",
 													"active":true,
@@ -17795,7 +16560,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":361,
+												"instanceID":348,
 												"props":{
 													"name":"P_PartActuator01",
 													"active":true,
@@ -17832,7 +16597,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":362,
+												"instanceID":349,
 												"props":{
 													"name":"P_PartActuator02",
 													"active":true,
@@ -17869,7 +16634,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":363,
+												"instanceID":350,
 												"props":{
 													"name":"P_PartActuator03",
 													"active":true,
@@ -17908,7 +16673,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":364,
+										"instanceID":351,
 										"props":{
 											"name":"P_PartActuator",
 											"active":true,
@@ -17954,7 +16719,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":365,
+												"instanceID":352,
 												"props":{
 													"name":"P_PartActuator",
 													"active":true,
@@ -17991,7 +16756,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":366,
+												"instanceID":353,
 												"props":{
 													"name":"P_PartActuator01",
 													"active":true,
@@ -18028,7 +16793,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":367,
+												"instanceID":354,
 												"props":{
 													"name":"P_PartActuator02",
 													"active":true,
@@ -18065,7 +16830,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":368,
+												"instanceID":355,
 												"props":{
 													"name":"P_PartActuator03",
 													"active":true,
@@ -18108,7 +16873,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":369,
+						"instanceID":356,
 						"props":{
 							"name":"End_Scene",
 							"active":true,
@@ -18135,7 +16900,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":370,
+								"instanceID":357,
 								"props":{
 									"name":"human_Fail",
 									"active":true,
@@ -18162,7 +16927,7 @@
 								"child":[
 									{
 										"type":"Sprite3D",
-										"instanceID":371,
+										"instanceID":358,
 										"props":{
 											"name":"@EndZombieSpawn01",
 											"active":true,
@@ -18190,7 +16955,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":372,
+										"instanceID":359,
 										"props":{
 											"name":"@EndZombieSpawn02",
 											"active":true,
@@ -18218,7 +16983,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":373,
+										"instanceID":360,
 										"props":{
 											"name":"@EndPrisonerSpawn01",
 											"active":true,
@@ -18246,7 +17011,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":374,
+										"instanceID":361,
 										"props":{
 											"name":"@EndPrisonerSpawn02",
 											"active":true,
@@ -18274,7 +17039,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":375,
+										"instanceID":362,
 										"props":{
 											"name":"@EndPrisonerSpawn03",
 											"active":true,
@@ -18302,7 +17067,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":376,
+										"instanceID":363,
 										"props":{
 											"name":"@EndPrisonerSpawn04",
 											"active":true,
@@ -18330,7 +17095,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":377,
+										"instanceID":364,
 										"props":{
 											"name":"@EndPrisonerSpawn05",
 											"active":true,
@@ -18358,7 +17123,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":378,
+										"instanceID":365,
 										"props":{
 											"name":"@EndPrisonerSpawn06",
 											"active":true,
@@ -18386,7 +17151,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":379,
+										"instanceID":366,
 										"props":{
 											"name":"@StoneSpawner01",
 											"active":true,
@@ -18414,7 +17179,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":380,
+										"instanceID":367,
 										"props":{
 											"name":"@StoneSpawner02",
 											"active":true,
@@ -18442,7 +17207,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":381,
+										"instanceID":368,
 										"props":{
 											"name":"@PrisonerSpawner",
 											"active":true,
@@ -18472,7 +17237,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":382,
+								"instanceID":369,
 								"props":{
 									"name":"human_victory",
 									"active":true,
@@ -18499,7 +17264,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":383,
+										"instanceID":370,
 										"props":{
 											"name":"humanV_Ground",
 											"active":true,
@@ -18550,7 +17315,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":384,
+										"instanceID":371,
 										"props":{
 											"name":"humanV_Tree",
 											"active":true,
@@ -18587,7 +17352,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":385,
+										"instanceID":372,
 										"props":{
 											"name":"humanV_house",
 											"active":true,
@@ -18647,7 +17412,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":386,
+										"instanceID":373,
 										"props":{
 											"name":"humanV_Lamp",
 											"active":true,
@@ -18674,7 +17439,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":387,
+												"instanceID":374,
 												"props":{
 													"name":"humanV_Lamp",
 													"active":true,
@@ -18711,7 +17476,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":388,
+												"instanceID":375,
 												"props":{
 													"name":"StreetLamp_glass002",
 													"active":true,
@@ -18748,7 +17513,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":389,
+												"instanceID":376,
 												"props":{
 													"name":"StreetLamp_glass002 (2)",
 													"active":true,
@@ -18787,7 +17552,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":390,
+										"instanceID":377,
 										"props":{
 											"name":"humanV_Lamp (1)",
 											"active":true,
@@ -18814,7 +17579,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":391,
+												"instanceID":378,
 												"props":{
 													"name":"humanV_Lamp",
 													"active":true,
@@ -18851,7 +17616,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":392,
+												"instanceID":379,
 												"props":{
 													"name":"StreetLamp_glass002",
 													"active":true,
@@ -18888,7 +17653,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":393,
+												"instanceID":380,
 												"props":{
 													"name":"StreetLamp_glass002 (1)",
 													"active":true,
@@ -18927,7 +17692,7 @@
 									},
 									{
 										"type":"MeshSprite3D",
-										"instanceID":394,
+										"instanceID":381,
 										"props":{
 											"name":"P_Grass01 (35)",
 											"active":true,
@@ -18963,7 +17728,7 @@
 										"child":[
 											{
 												"type":"MeshSprite3D",
-												"instanceID":395,
+												"instanceID":382,
 												"props":{
 													"name":"P_Grass01 (36)",
 													"active":true,
@@ -19000,7 +17765,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":396,
+												"instanceID":383,
 												"props":{
 													"name":"P_Grass01 (37)",
 													"active":true,
@@ -19037,7 +17802,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":397,
+												"instanceID":384,
 												"props":{
 													"name":"P_Grass01 (38)",
 													"active":true,
@@ -19074,7 +17839,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":398,
+												"instanceID":385,
 												"props":{
 													"name":"P_Grass01 (39)",
 													"active":true,
@@ -19111,7 +17876,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":399,
+												"instanceID":386,
 												"props":{
 													"name":"P_Grass01 (40)",
 													"active":true,
@@ -19148,7 +17913,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":400,
+												"instanceID":387,
 												"props":{
 													"name":"P_Grass01 (41)",
 													"active":true,
@@ -19185,7 +17950,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":401,
+												"instanceID":388,
 												"props":{
 													"name":"P_Grass01 (42)",
 													"active":true,
@@ -19222,7 +17987,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":402,
+												"instanceID":389,
 												"props":{
 													"name":"P_Grass01 (43)",
 													"active":true,
@@ -19259,7 +18024,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":403,
+												"instanceID":390,
 												"props":{
 													"name":"P_Grass01 (44)",
 													"active":true,
@@ -19296,7 +18061,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":404,
+												"instanceID":391,
 												"props":{
 													"name":"P_Grass01 (45)",
 													"active":true,
@@ -19333,7 +18098,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":405,
+												"instanceID":392,
 												"props":{
 													"name":"P_Grass01 (46)",
 													"active":true,
@@ -19370,7 +18135,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":406,
+												"instanceID":393,
 												"props":{
 													"name":"P_Grass01 (47)",
 													"active":true,
@@ -19407,7 +18172,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":407,
+												"instanceID":394,
 												"props":{
 													"name":"P_Grass01 (48)",
 													"active":true,
@@ -19444,7 +18209,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":408,
+												"instanceID":395,
 												"props":{
 													"name":"P_Grass01 (49)",
 													"active":true,
@@ -19481,7 +18246,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":409,
+												"instanceID":396,
 												"props":{
 													"name":"P_Grass01 (50)",
 													"active":true,
@@ -19518,7 +18283,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":410,
+												"instanceID":397,
 												"props":{
 													"name":"P_Grass01 (51)",
 													"active":true,
@@ -19555,7 +18320,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":411,
+												"instanceID":398,
 												"props":{
 													"name":"P_Grass01 (52)",
 													"active":true,
@@ -19592,7 +18357,7 @@
 											},
 											{
 												"type":"MeshSprite3D",
-												"instanceID":412,
+												"instanceID":399,
 												"props":{
 													"name":"P_Grass01 (53)",
 													"active":true,
@@ -19631,1503 +18396,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":413,
-										"props":{
-											"name":"zombie_EndScene",
-											"active":true,
-											"isStatic":false,
-											"layer":10,
-											"position":[
-												4.23,
-												0,
-												6.17
-											],
-											"rotation":[
-												0,
-												-0.999755,
-												0,
-												-0.02213502
-											],
-											"scale":[
-												1.3,
-												1.3,
-												1.3
-											]
-										},
-										"components":[
-											{
-												"type":"PhysicsCollider",
-												"restitution":0,
-												"friction":0.5,
-												"rollingFriction":0,
-												"shapes":[
-													{
-														"type":"CapsuleColliderShape",
-														"center":[
-															0,
-															0.85,
-															-0.08
-														],
-														"radius":0.44,
-														"height":2.12,
-														"orientation":1
-													}
-												],
-												"isTrigger":true
-											},
-											{
-												"type":"Animator",
-												"layers":[
-													{
-														"name":"Base Layer",
-														"weight":0,
-														"blendingMode":0,
-														"states":[
-															{
-																"name":"Grandmother_Angry",
-																"clipPath":"Assets/AnimationClip/Grandmother_Angry-Grandmother_Angry.lani"
-															}
-														]
-													}
-												],
-												"cullingMode":0,
-												"playOnWake":true
-											}
-										],
-										"child":[
-											{
-												"type":"Sprite3D",
-												"instanceID":414,
-												"props":{
-													"name":"Grandmother_set",
-													"active":true,
-													"isStatic":false,
-													"layer":0,
-													"position":[
-														0,
-														0,
-														0
-													],
-													"rotation":[
-														0,
-														0,
-														0,
-														-1
-													],
-													"scale":[
-														1,
-														1,
-														1
-													]
-												},
-												"components":[
-													{
-														"type":"Animator",
-														"layers":[],
-														"cullingMode":0
-													}
-												],
-												"child":[
-													{
-														"type":"Sprite3D",
-														"instanceID":415,
-														"props":{
-															"name":"Bip001",
-															"active":true,
-															"isStatic":false,
-															"layer":0,
-															"position":[
-																-0.03415107,
-																0.8135623,
-																-8.934721E-09
-															],
-															"rotation":[
-																0.5865632,
-																0.3140661,
-																0.4646399,
-																-0.5843082
-															],
-															"scale":[
-																1,
-																1,
-																1
-															]
-														},
-														"components":[],
-														"child":[
-															{
-																"type":"Sprite3D",
-																"instanceID":416,
-																"props":{
-																	"name":"Bip001 Footsteps",
-																	"active":true,
-																	"isStatic":false,
-																	"layer":0,
-																	"position":[
-																		0.3658733,
-																		0.008379383,
-																		-0.643643
-																	],
-																	"rotation":[
-																		0.2077472,
-																		0.1501878,
-																		-0.7902233,
-																		-0.5566254
-																	],
-																	"scale":[
-																		1,
-																		1,
-																		1
-																	]
-																},
-																"components":[],
-																"child":[]
-															},
-															{
-																"type":"Sprite3D",
-																"instanceID":417,
-																"props":{
-																	"name":"Bip001 Pelvis",
-																	"active":true,
-																	"isStatic":false,
-																	"layer":0,
-																	"position":[
-																		0,
-																		0,
-																		0
-																	],
-																	"rotation":[
-																		-0.5217195,
-																		-0.4749337,
-																		-0.5934764,
-																		0.3873404
-																	],
-																	"scale":[
-																		1,
-																		1,
-																		1
-																	]
-																},
-																"components":[],
-																"child":[
-																	{
-																		"type":"Sprite3D",
-																		"instanceID":418,
-																		"props":{
-																			"name":"Bip001 Spine",
-																			"active":true,
-																			"isStatic":false,
-																			"layer":0,
-																			"position":[
-																				0.08987004,
-																				0.01434963,
-																				0.0003438744
-																			],
-																			"rotation":[
-																				-0.1752293,
-																				-0.06592068,
-																				-0.04057939,
-																				-0.9814797
-																			],
-																			"scale":[
-																				1,
-																				1,
-																				1
-																			]
-																		},
-																		"components":[],
-																		"child":[
-																			{
-																				"type":"Sprite3D",
-																				"instanceID":419,
-																				"props":{
-																					"name":"Bip001 L Thigh",
-																					"active":true,
-																					"isStatic":false,
-																					"layer":0,
-																					"position":[
-																						-0.1066406,
-																						0.04131779,
-																						0.1241386
-																					],
-																					"rotation":[
-																						0.1177242,
-																						0.987449,
-																						-0.07747196,
-																						-0.07129976
-																					],
-																					"scale":[
-																						1,
-																						1,
-																						1
-																					]
-																				},
-																				"components":[],
-																				"child":[
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":420,
-																						"props":{
-																							"name":"B_BL_Skirt001",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.03518281,
-																								-0.2143531,
-																								-0.03989299
-																							],
-																							"rotation":[
-																								0.9544902,
-																								-0.2131944,
-																								-0.01063428,
-																								-0.2082872
-																							],
-																							"scale":[
-																								0.999999,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":421,
-																								"props":{
-																									"name":"B_BL_Skirt002",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.2991764,
-																										-2.422332E-08,
-																										3.633495E-08
-																									],
-																									"rotation":[
-																										-0.03760504,
-																										0.03422448,
-																										-0.2494508,
-																										-0.9670517
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										0.999999
-																									]
-																								},
-																								"components":[],
-																								"child":[]
-																							}
-																						]
-																					},
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":422,
-																						"props":{
-																							"name":"B_FL_Skirt001",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.1419388,
-																								0.1442514,
-																								0.01094643
-																							],
-																							"rotation":[
-																								0.06098084,
-																								-0.02142716,
-																								-0.05312377,
-																								-0.9964939
-																							],
-																							"scale":[
-																								1.000001,
-																								0.999999,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":423,
-																								"props":{
-																									"name":"B_FL_Skirt002",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.3007614,
-																										-1.937865E-07,
-																										-6.055843E-08
-																									],
-																									"rotation":[
-																										0.0077205,
-																										-0.01472411,
-																										0.06233961,
-																										-0.9979165
-																									],
-																									"scale":[
-																										0.999999,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[]
-																							}
-																						]
-																					},
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":424,
-																						"props":{
-																							"name":"Bip001 L Calf",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.4196962,
-																								1.211166E-08,
-																								0
-																							],
-																							"rotation":[
-																								1.189251E-08,
-																								1.928847E-08,
-																								0.377744,
-																								-0.9259101
-																							],
-																							"scale":[
-																								1,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":425,
-																								"props":{
-																									"name":"Bip001 L Foot",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.3485507,
-																										2.422333E-08,
-																										2.422333E-08
-																									],
-																									"rotation":[
-																										-0.1856695,
-																										0.007212892,
-																										-0.3094906,
-																										-0.9325719
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[
-																									{
-																										"type":"Sprite3D",
-																										"instanceID":426,
-																										"props":{
-																											"name":"Bip001 L Toe0",
-																											"active":true,
-																											"isStatic":false,
-																											"layer":0,
-																											"position":[
-																												0.1005595,
-																												0.1247262,
-																												0
-																											],
-																											"rotation":[
-																												-4.231308E-05,
-																												0.0004213443,
-																												-0.7152503,
-																												-0.6988683
-																											],
-																											"scale":[
-																												1,
-																												1,
-																												1
-																											]
-																										},
-																										"components":[],
-																										"child":[]
-																									}
-																								]
-																							}
-																						]
-																					}
-																				]
-																			},
-																			{
-																				"type":"Sprite3D",
-																				"instanceID":427,
-																				"props":{
-																					"name":"Bip001 R Thigh",
-																					"active":true,
-																					"isStatic":false,
-																					"layer":0,
-																					"position":[
-																						-0.07381536,
-																						-0.05823538,
-																						-0.1408745
-																					],
-																					"rotation":[
-																						-0.2108284,
-																						-0.9681946,
-																						0.1255444,
-																						-0.04887975
-																					],
-																					"scale":[
-																						1,
-																						1,
-																						1
-																					]
-																				},
-																				"components":[],
-																				"child":[
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":428,
-																						"props":{
-																							"name":"B_BR_Skirt001",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.03518255,
-																								-0.2143538,
-																								0.03989246
-																							],
-																							"rotation":[
-																								-0.8070386,
-																								0.5388873,
-																								-0.08923081,
-																								-0.224337
-																							],
-																							"scale":[
-																								1,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":429,
-																								"props":{
-																									"name":"B_BR_Skirt002",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.2991764,
-																										-4.849393E-09,
-																										-7.027799E-09
-																									],
-																									"rotation":[
-																										0.03192246,
-																										0.001660468,
-																										-0.1509524,
-																										-0.9880241
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[]
-																							}
-																						]
-																					},
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":430,
-																						"props":{
-																							"name":"B_FR_Skirt001",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.1419385,
-																								0.1442509,
-																								-0.01094598
-																							],
-																							"rotation":[
-																								-0.05904689,
-																								0.009529868,
-																								0.004580852,
-																								-0.9981992
-																							],
-																							"scale":[
-																								1,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":431,
-																								"props":{
-																									"name":"B_FR_Skirt002",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.3007614,
-																										0,
-																										1.643855E-08
-																									],
-																									"rotation":[
-																										0.004085851,
-																										-0.02554679,
-																										0.1455038,
-																										-0.9890194
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[]
-																							}
-																						]
-																					},
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":432,
-																						"props":{
-																							"name":"Bip001 R Calf",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.4196962,
-																								2.422333E-08,
-																								2.422333E-08
-																							],
-																							"rotation":[
-																								-6.57927E-10,
-																								4.112701E-09,
-																								0.3003098,
-																								-0.9538417
-																							],
-																							"scale":[
-																								1,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":433,
-																								"props":{
-																									"name":"Bip001 R Foot",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.3485508,
-																										-9.083748E-09,
-																										2.422333E-08
-																									],
-																									"rotation":[
-																										-0.2281798,
-																										-0.06782494,
-																										-0.1115366,
-																										-0.9648282
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[
-																									{
-																										"type":"Sprite3D",
-																										"instanceID":434,
-																										"props":{
-																											"name":"Bip001 R Toe0",
-																											"active":true,
-																											"isStatic":false,
-																											"layer":0,
-																											"position":[
-																												0.1005595,
-																												0.1247262,
-																												0
-																											],
-																											"rotation":[
-																												2.231616E-05,
-																												-0.0002178667,
-																												-0.7104985,
-																												-0.7036988
-																											],
-																											"scale":[
-																												1,
-																												1,
-																												1
-																											]
-																										},
-																										"components":[],
-																										"child":[]
-																									}
-																								]
-																							}
-																						]
-																					}
-																				]
-																			},
-																			{
-																				"type":"Sprite3D",
-																				"instanceID":435,
-																				"props":{
-																					"name":"Bip001 Spine1",
-																					"active":true,
-																					"isStatic":false,
-																					"layer":0,
-																					"position":[
-																						0.2344359,
-																						-0.0002177072,
-																						-0.0001235269
-																					],
-																					"rotation":[
-																						-0.2814735,
-																						0.2053475,
-																						-0.2224694,
-																						-0.9105561
-																					],
-																					"scale":[
-																						1,
-																						1,
-																						1
-																					]
-																				},
-																				"components":[],
-																				"child":[
-																					{
-																						"type":"Sprite3D",
-																						"instanceID":436,
-																						"props":{
-																							"name":"Bip001 Neck",
-																							"active":true,
-																							"isStatic":false,
-																							"layer":0,
-																							"position":[
-																								0.3360631,
-																								0.07872339,
-																								-5.280685E-06
-																							],
-																							"rotation":[
-																								-0.05063581,
-																								0.06868903,
-																								-0.1502295,
-																								-0.9849614
-																							],
-																							"scale":[
-																								1,
-																								1,
-																								1
-																							]
-																						},
-																						"components":[],
-																						"child":[
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":437,
-																								"props":{
-																									"name":"Bip001 Head",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.07965522,
-																										0.003224706,
-																										-9.410763E-05
-																									],
-																									"rotation":[
-																										-0.08191012,
-																										0.02692002,
-																										0.4076015,
-																										-0.9090803
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[
-																									{
-																										"type":"Sprite3D",
-																										"instanceID":438,
-																										"props":{
-																											"name":"Bip001 Xtra01",
-																											"active":true,
-																											"isStatic":false,
-																											"layer":0,
-																											"position":[
-																												0.06474169,
-																												0.0905357,
-																												-6.588745E-06
-																											],
-																											"rotation":[
-																												0.007093644,
-																												-0.03528666,
-																												-0.8081324,
-																												-0.5879003
-																											],
-																											"scale":[
-																												1,
-																												1,
-																												1
-																											]
-																										},
-																										"components":[],
-																										"child":[]
-																									}
-																								]
-																							},
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":439,
-																								"props":{
-																									"name":"Bip001 L Clavicle",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										0.0007219521,
-																										-0.06712633,
-																										0.1259228
-																									],
-																									"rotation":[
-																										-0.6380726,
-																										0.2520643,
-																										-0.7275411,
-																										-0.003292516
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[
-																									{
-																										"type":"Sprite3D",
-																										"instanceID":440,
-																										"props":{
-																											"name":"Bip001 L UpperArm",
-																											"active":true,
-																											"isStatic":false,
-																											"layer":0,
-																											"position":[
-																												0.1508701,
-																												9.689331E-08,
-																												0
-																											],
-																											"rotation":[
-																												-0.008307707,
-																												0.2257417,
-																												0.3281436,
-																												-0.9172205
-																											],
-																											"scale":[
-																												1,
-																												1,
-																												1
-																											]
-																										},
-																										"components":[],
-																										"child":[
-																											{
-																												"type":"Sprite3D",
-																												"instanceID":441,
-																												"props":{
-																													"name":"Bip001 L Forearm",
-																													"active":true,
-																													"isStatic":false,
-																													"layer":0,
-																													"position":[
-																														0.3191763,
-																														0,
-																														-9.689331E-08
-																													],
-																													"rotation":[
-																														1.743585E-08,
-																														-2.839387E-08,
-																														0.5281735,
-																														-0.8491365
-																													],
-																													"scale":[
-																														1,
-																														1,
-																														1
-																													]
-																												},
-																												"components":[],
-																												"child":[
-																													{
-																														"type":"Sprite3D",
-																														"instanceID":442,
-																														"props":{
-																															"name":"Bip001 L Hand",
-																															"active":true,
-																															"isStatic":false,
-																															"layer":0,
-																															"position":[
-																																0.2772666,
-																																0,
-																																-9.689331E-08
-																															],
-																															"rotation":[
-																																0.613184,
-																																0.1290184,
-																																0.01867168,
-																																-0.7791092
-																															],
-																															"scale":[
-																																1,
-																																1,
-																																1
-																															]
-																														},
-																														"components":[],
-																														"child":[
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":443,
-																																"props":{
-																																	"name":"Bip001 L Finger0",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.04932625,
-																																		0.03611611,
-																																		-0.05198074
-																																	],
-																																	"rotation":[
-																																		-0.6352144,
-																																		-0.2338531,
-																																		-0.02069247,
-																																		-0.7357903
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":444,
-																																		"props":{
-																																			"name":"Bip001 L Finger01",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.0592504,
-																																				0,
-																																				0
-																																			],
-																																			"rotation":[
-																																				1.958702E-08,
-																																				5.002921E-08,
-																																				-0.2131861,
-																																				-0.9770116
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															},
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":445,
-																																"props":{
-																																	"name":"Bip001 L Finger1",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.1133331,
-																																		-0.009076771,
-																																		-0.03341618
-																																	],
-																																	"rotation":[
-																																		0.0003981591,
-																																		-1.490746E-08,
-																																		-1.589447E-08,
-																																		-0.9999999
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":446,
-																																		"props":{
-																																			"name":"Bip001 L Finger11",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.0489956,
-																																				-1.937866E-07,
-																																				0
-																																			],
-																																			"rotation":[
-																																				3.002283E-08,
-																																				-8.27499E-10,
-																																				-0.4720297,
-																																				-0.8815827
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															},
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":447,
-																																"props":{
-																																	"name":"Bip001 L Finger2",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.109417,
-																																		-0.007352361,
-																																		0.01921569
-																																	],
-																																	"rotation":[
-																																		0.001023004,
-																																		0.02376445,
-																																		-0.02628571,
-																																		-0.9993715
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":448,
-																																		"props":{
-																																			"name":"Bip001 L Finger21",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.05029543,
-																																				9.689331E-08,
-																																				0
-																																			],
-																																			"rotation":[
-																																				1.239397E-08,
-																																				-9.493051E-09,
-																																				-0.5763758,
-																																				-0.8171848
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															}
-																														]
-																													}
-																												]
-																											}
-																										]
-																									}
-																								]
-																							},
-																							{
-																								"type":"Sprite3D",
-																								"instanceID":449,
-																								"props":{
-																									"name":"Bip001 R Clavicle",
-																									"active":true,
-																									"isStatic":false,
-																									"layer":0,
-																									"position":[
-																										-0.03506743,
-																										-0.08593526,
-																										-0.108378
-																									],
-																									"rotation":[
-																										-0.3757138,
-																										0.3251722,
-																										0.8669469,
-																										-0.03879838
-																									],
-																									"scale":[
-																										1,
-																										1,
-																										1
-																									]
-																								},
-																								"components":[],
-																								"child":[
-																									{
-																										"type":"Sprite3D",
-																										"instanceID":450,
-																										"props":{
-																											"name":"Bip001 R UpperArm",
-																											"active":true,
-																											"isStatic":false,
-																											"layer":0,
-																											"position":[
-																												0.1508701,
-																												-2.422333E-08,
-																												0
-																											],
-																											"rotation":[
-																												-0.1873198,
-																												0.536754,
-																												-0.156569,
-																												-0.8076464
-																											],
-																											"scale":[
-																												1,
-																												1,
-																												1
-																											]
-																										},
-																										"components":[],
-																										"child":[
-																											{
-																												"type":"Sprite3D",
-																												"instanceID":451,
-																												"props":{
-																													"name":"Bip001 R Forearm",
-																													"active":true,
-																													"isStatic":false,
-																													"layer":0,
-																													"position":[
-																														0.3191766,
-																														-1.211166E-08,
-																														0
-																													],
-																													"rotation":[
-																														7.736212E-10,
-																														-1.664203E-08,
-																														0.4051974,
-																														-0.9142292
-																													],
-																													"scale":[
-																														1,
-																														1,
-																														1
-																													]
-																												},
-																												"components":[],
-																												"child":[
-																													{
-																														"type":"Sprite3D",
-																														"instanceID":452,
-																														"props":{
-																															"name":"Bip001 R Hand",
-																															"active":true,
-																															"isStatic":false,
-																															"layer":0,
-																															"position":[
-																																0.2772667,
-																																0,
-																																-4.844665E-08
-																															],
-																															"rotation":[
-																																-0.812369,
-																																0.1496285,
-																																0.004083231,
-																																-0.5636056
-																															],
-																															"scale":[
-																																1,
-																																1,
-																																1
-																															]
-																														},
-																														"components":[],
-																														"child":[
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":453,
-																																"props":{
-																																	"name":"Bip001 R Finger0",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.04932638,
-																																		0.03611613,
-																																		0.05198064
-																																	],
-																																	"rotation":[
-																																		0.8163823,
-																																		0.3354906,
-																																		-0.05016647,
-																																		-0.4673856
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":454,
-																																		"props":{
-																																			"name":"Bip001 R Finger01",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.05925038,
-																																				0,
-																																				4.844665E-08
-																																			],
-																																			"rotation":[
-																																				5.870082E-09,
-																																				-1.369623E-08,
-																																				-0.3939346,
-																																				-0.9191385
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															},
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":455,
-																																"props":{
-																																	"name":"Bip001 R Finger1",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.1133332,
-																																		-0.009076699,
-																																		0.03341618
-																																	],
-																																	"rotation":[
-																																		-0.0003753862,
-																																		0.0001327185,
-																																		-0.3333126,
-																																		-0.9428163
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":456,
-																																		"props":{
-																																			"name":"Bip001 R Finger11",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.0489956,
-																																				4.844665E-08,
-																																				0
-																																			],
-																																			"rotation":[
-																																				-5.009028E-08,
-																																				-3.235954E-08,
-																																				-0.56861,
-																																				-0.8226073
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															},
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":457,
-																																"props":{
-																																	"name":"Bip001 R Finger2",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.1094169,
-																																		-0.007352337,
-																																		-0.01921569
-																																	],
-																																	"rotation":[
-																																		-0.006793279,
-																																		-0.02279579,
-																																		-0.2694506,
-																																		-0.9627205
-																																	],
-																																	"scale":[
-																																		1,
-																																		1,
-																																		1
-																																	]
-																																},
-																																"components":[],
-																																"child":[
-																																	{
-																																		"type":"Sprite3D",
-																																		"instanceID":458,
-																																		"props":{
-																																			"name":"Bip001 R Finger21",
-																																			"active":true,
-																																			"isStatic":false,
-																																			"layer":0,
-																																			"position":[
-																																				0.05029548,
-																																				0,
-																																				9.689331E-08
-																																			],
-																																			"rotation":[
-																																				-5.10423E-09,
-																																				5.427513E-09,
-																																				-0.6850773,
-																																				-0.7284704
-																																			],
-																																			"scale":[
-																																				1,
-																																				1,
-																																				1
-																																			]
-																																		},
-																																		"components":[],
-																																		"child":[]
-																																	}
-																																]
-																															},
-																															{
-																																"type":"Sprite3D",
-																																"instanceID":459,
-																																"props":{
-																																	"name":"Dummy_RHand",
-																																	"active":true,
-																																	"isStatic":false,
-																																	"layer":0,
-																																	"position":[
-																																		0.1124843,
-																																		0.04638369,
-																																		0.04182529
-																																	],
-																																	"rotation":[
-																																		0,
-																																		-0.04229726,
-																																		0,
-																																		-0.9991051
-																																	],
-																																	"scale":[
-																																		1.000001,
-																																		1,
-																																		1.000001
-																																	]
-																																},
-																																"components":[],
-																																"child":[]
-																															}
-																														]
-																													}
-																												]
-																											}
-																										]
-																									}
-																								]
-																							}
-																						]
-																					}
-																				]
-																			}
-																		]
-																	}
-																]
-															}
-														]
-													},
-													{
-														"type":"SkinnedMeshSprite3D",
-														"instanceID":460,
-														"props":{
-															"name":"gm",
-															"active":true,
-															"isStatic":false,
-															"layer":0,
-															"position":[
-																4.473613E-09,
-																0,
-																0
-															],
-															"rotation":[
-																0.7071068,
-																0,
-																0,
-																-0.7071068
-															],
-															"scale":[
-																1,
-																1,
-																1
-															],
-															"rootBone":417,
-															"boundBox":{
-																"min":[
-																	-0.8436238,
-																	-0.3458008,
-																	-0.7822517
-																],
-																"max":[
-																	1.307544,
-																	1.121167,
-																	0.7822515
-																]
-															},
-															"boundSphere":{
-																"center":[
-																	0.2319603,
-																	0.3876829,
-																	-1.490116E-07
-																],
-																"radius":1.518814
-															},
-															"bones":[
-																435,
-																439,
-																440,
-																418,
-																417,
-																436,
-																437,
-																438,
-																420,
-																422,
-																423,
-																421,
-																431,
-																430,
-																424,
-																427,
-																441,
-																442,
-																443,
-																445,
-																447,
-																448,
-																446,
-																444,
-																429,
-																449,
-																450,
-																428,
-																451,
-																452,
-																453,
-																455,
-																457,
-																458,
-																456,
-																454,
-																459,
-																432,
-																425,
-																426,
-																419,
-																433,
-																434
-															],
-															"enableRender":true,
-															"receiveShadows":true,
-															"castShadow":false,
-															"materials":[
-																{
-																	"path":"Assets/Material/GM.lmat"
-																}
-															],
-															"meshPath":"Assets/Mesh/gm-gm.lm"
-														},
-														"components":[],
-														"child":[]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type":"Sprite3D",
-										"instanceID":461,
+										"instanceID":400,
 										"props":{
 											"name":"@EndHumanSpawn01",
 											"active":true,
@@ -21155,7 +18424,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":462,
+										"instanceID":401,
 										"props":{
 											"name":"@EndHumanSpawn02",
 											"active":true,
@@ -21183,7 +18452,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":463,
+										"instanceID":402,
 										"props":{
 											"name":"@EndHumanSpawn03",
 											"active":true,
@@ -21211,7 +18480,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":464,
+										"instanceID":403,
 										"props":{
 											"name":"@EndHumanSpawn04",
 											"active":true,
@@ -21239,7 +18508,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":465,
+										"instanceID":404,
 										"props":{
 											"name":"@EndHumanSpawn05",
 											"active":true,
@@ -21267,7 +18536,7 @@
 									},
 									{
 										"type":"Sprite3D",
-										"instanceID":466,
+										"instanceID":405,
 										"props":{
 											"name":"@EndHumanSpawn06",
 											"active":true,
@@ -21299,7 +18568,7 @@
 					},
 					{
 						"type":"MeshSprite3D",
-						"instanceID":467,
+						"instanceID":406,
 						"props":{
 							"name":"SkyDome",
 							"active":true,
@@ -21335,7 +18604,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":468,
+								"instanceID":407,
 								"props":{
 									"name":"Moon",
 									"active":true,
@@ -21362,7 +18631,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":469,
+										"instanceID":408,
 										"props":{
 											"name":"Moon 1",
 											"active":true,
@@ -21401,7 +18670,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":470,
+								"instanceID":409,
 								"props":{
 									"name":"Stars",
 									"active":true,
@@ -21438,7 +18707,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":471,
+								"instanceID":410,
 								"props":{
 									"name":"Sun",
 									"active":true,
@@ -21465,7 +18734,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":472,
+										"instanceID":411,
 										"props":{
 											"name":"Sun 1",
 											"active":true,
@@ -21508,7 +18777,7 @@
 			},
 			{
 				"type":"Sprite3D",
-				"instanceID":473,
+				"instanceID":412,
 				"props":{
 					"name":"childPos",
 					"active":true,
@@ -21536,7 +18805,7 @@
 			},
 			{
 				"type":"Sprite3D",
-				"instanceID":474,
+				"instanceID":413,
 				"props":{
 					"name":"ghostPos",
 					"active":true,
@@ -21564,7 +18833,7 @@
 			},
 			{
 				"type":"Sprite3D",
-				"instanceID":475,
+				"instanceID":414,
 				"props":{
 					"name":"cagePos",
 					"active":true,
@@ -21572,7 +18841,7 @@
 					"layer":0,
 					"position":[
 						-10.8,
-						0.425,
+						0.5,
 						-3.52
 					],
 					"rotation":[
@@ -21592,7 +18861,7 @@
 			},
 			{
 				"type":"Sprite3D",
-				"instanceID":476,
+				"instanceID":415,
 				"props":{
 					"name":"rescuePos",
 					"active":true,
@@ -21619,7 +18888,7 @@
 				"child":[
 					{
 						"type":"Sprite3D",
-						"instanceID":477,
+						"instanceID":416,
 						"props":{
 							"name":"rescuePos",
 							"active":true,
@@ -21647,7 +18916,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":478,
+						"instanceID":417,
 						"props":{
 							"name":"rescuePos (1)",
 							"active":true,
@@ -21675,7 +18944,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":479,
+						"instanceID":418,
 						"props":{
 							"name":"rescuePos (2)",
 							"active":true,
@@ -21703,7 +18972,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":480,
+						"instanceID":419,
 						"props":{
 							"name":"rescuePos (3)",
 							"active":true,
@@ -21731,7 +19000,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":481,
+						"instanceID":420,
 						"props":{
 							"name":"rescuePos (4)",
 							"active":true,
@@ -21759,7 +19028,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":482,
+						"instanceID":421,
 						"props":{
 							"name":"rescuePos (5)",
 							"active":true,
@@ -21787,7 +19056,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":483,
+						"instanceID":422,
 						"props":{
 							"name":"rescuePos (6)",
 							"active":true,
@@ -21815,7 +19084,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":484,
+						"instanceID":423,
 						"props":{
 							"name":"rescuePos (7)",
 							"active":true,
@@ -21843,7 +19112,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":485,
+						"instanceID":424,
 						"props":{
 							"name":"rescuePos (8)",
 							"active":true,
@@ -21871,7 +19140,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":486,
+						"instanceID":425,
 						"props":{
 							"name":"rescuePos (9)",
 							"active":true,
@@ -21899,7 +19168,7 @@
 					},
 					{
 						"type":"Sprite3D",
-						"instanceID":487,
+						"instanceID":426,
 						"props":{
 							"name":"rescuePos (10)",
 							"active":true,
@@ -21920,6 +19189,1159 @@
 								1,
 								1,
 								1
+							]
+						},
+						"components":[],
+						"child":[]
+					}
+				]
+			},
+			{
+				"type":"Sprite3D",
+				"instanceID":427,
+				"props":{
+					"name":"keyBoxPos",
+					"active":true,
+					"isStatic":false,
+					"layer":0,
+					"position":[
+						0,
+						0,
+						0
+					],
+					"rotation":[
+						0,
+						0,
+						0,
+						-1
+					],
+					"scale":[
+						1,
+						1,
+						1
+					]
+				},
+				"components":[],
+				"child":[
+					{
+						"type":"Sprite3D",
+						"instanceID":428,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-30.417,
+								0,
+								-11.262
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":429,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-30.417,
+								0,
+								-6.39
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":430,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-14.74,
+								6.188,
+								-21.83
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":431,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								6.699,
+								6.19,
+								18.856
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":432,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-14.866,
+								6.19,
+								26.679
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":433,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-1.77,
+								6.19,
+								26.679
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":434,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-3.292,
+								6.19,
+								23.33
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":435,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-33.16,
+								6.19,
+								23.33
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":436,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-31.165,
+								6.19,
+								-21.573
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":437,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-0.88,
+								0,
+								-27.116
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":438,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-4.287,
+								0,
+								7.313
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":439,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								3.676,
+								6.19,
+								0.88
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":440,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								5.47,
+								6.19,
+								26.78
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":441,
+						"props":{
+							"name":"keyBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								2.15,
+								6.19,
+								-34.88
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					}
+				]
+			},
+			{
+				"type":"Sprite3D",
+				"instanceID":442,
+				"props":{
+					"name":"blueBoxPos",
+					"active":true,
+					"isStatic":false,
+					"layer":0,
+					"position":[
+						0,
+						0,
+						0
+					],
+					"rotation":[
+						0,
+						0,
+						0,
+						-1
+					],
+					"scale":[
+						1,
+						1,
+						1
+					]
+				},
+				"components":[],
+				"child":[
+					{
+						"type":"Sprite3D",
+						"instanceID":443,
+						"props":{
+							"name":"BlueBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-23.12,
+								6.194,
+								21.86
+							],
+							"rotation":[
+								0.5,
+								-0.5,
+								-0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":444,
+						"props":{
+							"name":"BlueBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								10.794,
+								6.194,
+								-17.9
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":445,
+						"props":{
+							"name":"BlueBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								6.53,
+								0,
+								-26.38
+							],
+							"rotation":[
+								0.7071068,
+								0,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					}
+				]
+			},
+			{
+				"type":"Sprite3D",
+				"instanceID":446,
+				"props":{
+					"name":"greenBoxPos",
+					"active":true,
+					"isStatic":false,
+					"layer":0,
+					"position":[
+						0,
+						0,
+						0
+					],
+					"rotation":[
+						0,
+						0,
+						0,
+						-1
+					],
+					"scale":[
+						1,
+						1,
+						1
+					]
+				},
+				"components":[],
+				"child":[
+					{
+						"type":"Sprite3D",
+						"instanceID":447,
+						"props":{
+							"name":"GreenBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-16.86,
+								6.194,
+								-11.43
+							],
+							"rotation":[
+								0.5,
+								-0.5,
+								-0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":448,
+						"props":{
+							"name":"GreenBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-34.794,
+								6.19,
+								-8.36
+							],
+							"rotation":[
+								0.5,
+								-0.5,
+								-0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":449,
+						"props":{
+							"name":"GreenBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								5.23,
+								0,
+								-12.51
+							],
+							"rotation":[
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					}
+				]
+			},
+			{
+				"type":"Sprite3D",
+				"instanceID":450,
+				"props":{
+					"name":"redBoxPos",
+					"active":true,
+					"isStatic":false,
+					"layer":0,
+					"position":[
+						0,
+						0,
+						0
+					],
+					"rotation":[
+						0,
+						0,
+						0,
+						-1
+					],
+					"scale":[
+						1,
+						1,
+						1
+					]
+				},
+				"components":[],
+				"child":[
+					{
+						"type":"Sprite3D",
+						"instanceID":451,
+						"props":{
+							"name":"RedBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								3.45,
+								6.194,
+								-4.73
+							],
+							"rotation":[
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":452,
+						"props":{
+							"name":"RedBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-15.998,
+								6.19,
+								38.74
+							],
+							"rotation":[
+								0.5,
+								-0.5,
+								-0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":453,
+						"props":{
+							"name":"RedBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-12.691,
+								6.43,
+								-14.6
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0.7071068,
+								0
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":454,
+						"props":{
+							"name":"RedBoxPos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-19.67,
+								0,
+								-11.35
+							],
+							"rotation":[
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
+					}
+				]
+			},
+			{
+				"type":"Sprite3D",
+				"instanceID":455,
+				"props":{
+					"name":"stonePos",
+					"active":true,
+					"isStatic":false,
+					"layer":0,
+					"position":[
+						0,
+						0,
+						0
+					],
+					"rotation":[
+						0,
+						0,
+						0,
+						-1
+					],
+					"scale":[
+						1,
+						1,
+						1
+					]
+				},
+				"components":[],
+				"child":[
+					{
+						"type":"Sprite3D",
+						"instanceID":456,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								0,
+								0,
+								0
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								0.5,
+								0.5,
+								0.5
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":457,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-15.57,
+								0,
+								-16.04
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								0.5,
+								0.5,
+								0.5
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":458,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-8.354,
+								0,
+								-14.543
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								0.5,
+								0.5,
+								0.5
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":459,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								18.07,
+								0,
+								-14.543
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								0.5,
+								0.5,
+								0.5
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":460,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								15.51,
+								0,
+								0.87
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5,
+								0.5,
+								0.5
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":461,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								12.532,
+								6.217,
+								4.19
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":462,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-10.76,
+								6.217,
+								0.33
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":463,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-8.856,
+								6.217,
+								10.6
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":464,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-1.601,
+								6.217,
+								16.74
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":465,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-29.62,
+								6.217,
+								0.9
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":466,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								1.26,
+								6.217,
+								-20.06
+							],
+							"rotation":[
+								0,
+								0.7071068,
+								0,
+								-0.7071068
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
+							]
+						},
+						"components":[],
+						"child":[]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":467,
+						"props":{
+							"name":"stonePos",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								-8.142,
+								6.217,
+								-18.217
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								0.5000002,
+								0.5,
+								0.5000002
 							]
 						},
 						"components":[],

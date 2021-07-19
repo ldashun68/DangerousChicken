@@ -15,13 +15,13 @@ class LayaShaderGUI : ShaderGUI
     }
     public enum RenderMode
     {
-        /**äÖÈ¾×´Ì¬_²»Í¸Ã÷¡£*/
+        /**æ¸²æŸ“çŠ¶æ€_ä¸é€æ˜ã€‚*/
         Opaque = 0,
-        /**äÖÈ¾×´Ì¬_Í¸Ã÷²âÊÔ¡£*/
+        /**æ¸²æŸ“çŠ¶æ€_é€æ˜æµ‹è¯•ã€‚*/
         Cutout = 1,
-        /**äÖÈ¾×´Ì¬_Í¸Ã÷»ìºÏ¡£*/
+        /**æ¸²æŸ“çŠ¶æ€_é€æ˜æ··åˆã€‚*/
         Transparent = 2,
-        /**äÖÈ¾×´Ì¬_×Ô¶¨Òå¡£*/
+        /**æ¸²æŸ“çŠ¶æ€_è‡ªå®šä¹‰ã€‚*/
         Custom = 3
     }
 
@@ -137,6 +137,16 @@ class LayaShaderGUI : ShaderGUI
 
     MaterialProperty isVertexColor = null;
 
+    //miner SubSurfaceScattering
+    MaterialProperty enableSubsurfaceScattering = null;
+    MaterialProperty thinknessSource = null;
+    //miner SubSurfaceScattering Property
+    MaterialProperty transmissionrate = null;
+    MaterialProperty IBackDiffuse = null;
+    MaterialProperty IBackScale = null;
+    MaterialProperty lightInsideAttenuation = null;
+    MaterialProperty thinknessTexture = null;
+
     bool m_FirstTimeApply = true;
 
     public void FindProperties(MaterialProperty[] props)
@@ -167,6 +177,15 @@ class LayaShaderGUI : ShaderGUI
         depthTest = FindProperty("_ZTest", props);
 
         isVertexColor = FindProperty("_IsVertexColor", props);
+
+       //miner SubSurfaceScattering
+        enableSubsurfaceScattering = FindProperty("_enableSubsurfaceScattering", props);
+        thinknessSource = FindProperty("_ThinknessSource",props);
+        transmissionrate = FindProperty("transmissionRate",props);
+        IBackDiffuse = FindProperty("backDiffuse",props);
+        IBackScale = FindProperty("backScale",props);
+        lightInsideAttenuation = FindProperty("transmissionColor",props);
+        thinknessTexture = FindProperty("thinknessTexture", props);
     }
 
 
@@ -228,6 +247,14 @@ class LayaShaderGUI : ShaderGUI
             //scaleAndOffset
             m_MaterialEditor.TextureScaleOffsetProperty(albedoTexture);
 
+            m_MaterialEditor.ShaderProperty(enableSubsurfaceScattering, Styles.enableSubsurfaceScattering);
+            if (enableSubsurfaceScattering.floatValue==1.0){
+                m_MaterialEditor.TexturePropertySingleLine(Styles.thinknessTexture, thinknessTexture, lightInsideAttenuation);
+                m_MaterialEditor.ShaderProperty(transmissionrate, Styles.transmissionrate, MaterialEditor.kMiniTextureFieldLabelIndentLevel);
+                m_MaterialEditor.ShaderProperty(IBackDiffuse,Styles.backdiffuse, MaterialEditor.kMiniTextureFieldLabelIndentLevel);
+                m_MaterialEditor.ShaderProperty(IBackScale,Styles.backScale, MaterialEditor.kMiniTextureFieldLabelIndentLevel);
+            }
+            
             GUILayout.Box("", GUILayout.Height(1), GUILayout.ExpandWidth(true));
 
             //Advanced properties
@@ -366,6 +393,21 @@ class LayaShaderGUI : ShaderGUI
                     material.DisableKeyword("ENABLEVERTEXCOLOR");
                 }
 
+                if (enableSubsurfaceScattering.floatValue == 1.0)
+                {
+                    material.EnableKeyword("ENABLETRANSMISSION");
+                }
+                else
+                {
+                    material.DisableKeyword("ENABLETRANSMISSION");
+                }
+                if(thinknessTexture.textureValue!=null){
+                    material.EnableKeyword("THICKNESSMAP");
+                }
+                else{
+                    material.DisableKeyword("THICKNESSMAP");
+                }
+
                 onChangeRender(material, (RenderMode)material.GetFloat("_Mode"));
             }
         }
@@ -443,7 +485,7 @@ class LayaShaderGUI : ShaderGUI
             {
                 material.DisableKeyword("EnableLighting");
             }
-        }
+        } 
     }
 
     public static class Styles
@@ -472,6 +514,13 @@ class LayaShaderGUI : ShaderGUI
         public static string PrimaryText = "Primary Properties";
         public static string AdvancedText = "Advanced Properties";
         public static GUIContent enableVertexColor = new GUIContent("Enable VertexColor", "Enable VertexColor");
+
+        public static GUIContent enableSubsurfaceScattering = new GUIContent("Enable Transmission", "Enable Transmission");
+        public static GUIContent transmissionrate = new GUIContent("Transmission Rate", "Transmission Rate");
+        public static GUIContent backdiffuse = new GUIContent("Back Diffuse","Back Diffuse");
+        public static GUIContent backScale = new GUIContent("Back Scale","Back Scale");
+        public static GUIContent lightInsideAttenuation = new GUIContent("Transmission Color", "Transmission Color");
+        public static GUIContent thinknessTexture = new GUIContent("Thinkness Texture", "Thinkness Texture");
 
         public static readonly string[] srcBlendNames = Enum.GetNames(typeof(SrcBlendMode));
         public static readonly string[] dstBlendNames = Enum.GetNames(typeof(DstBlendMode));

@@ -17,7 +17,8 @@ export default class MgobeManager extends RabManager {
     private sendServerID:Map<string, number>;
     private recvServerID:Map<string, number>;
     private gamelogic:GameLogicManager;
-    private _roomList:Array<MGOBE.types.RoomInfo>
+    private _roomList:Array<MGOBE.types.RoomInfo>;
+    private roomOwner: string;
 
     protected OnInit() {
         this.gamelogic = GameManager.gameLogicManager
@@ -38,30 +39,49 @@ export default class MgobeManager extends RabManager {
         };
         
         MGOBE.Listener.init(gameConfig, config, (event) => {
-            if(event.code == 0)
-            {
+            if (event.code == 0) {
                 Util.Log("初始化对战引擎成功",MGOBE.Player.id);
                 if (event.code === MGOBE.ErrCode.EC_OK) {
-                    this.room = new MGOBE.Room();
-                    MGOBE.Listener.add(this.room);
+                    this.initRoom();
                     this.setBroadcast();
                     GameController.onInitHall();
                     this.SendMessage(GameNotity.GameMessage_LoadingEnd);
-                    MGOBE.Room.getMyRoom((event)=>{
-                        Util.Log("初始化对战引擎成功",event);
-                        if (event.code === MGOBE.ErrCode.EC_OK) {
-                            this.room.initRoom(event.data.roomInfo);
-                            this.onEnterGameRoom(event.data)
-                            Util.Log("玩家已在房间内：", event.data.roomInfo.name);
-                        }
-                        if (event.code === 20011) {
-                            Util.Log("玩家不在房间内");
-                        }
-                    })
                 }
             }
             Util.Log("初始化对战引擎==",event);
         });
+    }
+
+    private _frameHandler:Map<string,Function> = new Map<string,Function> ();
+    /**
+     * 注册帧回调消息
+     * @param key 
+     * @param call 
+     */
+    public OnreceiveFrameMessage(key:string,call:Function)
+    {
+        if(!this._frameHandler.has(key))
+        {
+            this._frameHandler.set(key,call);
+        }
+    }
+
+    private initRoom (): void {
+        this._frame = null;
+        this.room = new MGOBE.Room();
+        MGOBE.Listener.add(this.room);
+        
+        MGOBE.Room.getMyRoom((event)=>{
+            Util.Log("初始化对战引擎成功", event);
+            if (event.code === MGOBE.ErrCode.EC_OK) {
+                this.room.initRoom(event.data.roomInfo);
+                this.onEnterGameRoom(event.data)
+                Util.Log("玩家已在房间内：", event.data.roomInfo.name);
+            }
+            if (event.code === 20011) {
+                Util.Log("玩家不在房间内");
+            }
+        })
     }
 
     /**服务器消息接收 */
@@ -69,35 +89,33 @@ export default class MgobeManager extends RabManager {
 		if (!this.room) { return; }
 
         this.room.onJoinRoom = event => {
+            let joinPlayerId = event.data.joinPlayerId;
+            MGOBE.Room.getMyRoom((event)=>{
+                if (event.code === MGOBE.ErrCode.EC_OK) {
+                    this._roomInfo = event.data.roomInfo;
+                    this.SendMessage(GameMessage.MGOBE_JoinRoom, joinPlayerId);
+                }
+            });
             Util.Log("新玩家加入", event);
         }
 
         this.room.onLeaveRoom = event => {
-            Util.Log("退出房间:",event);
-            if(this._roomInfo && event.data.roomInfo.id == this._roomInfo.id)
-            {
-                if(event.data.roomInfo.playerList.length < 2)
-                {
-                    if(MGOBE.Player.id == this._roomInfo.owner)
-                    {
-                        this.dismissRoom();
-                    }
+            let leavePlayerId = event.data.leavePlayerId;
+            MGOBE.Room.getMyRoom((event)=>{
+                if (event.code === MGOBE.ErrCode.EC_OK) {
+                    this._roomInfo = event.data.roomInfo;
+                    this.SendMessage(GameMessage.MGOBE_LeaveRoom, leavePlayerId);
                 }
-            }
+            });
+            Util.Log("退出房间:",event);
         };
 
         this.room.onDismissRoom = event => {
             Util.Log("解散房间:",event);
-            if(this._roomInfo && event.data.roomInfo.id == this._roomInfo.id)
-            {
-                Laya.timer.clearAll(this);
-                GameController.gameOver();
-            }
         };
 
 		this.room.onChangeCustomPlayerStatus = event => {
-            if(this._roomInfo && event.data.roomInfo.id == this._roomInfo.id)
-            {
+            if(this._roomInfo && event.data.roomInfo.id == this._roomInfo.id) {
                 GameController.gameStateManager.setRoomState(event.data.changePlayerId, event.data.customPlayerStatus);
             }
         };
@@ -112,9 +130,6 @@ export default class MgobeManager extends RabManager {
                 if (event.data.data["cmd"].indexOf(UnitServerType[index]) != -1) {
                     let sendServerID = event.data.data["sendServerID"];
                     bool = (this.recvServerID.get(UnitServerType[index]) < sendServerID);
-                    if (this.getPlayInfo((event.data.data as SendGameServer).senderID).isRobot == true) {
-                        bool = true;
-                    }
                     if (bool == true) {
                         this.recvServerID.set(UnitServerType[index], sendServerID);
                         if (index.indexOf(UnitServerType.role) != -1) {
@@ -147,41 +162,37 @@ export default class MgobeManager extends RabManager {
         };
 
         this.room.onRecvFrame = event => {
-            if(this._roomInfo && event.data.frame.roomId == this._roomInfo.id)
-            {
-                if(event.data.frame.items.length > 0)
-                {
-                    this._frame = (event.data.frame);
+            if (this._roomInfo && event.data.frame.roomId == this._roomInfo.id) {
+                if (event.data.frame.items.length > 0) {
+                    // this._frame = (event.data.frame);
+                    this._frameHandler.forEach((item,key) => {
+                        item&&item(event.data.frame)
+                    });
                 }
             }
         };
 
         this.room.onChangePlayerNetworkState = event => {
-            if(this._roomInfo)
-            {
+            if (this._roomInfo) {
                 this._roomInfo =event.data.roomInfo;
-                if(event.data.networkState == MGOBE.types.NetworkState.COMMON_OFFLINE)
-                {
-                    this.SendMessage(GameMessage.MGOBE_RoomOffLine, event.data.changePlayerId)
+                if (event.data.networkState == MGOBE.types.NetworkState.COMMON_OFFLINE) {
+                    
+                }
 
-                }if(event.data.networkState == MGOBE.types.NetworkState.RELAY_OFFLINE)
-                {
+                if (event.data.networkState == MGOBE.types.NetworkState.RELAY_OFFLINE) {
                     this.SendMessage(GameMessage.MGOBE_GameOffLine, event.data.changePlayerId)
-                    if(event.data.changePlayerId == MGOBE.Player.id)
-                    {
+                    if(event.data.changePlayerId == MGOBE.Player.id) {
                         Util.Log("我在游戏中掉线了")
                     }
                 }
 
-                if(event.data.networkState == MGOBE.types.NetworkState.COMMON_ONLINE)
-                {
-                    if(event.data.changePlayerId == MGOBE.Player.id)
-                    {
-                        Util.Log("我在游戏中又上线了")
+                if (event.data.networkState == MGOBE.types.NetworkState.COMMON_ONLINE) {
+                    if(event.data.changePlayerId == MGOBE.Player.id) {
+                        Util.Log("我在游戏中又上线了");
+                        this.SendMessage(GameMessage.MGOBE_GameOnLine);
                     }
-
-                }if(event.data.networkState == MGOBE.types.NetworkState.RELAY_ONLINE)
-                {
+                }
+                if (event.data.networkState == MGOBE.types.NetworkState.RELAY_ONLINE) {
                     
                 }
             }
@@ -189,9 +200,12 @@ export default class MgobeManager extends RabManager {
 
         this.room.onChangeRoom = event => {
             console.log("房间属性变更", event.data.roomInfo);
-            if(this._roomInfo.id == event.data.roomInfo.id)
-            {
+            if(this._roomInfo.id == event.data.roomInfo.id) {
                 this._roomInfo = event.data.roomInfo;
+                if (this.roomOwner != this._roomInfo.owner) {
+                    this.roomOwner = this._roomInfo.owner+"";
+                    this.SendMessage(GameMessage.MGOBE_ChangeRoomOwner);
+                }
             }
          };
 	}
@@ -204,15 +218,9 @@ export default class MgobeManager extends RabManager {
      */
     private onEnterGameRoom(data:MGOBE.types.GetRoomByRoomIdRsp)
     {
-        if(data.roomInfo)
-        {
-            Util.Log("玩家当前自定义的状态：",MGOBE.Player.customPlayerStatus);
-            this.room.leaveRoom({}, event => {
-                if (event.code === MGOBE.ErrCode.EC_OK) {
-                    Util.Log("先退出房间",event.code);
-                }else {
-                    Util.Log(`退出房间失败，错误码：${event.code}`);
-                }
+        if(data.roomInfo) {
+            this.leaveRoom(() => {
+
             });
         }
     }
@@ -272,7 +280,8 @@ export default class MgobeManager extends RabManager {
                 Util.Log("创建房间成功");
                 this._roomInfo = event.data.roomInfo;
                 this.onEnterGame();
-            }else{
+            }
+            else {
 
             }
         })
@@ -316,33 +325,58 @@ export default class MgobeManager extends RabManager {
      * @param breakCall 
      */
     public leaveRoom(breakCall:Function) {
-		this.room.leaveRoom({}, event => {
-            if (event.code === MGOBE.ErrCode.EC_OK) {
-                Util.Log("退出房间成功",event.code);
-                this.SendMessage(GameMessage.MGOBE_LeaveRoom);
-                breakCall&&breakCall();
-                // this.room = null;
-            }else {
-                Util.Log(`退出房间失败，错误码：${event.code}`);
-                breakCall&&breakCall();
-                if(MGOBE.Player.id == this._roomInfo.owner)
-                {
-                    this.dismissRoom();
-                }
+        this._frame = null;
+        if (this._roomInfo == null) {
+            this.room.leaveRoom(() => {
+
+            });
+            return;
+        }
+
+        if (this._roomInfo.playerList.length > 1) {
+            // 修改房主
+            if (this.isRoomOwner() == true) {
+                this._roomInfo.playerList.forEach((value: MGOBE.types.PlayerInfo, index: number) => {
+                    if (value.id != this._roomInfo.owner) {
+                        this.changeRoom(false, value.id);
+                        return;
+                    }
+                });
             }
-        });
+            
+            this.room.leaveRoom({}, event => {
+                if (event.code === MGOBE.ErrCode.EC_OK) {
+                    Util.Log("退出房间成功",event.code);
+                    breakCall&&breakCall();
+                }else {
+                    Util.Log(`退出房间失败，错误码：${event.code}`);
+                }
+            });
+        }
+        else {
+            this.dismissRoom();
+        }
 	}
 
     /**解散房间 */
     public dismissRoom()
     {
-        this.room.dismissRoom({}, event => {
-            if (event.code === MGOBE.ErrCode.EC_OK) {
-                Util.Log("解散房间成功",event.code);
-            }else {
-                Util.Log(`解散房间失败，错误码：${event.code}`);
-            }
-        });
+        if (this._roomInfo == null) {
+            return;
+        }
+        
+        if (MGOBE.Player.id == this._roomInfo.owner) {
+            //this.room.stopFrameSync({});
+            this.room.dismissRoom({}, event => {
+                if (event.code === MGOBE.ErrCode.EC_OK) {
+                    Laya.timer.clearAll(this);
+                    GameController.gameOver();
+                    Util.Log("解散房间成功",event.code);
+                }else {
+                    Util.Log(`解散房间失败，错误码：${event.code}`);
+                }
+            });
+        }
     }
 
 	/**取消匹配 */
@@ -353,12 +387,12 @@ export default class MgobeManager extends RabManager {
 	}
 
     /**修改房间信息 */
-    public changeRoom(isForbidJoin:boolean)
+    public changeRoom(isForbidJoin:boolean, owner:string = this._roomInfo.owner)
     {
         const changeRoomPara = {
             isForbidJoin: isForbidJoin,
             // roomName?: string;
-            // owner?: string;
+            owner: owner,
             // isPrivate?: boolean;
             // customProperties?: string;
         };
@@ -402,16 +436,14 @@ export default class MgobeManager extends RabManager {
         }
 
         let sendServerID = 0;
-        if (this.getPlayInfo(_sendPlayid).isRobot == false) {
-            for (let index in UnitServerType) {
-                if (cmd.indexOf(UnitServerType[index]) != -1) {
-                    sendServerID = this.sendServerID.get(UnitServerType[index])+1;
-                    this.sendServerID.set(UnitServerType[index], sendServerID);
-                    if (sendServerID <= this.recvServerID.get(UnitServerType[index])) {
-                        return;
-                    }
-                    break;
+        for (let index in UnitServerType) {
+            if (cmd.indexOf(UnitServerType[index]) != -1) {
+                sendServerID = this.sendServerID.get(UnitServerType[index])+1;
+                this.sendServerID.set(UnitServerType[index], sendServerID);
+                if (sendServerID <= this.recvServerID.get(UnitServerType[index])) {
+                    return;
                 }
+                break;
             }
         }
 
@@ -441,7 +473,8 @@ export default class MgobeManager extends RabManager {
         this.room.sendFrame(sendFramePara, event => {
             if (event.code === MGOBE.ErrCode.EC_OK) {
                 
-            } else {
+            }
+            else {
                 Util.Log(`发送帧消息失败，错误码：${event.code}`);
             }
         });
@@ -509,18 +542,11 @@ export default class MgobeManager extends RabManager {
             if(roomList) {
                 this._roomList = roomList;
                 let arr = []
-                for(var i = 0;i<this._roomList.length;i++)
-                {
-                    if(this._roomList[i].type == roomType)
-                    {
-                        if(!this._roomList[i].isForbidJoin && !this._roomList[i].isPrivate)
-                        {
-                            if(this._roomList[i].maxPlayers > this._roomList[i].playerList.length)
-                            {
-                                if(this._roomList[i].frameSyncState == MGOBE.types.FrameSyncState.STOP)
-                                {
-                                    arr.push(this._roomList[i]);
-                                }
+                for(var i = 0;i<this._roomList.length;i++) {
+                    if(this._roomList[i].type == roomType) {
+                        if(!this._roomList[i].isForbidJoin && !this._roomList[i].isPrivate) {
+                            if(this._roomList[i].maxPlayers > this._roomList[i].playerList.length) {
+                                arr.push(this._roomList[i]);
                             }
                         }
                     }
@@ -559,6 +585,8 @@ export default class MgobeManager extends RabManager {
             this.recvServerID.set(UnitServerType[index], 0);
         };
 
+        this.roomOwner = this._roomInfo.owner+"";
+        this.startFrameSync();
         this.SendMessage(GameMessage.MGOBE_EnterRoomFinish);
     }
 
@@ -580,11 +608,6 @@ export default class MgobeManager extends RabManager {
         return this._roomInfo.owner == MGOBE.Player.id;
     }
     
-    /**清空帧数据 */
-    public clearFrame() {
-        this._frame = null;
-    }
-
     /**获取房间信息 */
     public get roomInfo():MGOBE.types.RoomInfo {
         return this._roomInfo

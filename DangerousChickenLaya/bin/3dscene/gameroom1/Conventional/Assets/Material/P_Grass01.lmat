@@ -1,26 +1,23 @@
 {
 	"version":"LAYAMATERIAL:02",
 	"props":{
-		"type":"Laya.UnlitMaterial",
-		"name":"P_Grass01",
+		"type":"Laya.EffectMaterial",
 		"renderStates":[
 			{
-				"cull":2,
-				"blend":0,
-				"srcBlend":1,
-				"dstBlend":0,
-				"depthWrite":true,
+				"cull":0,
+				"blend":1,
+				"srcBlend":770,
+				"dstBlend":771,
+				"depthWrite":false,
 				"depthTest":515
 			}
 		],
-		"enableVertexColor":false,
-		"alphaTest":true,
-		"alphaTestValue":0.5,
-		"renderQueue":2450,
-		"albedoIntensity":1,
+		"name":"P_Grass01",
+		"alphaTest":false,
+		"renderQueue":3000,
 		"textures":[
 			{
-				"name":"albedoTexture",
+				"name":"texture",
 				"path":"../Texture2D/P_Grass01.png",
 				"constructParams":[
 					256,
@@ -47,12 +44,12 @@
 				]
 			},
 			{
-				"name":"albedoColor",
+				"name":"color",
 				"value":[
-					0.490566,
-					0.490566,
-					0.490566,
-					1
+					0.5,
+					0.5,
+					0.5,
+					0.5
 				]
 			}
 		],

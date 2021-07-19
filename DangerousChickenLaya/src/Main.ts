@@ -4,12 +4,12 @@ class Main {
 	constructor() {
 		//根据IDE设置初始化引擎		
 		if (window["Laya3D"]) 
-			Laya3D.init(1334, 750, null,Laya.Handler.create(this,this.initMain));
+			Laya3D.init(1334, 750,null,Laya.Handler.create(this,this.initMain));
 		else {
 			Laya.init(1334, 750, Laya["WebGL"]);
-			// Laya.init(1334, Laya.Browser.width / 1334 * 1028, Laya["WebGL"]);
 			this.initMain();
 		}
+	
 	}
 	initMain(){
 		Laya["Physics"] && Laya["Physics"].enable();
@@ -25,12 +25,11 @@ class Main {
 		//打开调试面板（通过IDE设置调试模式，或者url地址增加debug=true参数，均可打开调试面板）
 		if (GameConfig.debug || Laya.Utils.getQueryString("debug") == "true") Laya.enableDebugPanel();
 		if (GameConfig.physicsDebug && Laya["PhysicsDebugDraw"]) Laya["PhysicsDebugDraw"].enable();
-		GameConfig.stat = true;
-		if (GameConfig.stat)
-			//Laya.Stat.show();
+		if (GameConfig.stat) Laya.Stat.show();
 		Laya.alertGlobalError(true);
-		// Laya.URL.basePath = "https://xyx-znc-cdn.oss-cn-hangzhou.aliyuncs.com/ttt/v1.0.07/";
+
 		//激活资源版本控制，version.json由IDE发布功能自动生成，如果没有也不影响后续流程
+		//Laya.URL.basePath = "https://xyx-znc-cdn.oss-cn-hangzhou.aliyuncs.com/kbnn/v1.0.0/";
 		Laya.ResourceVersion.enable("version.json", Laya.Handler.create(this, this.onVersionLoaded), Laya.ResourceVersion.FILENAME_VERSION);
 	}
 

@@ -5,6 +5,10 @@ import ViewConfig from "../ViewConfig";
 import ResourceManager from "./ResourceManager";
 import RoleManager from "./RoleManager";
 import { PlayerRoomState } from "../model/DataType";
+import DoorManager from "./DoorManager";
+import PropManager from "./PropManager";
+import SkillManager from "./SkillManager";
+import TaskManager from "./TaskManager";
 
 /**游戏控制器 */
 class GameController {
@@ -13,16 +17,20 @@ class GameController {
     private _gameStateManager:GameStateManager;
     private _resourceManager:ResourceManager;
     private _roleManager:RoleManager;
+    private _doorManager:DoorManager;
+    private _propManager:PropManager;
+    private _skillManager:SkillManager;
+    private _taskManager:TaskManager;
 
     public onInitHall()
     {
         this._resourceManager = GameManager.addManager(ResourceManager);
         this._gameStateManager = GameManager.addManager(GameStateManager);
-    }
-
-    public onInitRoom()
-    {
         this._roleManager = GameManager.addManager(RoleManager);
+        this._doorManager = GameManager.addManager(DoorManager);
+        this._propManager = GameManager.addManager(PropManager);
+        this._skillManager = GameManager.addManager(SkillManager);
+        this._taskManager = GameManager.addManager(TaskManager);
     }
 
     /**通信管理器 */
@@ -65,6 +73,46 @@ class GameController {
         return this._roleManager;
     }
 
+    /**门管理器 */
+    public get doorManager():DoorManager
+    {
+        if(!this._doorManager)
+        {
+            this._doorManager = GameManager.getManager(DoorManager);
+        }
+        return this._doorManager;
+    }
+
+    /**道具管理器 */
+    public get propManager():PropManager
+    {
+        if(!this._propManager)
+        {
+            this._propManager = GameManager.getManager(PropManager);
+        }
+        return this._propManager;
+    }
+
+    /**技能管理器 */
+    public get skillManager():SkillManager
+    {
+        if(!this._skillManager)
+        {
+            this._skillManager = GameManager.getManager(SkillManager);
+        }
+        return this._skillManager;
+    }
+
+    /**任务管理器 */
+    public get taskManager():TaskManager
+    {
+        if(!this._taskManager)
+        {
+            this._taskManager = GameManager.getManager(TaskManager);
+        }
+        return this._taskManager;
+    }
+
     /**离开房间 */
     public leaveRoom()
     {
@@ -79,14 +127,19 @@ class GameController {
     /**游戏结束 */
     public gameOver()
     {
-        GameManager.removeManager(RoleManager);
+        this._roleManager.removeRole(null);
+        this._skillManager.removeSkill();
+        this._propManager.removeProp();
 
         if (this.gameStateManager.ME <= PlayerRoomState.gameLoading) {
             GameManager.uimanager.onCloseView(ViewConfig.WaitingRoomView);
             GameManager.uimanager.onCreateView(ViewConfig.HallView);
         }
         else {
-
+            GameManager.gameScene3D.onRemoveScene();
+            GameManager.uimanager.onCloseView(ViewConfig.GameView);
+            GameManager.uimanager.onCloseView(ViewConfig.JoystickView);
+            GameManager.uimanager.onCreateView(ViewConfig.OverView);
         }
     }
     

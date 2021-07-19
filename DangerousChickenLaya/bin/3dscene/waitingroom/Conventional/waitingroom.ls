@@ -898,7 +898,7 @@
 									"position":[
 										-7.82,
 										3,
-										4.78
+										6.88
 									],
 									"rotation":[
 										0,
@@ -909,7 +909,7 @@
 									"scale":[
 										0.4,
 										6,
-										9.5
+										6.62
 									]
 								},
 								"components":[
@@ -1039,14 +1039,93 @@
 									}
 								],
 								"child":[]
+							},
+							{
+								"type":"Sprite3D",
+								"instanceID":22,
+								"props":{
+									"name":"wall (14)",
+									"active":true,
+									"isStatic":false,
+									"layer":0,
+									"position":[
+										-7.820001,
+										0.03,
+										3.79
+									],
+									"rotation":[
+										0,
+										0,
+										0,
+										-1
+									],
+									"scale":[
+										0.4,
+										6,
+										6.62
+									]
+								},
+								"components":[
+									{
+										"type":"PhysicsCollider",
+										"restitution":0,
+										"friction":0.5,
+										"rollingFriction":0,
+										"shapes":[
+											{
+												"type":"BoxColliderShape",
+												"center":[
+													0,
+													0,
+													0
+												],
+												"size":[
+													1,
+													1,
+													1
+												]
+											}
+										],
+										"isTrigger":true
+									}
+								],
+								"child":[]
 							}
 						]
+					},
+					{
+						"type":"Sprite3D",
+						"instanceID":23,
+						"props":{
+							"name":"prop",
+							"active":true,
+							"isStatic":false,
+							"layer":0,
+							"position":[
+								0,
+								0,
+								0
+							],
+							"rotation":[
+								0,
+								0,
+								0,
+								-1
+							],
+							"scale":[
+								1,
+								1,
+								1
+							]
+						},
+						"components":[],
+						"child":[]
 					}
 				]
 			},
 			{
 				"type":"MeshSprite3D",
-				"instanceID":22,
+				"instanceID":24,
 				"props":{
 					"name":"waitingroom",
 					"active":true,
@@ -1087,25 +1166,11 @@
 						}
 					]
 				},
-				"components":[
-					{
-						"type":"PhysicsCollider",
-						"restitution":0,
-						"friction":0.5,
-						"rollingFriction":0,
-						"shapes":[
-							{
-								"type":"MeshColliderShape",
-								"mesh":"Assets/Mesh/waitingroom-waitingroom.lm"
-							}
-						],
-						"isTrigger":false
-					}
-				],
+				"components":[],
 				"child":[
 					{
 						"type":"MeshSprite3D",
-						"instanceID":23,
+						"instanceID":25,
 						"props":{
 							"name":"SkyDome",
 							"active":true,
@@ -1141,7 +1206,7 @@
 						"child":[
 							{
 								"type":"Sprite3D",
-								"instanceID":24,
+								"instanceID":26,
 								"props":{
 									"name":"Moon",
 									"active":true,
@@ -1168,7 +1233,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":25,
+										"instanceID":27,
 										"props":{
 											"name":"Moon 1",
 											"active":true,
@@ -1207,7 +1272,7 @@
 							},
 							{
 								"type":"MeshSprite3D",
-								"instanceID":26,
+								"instanceID":28,
 								"props":{
 									"name":"Stars",
 									"active":true,
@@ -1244,7 +1309,7 @@
 							},
 							{
 								"type":"Sprite3D",
-								"instanceID":27,
+								"instanceID":29,
 								"props":{
 									"name":"Sun",
 									"active":true,
@@ -1271,7 +1336,7 @@
 								"child":[
 									{
 										"type":"MeshSprite3D",
-										"instanceID":28,
+										"instanceID":30,
 										"props":{
 											"name":"Sun 1",
 											"active":true,

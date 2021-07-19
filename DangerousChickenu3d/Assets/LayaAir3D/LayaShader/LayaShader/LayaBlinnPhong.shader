@@ -15,6 +15,18 @@ Shader "LayaAir3D/Mesh/BlinnPhong" {
 		[ToggleOff] _AlphaBlend("AlphaBlend", Float) = 0.0
 		[ToggleOff] _IsVertexColor("vertexcolor",Float) = 0.0
 
+		
+		//SubSurface Scattering
+		transmissionRate("transmissionRate",Range(0.0,1.0)) = 0.0
+		backDiffuse("backDiffuse",Range(1.0,10.0)) = 1.0
+		backScale("backScale",Range(0.0,10.0)) = 1.0
+		transmissionColor("transmissionColor",Color) = (1.0,1.0,1.0,1.0)
+		thinknessTexture("thinknessTexture",2D) = "white" {}
+		//Subsurface 
+		[ToggleOff] _enableSubsurfaceScattering("Subsurface Scattering",Float) = 0.0
+		[HideInInspector] _ThinknessSource ("__thinknessSource", Float) = 0.0
+
+
 		[HideInInspector] _Lighting ("__Lighting", Float) = 0.0
 		[HideInInspector] _Cull ("__cull", Float) = 2.0
 		[HideInInspector] _Mode ("__mode", Float) = 0.0
@@ -39,16 +51,20 @@ Shader "LayaAir3D/Mesh/BlinnPhong" {
 			#pragma shader_feature SpecularTexture
 			#pragma shader_feature EnableAlphaCutoff
 			#pragma shader_feature EnableLighting
+			#pragma shader_feature THICKNESSMAP
 
 			#pragma multi_compile_fwdbase
 			#pragma multi_compile_fog
 			#pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
 			#pragma shader_feature ENABLEVERTEXCOLOR
+			#pragma shader_feature ENABLETRANSMISSION
+			
 
 			#pragma vertex vert
 			#pragma fragment frag
 
 			#include "../CGIncludes/LayaBlinnPhongFB.cginc"
+
 			
 			ENDCG
 		}
@@ -62,12 +78,14 @@ Shader "LayaAir3D/Mesh/BlinnPhong" {
 			#pragma shader_feature SpecularTexture
 			#pragma shader_feature EnableAlphaCutoff
 			#pragma shader_feature EnableLighting
+			#pragma shader_feature THICKNESSMAP
 			
 			#pragma multi_compile_fwdadd
 			#pragma multi_compile_fwdadd_fullshadows
 			#pragma multi_compile_fog
 			#pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
 			#pragma shader_feature ENABLEVERTEXCOLOR
+			#pragma shader_feature ENABLETRANSMISSION
 
 			#pragma vertex vert
 			#pragma fragment frag

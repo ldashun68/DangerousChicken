@@ -13,15 +13,10 @@ export default class MoveState extends ActorState<Unit>  {
     }
 
     protected onEnterState() {
-        this._isLoop = true;
         console.log("切换成了移动状态");
     }
 
     public Update() {
         this.CurrFsm.Owner.move();
-    }
-
-    public Leave() {
-        
     }
 }

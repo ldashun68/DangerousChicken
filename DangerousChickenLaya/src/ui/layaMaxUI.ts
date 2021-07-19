@@ -12,4 +12,4 @@ export module ui.test {
         }
     }
     REG("ui.test.TestSceneUI",TestSceneUI);
-}
+}

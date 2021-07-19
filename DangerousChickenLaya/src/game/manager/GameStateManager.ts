@@ -18,13 +18,10 @@ export default class GameStateManager extends RabManager {
     protected OnInit() {
         this.allPlayerRoomState = new Map<string,roomState>();
         this._playerRoomState = PlayerRoomState.hall;
-
-        this.AddListenerMessage(GameMessage.MGOBE_LeaveRoom, this.leaveRoom);
     }
 
     /**游戏状态 */
-    public get ME ():PlayerRoomState
-    {
+    public get ME ():PlayerRoomState {
         return this._playerRoomState;
     }
 
@@ -76,7 +73,7 @@ export default class GameStateManager extends RabManager {
     }
 
     /**玩家离开房间 */
-    private leaveRoom (): void {
+    public leaveRoom (): void {
         let room = GameController.mgobeManager.roomInfo;
         room.playerList.forEach((value: MGOBE.types.PlayerInfo, index: number) => {
             if (this.allPlayerRoomState.has(value.id) == false) {
@@ -106,14 +103,19 @@ export default class GameStateManager extends RabManager {
      * @param state 
      * @returns 
      */
-    private isNextState(state:PlayerRoomState): boolean
+    public isNextState(state:PlayerRoomState): boolean
     {
         let count: number = 0;
-        this.allPlayerRoomState.forEach(element => {
-            if (element.state != state) {
-                count += 1;
-            }
-        });
+        if (this.allPlayerRoomState.size < GameController.mgobeManager.roomInfo.playerList.length) {
+            count = 1;
+        }
+        else {
+            this.allPlayerRoomState.forEach(element => {
+                if (element.state != state) {
+                    count += 1;
+                }
+            });
+        }
         return (count == 0);
     }
 }

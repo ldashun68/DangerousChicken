@@ -53,7 +53,7 @@ export default  abstract class GameObject extends Laya.Script3D {
         Laya.timer.clearAll(this);
         Laya.stage.offAllCaller(this);
 
-        if(this.gameObject) {
+        if (this.gameObject) {
             this.gameObject.removeSelf();
             this.gameObject.destroy();
         }
@@ -83,7 +83,7 @@ export default  abstract class GameObject extends Laya.Script3D {
      * @param name 消息类型
      * @param args 参数
      */
-    protected SendMessage(name,...args: any[])
+    public SendMessage(name,...args: any[])
     {
         Laya.stage.event(name,args);
     }
@@ -93,7 +93,7 @@ export default  abstract class GameObject extends Laya.Script3D {
      * @param node 
      * @param path 
      */
-    protected findChild(node:Laya.Sprite3D, path:string): Laya.Sprite3D
+    public findChild (node:Laya.Sprite3D, path:string): Laya.Sprite3D
     {
         let url = path.split('/');
         let parent = node;
@@ -105,6 +105,14 @@ export default  abstract class GameObject extends Laya.Script3D {
             }
         }
         return child;
+    }
+
+     /**
+     * 寻找子节点
+     * @param node 
+     */
+    public findChildAt (node:Laya.Sprite3D, index:number): Laya.Sprite3D {
+        return node.getChildAt(index) as Laya.Sprite3D;
     }
 
     /**

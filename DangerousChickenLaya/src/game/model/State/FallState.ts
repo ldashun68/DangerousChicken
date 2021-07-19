@@ -19,20 +19,14 @@ export default class FallState extends ActorState<Unit> {
 
     public Update() {
         this.CurrFsm.Owner.fall();
+        if(this.CurrFsm.Owner.isMove == true) {
+            this.CurrFsm.Owner.move();
+        }
     }
 
     protected onPlayAnim() {
         if (this.CurrFsm.LastStateType == RoleState.move) {
             super.onPlayAnim();
-        }
-    }
-    
-    protected onAnimPlayEnd() {
-        if (this.CurrFsm.Owner.isMove == true) {
-            this.CurrFsm.ChangeState(RoleState.move);
-        }
-        else {
-            this.CurrFsm.ChangeState(RoleState.idle);
         }
     }
 }

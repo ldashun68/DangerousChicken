@@ -174,6 +174,13 @@ export default class Joystick {
             this._button.x = buttonX - this._button.width / 2;
             this._button.y = buttonY - this._button.height / 2;
             
+            if (degree < 0) {
+                degree += 360;
+            }
+            degree += 90;
+            if (degree > 360) {
+                degree -= 360;
+            }
             this.touchDownCallback && this.touchDownCallback(degree);
         }
     }

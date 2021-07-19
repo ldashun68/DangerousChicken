@@ -19,13 +19,23 @@ export default class LoadingView extends RabView{
         if (scaleX > 1) {
             this._view.getChildAt(0).scaleX = scaleX;
         }
+
+        for (let index: number = 0; index < this._view.numChildren; index++) {
+            this._view.getChildAt(index).x *= scaleX;
+        }
     }
 
     protected InitView() {
+        this._view.getChild("ProgressText").asTextField.text = "加载中...0%";
+
         if (GameController.gameStateManager.ME == PlayerRoomState.hall) {
             Laya.loader.create(GameController.resourceManager.getWaitingRoomAllPath(),
                 Laya.Handler.create(this, () => {
-                    Laya.timer.once(2000,this,this.onLoadEnd);
+                    this.onLoadEnd();
+                }),
+                Laya.Handler.create(this, (progress: number) => {
+                    progress = parseFloat(progress.toFixed(2));
+                    this._view.getChild("ProgressText").asTextField.text = "加载中..."+Math.round(progress*100)+"%";
                 })
             );
         }
@@ -33,6 +43,10 @@ export default class LoadingView extends RabView{
             Laya.loader.create(GameController.resourceManager.getGameRoomPath(),
                 Laya.Handler.create(this, () => {
                     GameController.mgobeManager.changeCustomPlayerStatus(PlayerRoomState.gameLoading);
+                }),
+                Laya.Handler.create(this, (progress: number) => {
+                    progress = parseFloat(progress.toFixed(2));
+                    this._view.getChild("ProgressText").asTextField.text = "加载中..."+Math.round(progress*100)+"%";
                 })
             );
         }
@@ -41,20 +55,19 @@ export default class LoadingView extends RabView{
     }
 
     /**加载完成 */
-    onLoadEnd()
-    {
+    onLoadEnd() {
         if (GameController.gameStateManager.ME == PlayerRoomState.hall) {
-            GameManager.gameScene3D.onLoad3dScene(GameController.resourceManager.getWaitingRoomPath(), () => {
+            GameManager.gameScene3D.onLoad3dScene(GameController.resourceManager.getWaitingRoomPath()[0], () => {
                 this.OnCloseView();
+                GameController.roleManager.addRole(null, false);
                 GameManager.uimanager.onCreateView(ViewConfig.WaitingRoomView);
-                GameController.onInitRoom();
             });
         }
         else if (GameController.gameStateManager.ME == PlayerRoomState.gameLoading) {
             GameManager.gameScene3D.onLoad3dScene(GameController.resourceManager.getGameRoomPath(), () => {
                 this.OnCloseView();
+                GameController.roleManager.addRole(null, false);
                 GameManager.uimanager.onCreateView(ViewConfig.GameView);
-                GameController.onInitRoom();
             });
         }
     }

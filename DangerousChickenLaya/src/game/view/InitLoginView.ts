@@ -1,6 +1,7 @@
 import GameNotity from "../../rab/GameNotity";
 import GameManager from "../../rab/Manager/GameManager";
 import RabView from "../../rab/RabView";
+import MgobeManager from "../manager/MgobeManager";
 import ViewConfig from "../ViewConfig";
 
 export default class InitLoadView extends RabView{
@@ -34,8 +35,11 @@ export default class InitLoadView extends RabView{
         ], Laya.Handler.create(this, () => {
             this.onLoadend();
         }), Laya.Handler.create(this, (progress: number) => {
-            this._view.getChild("ProgressText").asTextField.text = "加载中..."+(progress*100)+"%";
+            progress = parseFloat(progress.toFixed(2));
+            this._view.getChild("ProgressText").asTextField.text = "加载中..."+Math.round(progress*100)+"%";
         }, [], false));
+
+        GameManager.addManager(MgobeManager);
 
         this.AddListenerMessage(GameNotity.GameMessage_LoadingEnd, this.onLoadend);
     }

@@ -1,6 +1,10 @@
 import GameManager from "../../rab/Manager/GameManager";
 import Util from "../../rab/Util";
-import { RoleState } from "./DataType";
+import GameMessage from "../GameMessage";
+import GameController from "../manager/GameController";
+import Child from "./Child";
+import { RoleSkill, RoleState, RoleType } from "./DataType";
+import Door from "./Door";
 import Role from "./Role";
 
 export default class RoleMoveRayCast {
@@ -9,6 +13,7 @@ export default class RoleMoveRayCast {
 	public startPosY: number;
 	public floor: Laya.Sprite3D;
 	public stair: Laya.Sprite3D;
+	public prop: Laya.Sprite3D;
 	public door: Laya.Sprite3D;
 
 	private lineForward: Laya.PixelLineSprite3D;
@@ -27,6 +32,10 @@ export default class RoleMoveRayCast {
 
 	/**射线检测 */
 	public forward (): boolean {
+		if (GameManager.gameScene3D.scene3D == null || GameManager.gameScene3D.scene3D.physicsSimulation == null) {
+			return false;
+		}
+
 		let position = Util.getNewVector3(this.role.prior);
 		position.y += this.startPosY;
 		this.role.getForward();
@@ -64,14 +73,31 @@ export default class RoleMoveRayCast {
 						return true;
 					}
                 }
-				else if (cube.parent.name.indexOf("prop") != -1) {
+				else if (cube.name.indexOf("door") != -1) {
 					if (Util.getDistanceV3(value.point, position, "y") <= 0.5) {
-						if (cube.name.indexOf("door") != -1) {
-							this.door = cube;
+						this.door = cube;
+						// 只有小孩可以开门
+						if (this.role.unitInfo.type == RoleType.child) {
+							let door: Door = this.door.parent.getComponent(Door);
+							if (door != null) {
+								door.openDoor();
+							}
 						}
 						return true;
 					}
                 }
+				else if (cube.parent.name.indexOf("prop") != -1) {
+					if (Util.getDistanceV3(value.point, position, "y") <= 0.5) {
+						return true;
+					}
+                }
+				else if (cube.name.indexOf("safe") != -1) {
+					if (Util.getDistanceV3(value.point, position, "y") <= 0.5) {
+						this.role.OnChangeEntityState(RoleState.safe, true);
+						GameController.roleManager.isChildWin();
+						return true;
+					}
+				}
 			}
 		}
 		return false;
@@ -79,6 +105,16 @@ export default class RoleMoveRayCast {
 
 	/**射线检测 */
 	public down (): void {
+		if (GameManager.gameScene3D.scene3D == null || GameManager.gameScene3D.scene3D.physicsSimulation == null) {
+			return;
+		}
+
+		if (this.role.unitInfo.type == RoleType.child) {
+			if ((this.role as Child).jumpHeight > 0) {
+				return;
+			}
+		}
+		
 		let position = Util.getNewVector3(this.role.prior);
 		position.y += 0.25;
         let direction = new Laya.Vector3(0, -0.1, 0);
@@ -91,24 +127,43 @@ export default class RoleMoveRayCast {
         let hitResult: Laya.HitResult = new Laya.HitResult();
         GameManager.gameScene3D.scene3D.physicsSimulation.raycastFromTo(position, direction, hitResult);
 
+		this.floor = null;
+		this.stair = null;
+		this.prop = null;
 		if (hitResult.collider != null) {
 			let cube: Laya.Sprite3D = hitResult.collider.owner as Laya.Sprite3D;
+			// 是否位移
+			let bool = true;
 			if (cube.parent.name.indexOf("floor") != -1) {
 				this.floor = cube;
 			}
 			else if (cube.parent.name.indexOf("stair") != -1) {
 				this.stair = cube;
 			}
+			else if (cube.parent.name.indexOf("prop") != -1) {
+				this.prop = cube;
+				if (cube.name.indexOf(RoleSkill.Ghost_Trap) != -1) {
+					bool = false;
+				}
+			}
 
 			let gap = Math.abs(this.role.gameObject.transform.position.y - hitResult.point.y);
-			if (gap >= 0.2) {
-				if (this.isFall == false) {
-					this.isFall = true;
-					this.role.OnChangeEntityState(RoleState.fall, true, new Laya.Vector3(0, hitResult.point.y, 0));
+			if (gap >= 0.1 && this.role.unitInfo.type == RoleType.child) {
+				this.isFall = true;
+				if (bool == true) {
+
+					(this.role as Child).onFall(new Laya.Vector3(0, hitResult.point.y, 0));
+				}
+
+				if (this.prop != null) {
+					if (cube.name.indexOf(RoleSkill.Ghost_Trap) != -1) {
+						this.role.SendMessage(GameMessage.GameView_Hint, this.role.unitInfo.nickName+"中了陷阱");
+						GameController.mgobeManager.sendToGameSvr(GameMessage.Role_TreadTrap, {}, this.role.unitInfo.id);
+					}
 				}
 			}
 			else {
-				if (this.isFall == false) {
+				if (this.isFall == false && bool == true) {
 					this.role.gameObject.transform.position.y = hitResult.point.y;
 				}
 			}

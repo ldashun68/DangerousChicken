@@ -141,11 +141,11 @@ export default class GameLogicManager extends RabManager {
             if(sdk.user.avatar == null)
             {
                 SDKChannel.createUserInfoButton(()=>{
-                    this.gameInfo.nickName = sdk.user.nickname;
-                    this.gameInfo.avatarUrl = sdk.user.avatar;
+                    this.gameInfo.nickName = "";
+                    this.gameInfo.avatarUrl = "";
                     this.gameInfo.id = sdk.user.id;
                     this.gameInfo.openId = sdk.user.openid+"";
-                    this.SendMessage(GameMessage.GameView_ShowIcon);
+                    this.SendMessage(GameMessage.HallView_ShowRole);
                     sdk.data = this.gameInfo;
                     sdk.postData();
                 })
@@ -153,11 +153,11 @@ export default class GameLogicManager extends RabManager {
             {
                 if(this.gameInfo.nickName == "" || this.gameInfo.nickName == null)
                 {
-                    this.gameInfo.nickName = sdk.user.nickname;
-                    this.gameInfo.avatarUrl = sdk.user.avatar;
+                    this.gameInfo.nickName = "";
+                    this.gameInfo.avatarUrl = "";
                     this.gameInfo.id = sdk.user.id;
                     this.gameInfo.openId = sdk.user.openid+"";
-                    this.SendMessage(GameMessage.GameView_ShowIcon);
+                    this.SendMessage(GameMessage.HallView_ShowRole);
                     sdk.data = this.gameInfo;
                     sdk.postData();
                 }
@@ -165,7 +165,6 @@ export default class GameLogicManager extends RabManager {
             // this.gameInfo.openId = Date.now()+""
         }
         this.InitGameInfo();
-        GameManager.addManager(MgobeManager);
     }
 
     /**

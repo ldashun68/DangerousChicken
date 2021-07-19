@@ -37,7 +37,7 @@ export default class HallView extends RabView{
         this.userInfo();
         this.updateUserInfo();
 
-        GameController.mgobeManager.changeCustomPlayerStatus(PlayerRoomState.hall);
+        GameController.gameStateManager.setRoomState(MGOBE.Player.id, PlayerRoomState.hall);
 
         this.AddListenerMessage(GameMessage.GameMessage_UpdateUserInfo, this.updateUserInfo, this);
         this.AddListenerMessage(GameMessage.MGOBE_EnterRoomFinish, this.enterRoom, this);
@@ -88,10 +88,10 @@ export default class HallView extends RabView{
         let escapeMode: fgui.GComponent = this._view.getChild("EscapeMode").asCom;
         escapeMode.setPivot(0.5, 0.5);
         escapeMode.onClick(this, () => {
-            if (isEnter == false) {
+            if (isEnter == false && GameManager.gameLogicManager.isHaveRole() == true) {
+                isEnter = true;
                 GameController.mgobeManager.onQuickMatch(RoomType.EscapeMode);
             }
-            isEnter = true;
         });
         Util.addButtonAnimation(escapeMode, "HallView");
 
@@ -167,6 +167,7 @@ export default class HallView extends RabView{
     /**初始化大厅3d角色 */
     private InitRole(): void {
         let path = GameController.resourceManager.getRolePath(GameManager.gameLogicManager.gameInfo.currentRole);
+        let scaleX = Laya.stage.width/Laya.stage.designWidth;
         Laya.loader.create(path, Laya.Handler.create(this, () => {
             if (this._role != null) {
                 this._role.destroy();
@@ -176,7 +177,7 @@ export default class HallView extends RabView{
             this.isClick = false;
             this._role = Laya.loader.getRes(path) as Laya.MeshSprite3D;
             this.scene3d.addChild(this._role);
-            this._role.transform.localPosition = new Laya.Vector3(-1.7,-0.8,-3.3)
+            this._role.transform.localPosition = new Laya.Vector3(-1.7*scaleX,-0.8,-3.3);
         }));
     }
 

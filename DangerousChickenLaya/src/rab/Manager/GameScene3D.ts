@@ -59,7 +59,7 @@ export default class GameScene3D extends RabManager {
                     let SkyDome:Laya.Sprite3D = gameroom.getChildByName("SkyDome") as Laya.Sprite3D
                     if(SkyDome)
                     {
-                        SkyDome.transform.scale = new Laya.Vector3(100,100,100);
+                        SkyDome.active = false;
                     }
                 }
 

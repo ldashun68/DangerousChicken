@@ -11,12 +11,23 @@ sampler2D _SpecGlossMap;
 half _Shininess;
 half _Cutoff;
 
+#if ENABLETRANSMISSION
+	float transmissionRate;
+	float backDiffuse;
+	float backScale;
+	float4 transmissionColor;
+	#if THICKNESSMAP
+		sampler2D thinknessTexture;
+	#endif
+#endif
+
 struct a2v {
 	float4 vertex : POSITION;
 	float3 normal : NORMAL;
 	float4 tangent : TANGENT;
 	float4 texcoord : TEXCOORD0;
 	float4 texcoord1: TEXCOORD1;
+
 	float4 color : COLOR;
 };
 			
@@ -31,6 +42,23 @@ struct v2f {
 	SHADOW_COORDS(5)
 	UNITY_FOG_COORDS(6)
 };
+
+#if ENABLETRANSMISSION
+	inline float3 SubSurfaceIBack(float3 lightDir,float3 viewDir,float2 uv){
+		float3 H = normalize(lightDir);
+		float VdotH = pow(saturate(dot(viewDir,-H)),backDiffuse)*backScale;
+		float3 I;
+		#if THICKNESSMAP
+			I = transmissionColor.rgb*VdotH*(tex2D(thinknessTexture,uv).r);
+		#else
+			I = transmissionColor.rgb*VdotH;
+		#endif
+		return I;
+	}
+#endif
+
+
+
 
 inline void layaBlinnPhongLighting (in fixed3 lightDir, in fixed3 viewDir, in fixed3 normal, out fixed4 diffuse, out fixed4 specular)
 {
@@ -110,11 +138,16 @@ fixed4 frag(v2f i) : SV_Target {
 	UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos);
 	
 	fixed4 color;
-
+#if defined(ENABLETRANSMISSION)&&defined(EnableLighting)
+	diffuse.rgb *= transmissionRate;
+#endif
 	#if ENABLEVERTEXCOLOR
 	color = fixed4((diffuse + specular).rgb * atten, albedo.a)*i.color;
 	#else
-	color = fixed4((diffuse + specular).rgb * atten, albedo.a)
+	color = fixed4((diffuse + specular).rgb * atten, albedo.a);
+	#endif
+	#if defined(ENABLETRANSMISSION)&&defined(EnableLighting)
+		color.rgb += SubSurfaceIBack(lightDir, viewDir, i.uv)*_LightColor0.rgb*(1.0-transmissionRate)*atten;
 	#endif
 
 	UNITY_APPLY_FOG(i.fogCoord, color);

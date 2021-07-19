@@ -74,52 +74,40 @@
 										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Cheer.lani"
 									},
 									{
-										"name":"Dorothy_Hi",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Hi.lani"
+										"name":"Dorothy_Hi"
 									},
 									{
-										"name":"Dorothy_Hurt",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Hurt.lani"
+										"name":"Dorothy_Hurt"
 									},
 									{
-										"name":"Dorothy_Laugh",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Laugh.lani"
+										"name":"Dorothy_Laugh"
 									},
 									{
-										"name":"Dorothy_Melee",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Melee.lani"
+										"name":"Dorothy_Melee"
 									},
 									{
-										"name":"Dorothy_MoveBox",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_MoveBox.lani"
+										"name":"Dorothy_MoveBox"
 									},
 									{
-										"name":"Dorothy_OTL",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_OTL.lani"
+										"name":"Dorothy_OTL"
 									},
 									{
-										"name":"Dorothy_Praise",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Praise.lani"
+										"name":"Dorothy_Praise"
 									},
 									{
-										"name":"Dorothy_Provoke",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Provoke.lani"
+										"name":"Dorothy_Provoke"
 									},
 									{
-										"name":"Dorothy_Respawn",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Respawn.lani"
+										"name":"Dorothy_Respawn"
 									},
 									{
-										"name":"Dorothy_Sad",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Sad.lani"
+										"name":"Dorothy_Sad"
 									},
 									{
-										"name":"Dorothy_Upset",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Dorothy_Upset.lani"
+										"name":"Dorothy_Upset"
 									},
 									{
-										"name":"Elle_Dodge",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Elle_Dodge.lani"
+										"name":"Elle_Dodge"
 									},
 									{
 										"name":"Girl_Attack",
@@ -150,16 +138,32 @@
 										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_Run.lani"
 									},
 									{
-										"name":"Girl_RunAtk",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_RunAtk.lani"
+										"name":"Girl_RunAtk"
 									},
 									{
-										"name":"Girl_Scared",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_Scared.lani"
+										"name":"Girl_Scared"
 									},
 									{
-										"name":"Girl_StoreStand",
-										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_StoreStand.lani"
+										"name":"Girl_StoreStand"
+									},
+									{
+										"name":"Girl_JumpDwon",
+										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_JumpDwon.lani"
+									}
+								]
+							},
+							{
+								"name":"New Layer",
+								"weight":0,
+								"blendingMode":0,
+								"states":[
+									{
+										"name":"Girl_IdleStay",
+										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_IdleStay.lani"
+									},
+									{
+										"name":"Girl_Run",
+										"clipPath":"Assets/model/Units/Model/play3/Eliot_Set-Girl_Run.lani"
 									}
 								]
 							}

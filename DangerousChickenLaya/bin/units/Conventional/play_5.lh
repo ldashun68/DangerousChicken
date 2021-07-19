@@ -74,52 +74,40 @@
 										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Cheer.lani"
 									},
 									{
-										"name":"Dorothy_Hi",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Hi.lani"
+										"name":"Dorothy_Hi"
 									},
 									{
-										"name":"Dorothy_Hurt",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Hurt.lani"
+										"name":"Dorothy_Hurt"
 									},
 									{
-										"name":"Dorothy_Laugh",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Laugh.lani"
+										"name":"Dorothy_Laugh"
 									},
 									{
-										"name":"Dorothy_Melee",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Melee.lani"
+										"name":"Dorothy_Melee"
 									},
 									{
-										"name":"Dorothy_MoveBox",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_MoveBox.lani"
+										"name":"Dorothy_MoveBox"
 									},
 									{
-										"name":"Dorothy_OTL",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_OTL.lani"
+										"name":"Dorothy_OTL"
 									},
 									{
-										"name":"Dorothy_Praise",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Praise.lani"
+										"name":"Dorothy_Praise"
 									},
 									{
-										"name":"Dorothy_Provoke",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Provoke.lani"
+										"name":"Dorothy_Provoke"
 									},
 									{
-										"name":"Dorothy_Respawn",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Respawn.lani"
+										"name":"Dorothy_Respawn"
 									},
 									{
-										"name":"Dorothy_Sad",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Sad.lani"
+										"name":"Dorothy_Sad"
 									},
 									{
-										"name":"Dorothy_Upset",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Dorothy_Upset.lani"
+										"name":"Dorothy_Upset"
 									},
 									{
-										"name":"Elle_Dodge",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Elle_Dodge.lani"
+										"name":"Elle_Dodge"
 									},
 									{
 										"name":"Girl_Attack",
@@ -150,20 +138,35 @@
 										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_Run.lani"
 									},
 									{
-										"name":"Girl_RunAtk",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_RunAtk.lani"
+										"name":"Girl_RunAtk"
 									},
 									{
-										"name":"Girl_Scared",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_Scared.lani"
+										"name":"Girl_Scared"
 									},
 									{
-										"name":"Girl_StoreStand",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_StoreStand.lani"
+										"name":"Girl_StoreStand"
 									},
 									{
-										"name":"T_Pose",
-										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-T_Pose.lani"
+										"name":"T_Pose"
+									},
+									{
+										"name":"Girl_JumpDwon",
+										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_JumpDwon.lani"
+									}
+								]
+							},
+							{
+								"name":"New Layer",
+								"weight":0,
+								"blendingMode":0,
+								"states":[
+									{
+										"name":"Girl_IdleStay",
+										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_IdleStay.lani"
+									},
+									{
+										"name":"Girl_Run",
+										"clipPath":"Assets/model/Units/Model/play5/Ralph_Set-Girl_Run.lani"
 									}
 								]
 							}
@@ -268,7 +271,7 @@
 														0.0003308483
 													],
 													"rotation":[
-														-0.06041122,
+														-0.06041123,
 														-0.01267641,
 														0.01672396,
 														-0.997953
@@ -298,7 +301,7 @@
 																0.2124487,
 																0.9735295,
 																-0.08427992,
-																-0.001715731
+																-0.001715733
 															],
 															"scale":[
 																1,
@@ -344,9 +347,9 @@
 																			"isStatic":false,
 																			"layer":0,
 																			"position":[
-																				0.2673624,
-																				-2.422333E-08,
-																				1.211166E-08
+																				0.2647887,
+																				0.004310179,
+																				-0.0008853866
 																			],
 																			"rotation":[
 																				0.05225454,
@@ -376,7 +379,7 @@
 																						0
 																					],
 																					"rotation":[
-																						2.488571E-05,
+																						2.488566E-05,
 																						0.001023692,
 																						-0.7004774,
 																						-0.7136738
@@ -459,9 +462,9 @@
 																			"isStatic":false,
 																			"layer":0,
 																			"position":[
-																				0.2673624,
-																				-1.81675E-08,
-																				0
+																				0.2650067,
+																				0.001919671,
+																				-0.005180115
 																			],
 																			"rotation":[
 																				-0.08933514,
@@ -609,7 +612,7 @@
 																			"rotation":[
 																				0.01432993,
 																				0.01467834,
-																				-0.01620731,
+																				-0.0162073,
 																				-0.9996582
 																			],
 																			"scale":[
@@ -662,10 +665,10 @@
 																						0.1810858
 																					],
 																					"rotation":[
-																						-0.070435,
-																						0.712862,
-																						-0.6971418,
-																						0.0293239
+																						-0.07043491,
+																						0.7128621,
+																						-0.6971419,
+																						0.02932381
 																					],
 																					"scale":[
 																						1,
@@ -910,7 +913,7 @@
 																					"rotation":[
 																						-0.2130455,
 																						-0.5155964,
-																						0.08441848,
+																						0.08441849,
 																						-0.8256183
 																					],
 																					"scale":[
@@ -1105,7 +1108,7 @@
 																											"rotation":[
 																												0.0003844057,
 																												-0.0001037781,
-																												-0.2606525,
+																												-0.2606526,
 																												-0.9654326
 																											],
 																											"scale":[
@@ -1169,9 +1172,9 @@
 																			],
 																			"rotation":[
 																				-0.6702674,
-																				0.0704331,
+																				0.07043315,
 																				0.7257236,
-																				0.1382244
+																				0.1382245
 																			],
 																			"scale":[
 																				1,
@@ -1222,10 +1225,10 @@
 																								4.844665E-08
 																							],
 																							"rotation":[
-																								-9.67438E-09,
+																								-9.674382E-09,
 																								2.91564E-08,
 																								0.8443971,
-																								-0.5357177
+																								-0.5357178
 																							],
 																							"scale":[
 																								1,
@@ -1478,23 +1481,23 @@
 									"rootBone":367,
 									"boundBox":{
 										"min":[
-											-0.5746907,
-											-0.2183497,
-											-0.2962212
+											-0.573606,
+											-0.21835,
+											-0.2962209
 										],
 										"max":[
-											0.9530394,
-											0.4877265,
-											0.5394393
+											0.9530401,
+											0.4877267,
+											0.5394394
 										]
 									},
 									"boundSphere":{
 										"center":[
-											0.1891744,
-											0.1346884,
-											0.1216091
+											0.1897171,
+											0.1346883,
+											0.1216092
 										],
-										"radius":0.9395253
+										"radius":0.9390848
 									},
 									"bones":[
 										369,

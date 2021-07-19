@@ -13,7 +13,15 @@ export default class IdleState extends ActorState<Unit> {
     }
 
     protected onEnterState() {
-        this._isLoop = true;
         console.log("切换成了待机状态");
+    }
+
+    protected onPlayAnim () {
+        this.CurrFsm.Owner.idle();
+        super.onPlayAnim();
+
+        if (this._animName != "") {
+            this._animator.getControllerLayer(0).getAnimatorState(this._animName).clip.islooping = true;
+        }
     }
 }

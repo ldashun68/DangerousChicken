@@ -21,15 +21,6 @@ export default class JumpState extends ActorState<Unit> {
         if(this.CurrFsm.Owner.isMove == true) {
             this.CurrFsm.Owner.move();
         }
-    }
-    
-    protected onAnimPlayEnd() {
-        this.Exchange = true;
-        if (this.CurrFsm.Owner.isMove == true) {
-            this.CurrFsm.ChangeState(RoleState.move);
-        }
-        else {
-            this.CurrFsm.ChangeState(RoleState.idle);
-        }
+        this.CurrFsm.Owner.jump();
     }
 }

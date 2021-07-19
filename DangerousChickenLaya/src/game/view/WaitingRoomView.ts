@@ -2,8 +2,7 @@ import GameManager from "../../rab/Manager/GameManager";
 import RabView from "../../rab/RabView";
 import GameMessage from "../GameMessage";
 import GameController from "../manager/GameController";
-import RoleManager from "../manager/RoleManager";
-import { PlayerRoomState } from "../model/DataType";
+import { PlayerRoomState, SendGameServer } from "../model/DataType";
 import ViewConfig from "../ViewConfig";
 
 export default class WaitingRoomView extends RabView {
@@ -33,40 +32,64 @@ export default class WaitingRoomView extends RabView {
         this._view.displayObject.mouseThrough = true;
         this._view.getChild("timeText").visible = false;
 
-        this._view.getChild("LeaveRoom").onClick(this, ()=>{
-            GameController.mgobeManager.changeCustomPlayerStatus(PlayerRoomState.hall);
+        this._view.getChild("leaveButton").onClick(this, ()=>{
             GameController.leaveRoom();
         });
 
-        if (GameController.mgobeManager.isRoomOwner() == true) {
-            this._view.getChild("GameStart").onClick(this, ()=>{
-                if (this.isStartGame() == true && this._view.getChild("GameStart").visible == true) {
-                    GameController.mgobeManager.changeRoom(true);
-                    this.downcountTime = 3;
-                    this._view.getChild("timeText").asTextField.text = ""+this.downcountTime;
-                    this._view.getChild("timeText").visible = true;
-        
-                    Laya.timer.clear(this, this.downcount);
-                    Laya.timer.loop(1000, this, this.downcount);
-                }
-                this._view.getChild("GameStart").visible = false;
-            });
-        }
-        else {
-            this._view.getChild("GameStart").visible = false;
-        }
+        this._view.getChild("startButton").visible = GameController.mgobeManager.isRoomOwner();
+        this._view.getChild("startButton").onClick(this, ()=>{
+            if (this.isStartGame() == true && this._view.getChild("startButton").visible == true) {
+                this._view.getChild("startButton").visible = false;
+                GameController.mgobeManager.changeRoom(true);
+                GameController.mgobeManager.sendToGameSvr(GameMessage.GameMessage_LoadProgess, {});
+            }
+        });
 
-        GameController.mgobeManager.changeCustomPlayerStatus(PlayerRoomState.waitingRoom);
 
         this.updateRoom();
         this.AddListenerMessage(GameMessage.MGOBE_EnterRoomFinish, this.updateRoom);
-        this.AddListenerMessage(GameMessage.MGOBE_LeaveRoom, this.updateRoom);
+        this.AddListenerMessage(GameMessage.MGOBE_JoinRoom, this.joinRoom);
+        this.AddListenerMessage(GameMessage.MGOBE_LeaveRoom, this.leaveRoom);
+        this.AddListenerMessage(GameMessage.MGOBE_ChangeRoomOwner, this.changeRoomOwner, this);
+        this.AddListenerMessage(GameMessage.MGOBE_RecvFromGameServer, this.RecvFromGameServer);
+
+        GameController.mgobeManager.changeCustomPlayerStatus(PlayerRoomState.waitingRoom);
     }
 
+    /**玩家自己进入房间 */
     private updateRoom (): void {
         let room = GameController.mgobeManager.roomInfo;
         this._view.getChild("roleCountText").text = room.playerList.length+"/"+room.maxPlayers;
     }
+
+    /**其他玩家进入房间 */
+    private joinRoom (joinPlayerId: string): void {
+        if (joinPlayerId == MGOBE.Player.id) {
+            return;
+        }
+
+        let playinfo: MGOBE.types.PlayerInfo = GameController.mgobeManager.getPlayInfo(joinPlayerId);
+        GameController.roleManager.joinPlayerId.push(joinPlayerId);
+        GameController.roleManager.addRole(playinfo, false);
+        this.updateRoom();
+    }
+
+    /**其他玩家离开房间 */
+    private leaveRoom (leavePlayerId: string): void {
+        if (leavePlayerId == MGOBE.Player.id) {
+            return;
+        }
+
+        GameController.roleManager.removeRole(leavePlayerId);
+        this.updateRoom();
+    }
+
+    private changeRoomOwner (): void {
+        if (GameController.mgobeManager.isRoomOwner() == true) {
+            this._view.getChild("startButton").visible = true;
+        }
+    }
+
 
     /**是否可以开始游戏 */
     private isStartGame (): boolean {
@@ -81,13 +104,27 @@ export default class WaitingRoomView extends RabView {
         else if (room.playerList.length >= 4 && count[0] == 1) {
             bool = true;
         }
+        if (bool == true) {
+            bool = GameController.gameStateManager.isNextState(PlayerRoomState.waitingRoom);
+        }
         return bool;
+    }
+
+    private startDowncount (): void {
+        this.downcountTime = 3;
+        this._view.getChild("timeText").asTextField.text = ""+this.downcountTime;
+        this._view.getChild("timeText").visible = true;
+        this._view.getChild("leaveButton").visible = false;
+
+        Laya.timer.clear(this, this.downcount);
+        Laya.timer.loop(1000, this, this.downcount);
     }
 
     private downcount (): void {
         this.downcountTime--;
         if (this.downcountTime == 0) {
             this.startGame();
+            Laya.timer.clear(this, this.downcount);
         }
         else {
             this._view.getChild("timeText").asTextField.text = ""+this.downcountTime;
@@ -96,18 +133,25 @@ export default class WaitingRoomView extends RabView {
 
     private startGame (): void {
         this.OnCloseView();
-
+        
         GameManager.uimanager.onCreateView(ViewConfig.LoadingView);
+    }
 
-        Laya.timer.clear(this, this.downcount);
+    private RecvFromGameServer (data: SendGameServer): void {
+        if(GameController.gameStateManager.ME == PlayerRoomState.gameEnd) return;
+        if (data) {
+            if (data.cmd == GameMessage.GameMessage_LoadProgess) {
+                this.startDowncount();
+            }
+        }
     }
 
     onDestroy () {
-        GameManager.uimanager.onCloseView(ViewConfig.JoystickView);
-        GameController.roleManager.isLoop = false;
-        GameManager.removeManager(RoleManager);
-        GameManager.gameScene3D.onRemoveScene();
-
         super.onDestroy();
+
+        // 开始游戏和离开房间都需要执行
+        GameManager.uimanager.onCloseView(ViewConfig.JoystickView);
+        GameController.roleManager.removeRole(null);
+        GameManager.gameScene3D.onRemoveScene();
     }
 }

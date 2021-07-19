@@ -5,7 +5,7 @@
 		"name":"star",
 		"renderStates":[
 			{
-				"cull":0,
+				"cull":2,
 				"blend":0,
 				"srcBlend":1,
 				"dstBlend":0,
@@ -32,10 +32,10 @@
 			{
 				"name":"albedoColor",
 				"value":[
-					0,
-					0.6343144,
-					0.9811321,
-					0.5
+					1,
+					1,
+					1,
+					1
 				]
 			}
 		],

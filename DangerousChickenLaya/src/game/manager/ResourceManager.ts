@@ -42,9 +42,21 @@ export default class ResourceManager extends RabManager {
     }
 
     /**获得等待房间资源路径 */
-    public getWaitingRoomPath ():string
+    public getWaitingRoomPath ():Array<string>
     {
-        return "3dscene/waitingroom/Conventional/waitingroom.ls";
+        return [
+            "3dscene/waitingroom/Conventional/waitingroom.ls",
+            "units/Conventional/box_key.lh",
+            "units/Conventional/box_part.lh",
+            "units/Conventional/key_blue.lh",
+            "units/Conventional/key_green.lh",
+            "units/Conventional/key_red.lh",
+            "units/Conventional/key_yellow.lh",
+            "units/Conventional/stone.lh",
+            "units/Conventional/stones.lh",
+            "units/Conventional/traps.lh",
+            "units/Conventional/shield.lh",
+        ];
     }
 
     /**获得游戏房间资源路径 */
@@ -78,8 +90,7 @@ export default class ResourceManager extends RabManager {
     /**获得等待房间所需的全部资源路径 */
     public getWaitingRoomAllPath (): Array<string>
     {
-        let arr:Array<string> = [];
-        arr.push(this.getWaitingRoomPath());
+        let arr:Array<string> = this.getWaitingRoomPath();
         
         let room = GameController.mgobeManager.roomInfo;
         room.playerList.forEach((value: MGOBE.types.PlayerInfo, index: number) => {

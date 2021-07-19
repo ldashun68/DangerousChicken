@@ -74,24 +74,20 @@
 										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_Atk.lani"
 									},
 									{
-										"name":"GrandMother_Block",
-										"clipPath":"Assets/model/Units/Model/granny/gp1-GrandMother_Block.lani"
+										"name":"GrandMother_Block"
 									},
 									{
 										"name":"GrandMother_BlockStay",
 										"clipPath":"Assets/model/Units/Model/granny/gp1-GrandMother_BlockStay.lani"
 									},
 									{
-										"name":"GrandMother_Dash",
-										"clipPath":"Assets/model/Units/Model/granny/gp1-GrandMother_Dash.lani"
+										"name":"GrandMother_Dash"
 									},
 									{
-										"name":"GrandMother_Dead",
-										"clipPath":"Assets/model/Units/Model/granny/gp1-GrandMother_Dead.lani"
+										"name":"GrandMother_Dead"
 									},
 									{
-										"name":"GrandMother_Extinguish",
-										"clipPath":"Assets/model/Units/Model/granny/gp1-GrandMother_Extinguish.lani"
+										"name":"GrandMother_Extinguish"
 									},
 									{
 										"name":"GrandMother_Hit",
@@ -106,12 +102,26 @@
 										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_Run.lani"
 									},
 									{
-										"name":"GrandMother_StunWalk",
-										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_StunWalk.lani"
+										"name":"GrandMother_StunWalk"
 									},
 									{
 										"name":"GrandMother_Victory",
 										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_Victory.lani"
+									}
+								]
+							},
+							{
+								"name":"New Layer",
+								"weight":0,
+								"blendingMode":0,
+								"states":[
+									{
+										"name":"GrandMother_IdleStay",
+										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_IdleStay.lani"
+									},
+									{
+										"name":"GrandMother_Run",
+										"clipPath":"Assets/model/Units/Model/granny/gp1-Grandmother_Run.lani"
 									}
 								]
 							}
@@ -190,8 +200,8 @@
 											],
 											"rotation":[
 												-0.5628818,
-												-0.4459747,
-												-0.55459,
+												-0.4459748,
+												-0.5545899,
 												0.4203577
 											],
 											"scale":[
@@ -270,7 +280,7 @@
 																		1.211166E-08
 																	],
 																	"rotation":[
-																		-5.037926E-10,
+																		-5.037925E-10,
 																		-1.79322E-09,
 																		0.2704716,
 																		-0.962728
@@ -638,8 +648,8 @@
 																								0
 																							],
 																							"rotation":[
-																								-5.127665E-09,
-																								5.058108E-08,
+																								-5.127664E-09,
+																								5.058109E-08,
 																								0.3851706,
 																								-0.9228454
 																							],
@@ -980,9 +990,9 @@
 																											],
 																											"rotation":[
 																												-0.8163823,
-																												-0.3354907,
-																												0.05016666,
-																												0.4673856
+																												-0.3354906,
+																												0.05016664,
+																												0.4673855
 																											],
 																											"scale":[
 																												0.9999999,
@@ -1120,7 +1130,7 @@
 																														-4.844665E-08
 																													],
 																													"rotation":[
-																														9.561841E-09,
+																														9.561842E-09,
 																														-3.191856E-08,
 																														-0.6850773,
 																														-0.7284704
@@ -1237,21 +1247,21 @@
 									"rootBone":53,
 									"boundBox":{
 										"min":[
-											-0.8556825,
-											-0.4440355,
+											-0.8556809,
+											-0.4440361,
 											-0.529144
 										],
 										"max":[
-											1.243153,
-											0.7058641,
-											0.5350472
+											1.243155,
+											0.7058631,
+											0.5350455
 										]
 									},
 									"boundSphere":{
 										"center":[
-											0.1937354,
-											0.1309143,
-											0.002951562
+											0.1937371,
+											0.1309135,
+											0.002950728
 										],
 										"radius":1.309569
 									},
